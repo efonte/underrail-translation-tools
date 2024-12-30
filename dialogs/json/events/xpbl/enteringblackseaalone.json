@@ -1,0 +1,390 @@
+{
+  "Header": "F9538B831F363243BAAE0D17865D08540F6688D54C000000",
+  "Records": [
+    {
+      "RootId": 1,
+      "HeaderId": -1,
+      "MajorVersion": 1,
+      "MinorVersion": 0,
+      "RecordTypeEnum": "SerializedStreamHeader"
+    },
+    {
+      "LibraryId": 2,
+      "LibraryName": "X",
+      "RecordTypeEnum": "BinaryLibrary"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 1,
+        "Name": "DM",
+        "MemberCount": 11,
+        "MemberNames": [
+          "DM:DN",
+          "DM:DD",
+          "DM:SE",
+          "DM:LL:Count",
+          "DM:LL:0",
+          "DM:LL:1",
+          "DM:A:Count",
+          "DM:A:0",
+          "DM:A:1",
+          "DM:IC",
+          "DM:P"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "String",
+          "String",
+          "Class",
+          "Primitive",
+          "String",
+          "String",
+          "Primitive",
+          "Class",
+          "Class",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          null,
+          null,
+          {
+            "TypeName": "J",
+            "LibraryId": 2
+          },
+          "Int32",
+          null,
+          null,
+          "Int32",
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Boolean"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": 3,
+          "Value": "enteringBlackSeaAlone",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 4,
+          "Value": "",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "IdRef": 5,
+          "RecordTypeEnum": "MemberReference"
+        },
+        2,
+        {
+          "ObjectId": 6,
+          "Value": "English",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 7,
+          "Value": "English",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        2,
+        {
+          "IdRef": 8,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 9,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        true
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 5,
+        "Name": "J",
+        "MemberCount": 4,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:PNS:0",
+          "CE:N"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "Primitive",
+          "Class",
+          "String"
+        ],
+        "AdditionalInfos": [
+          null,
+          "Int32",
+          {
+            "TypeName": "Q",
+            "LibraryId": 2
+          },
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        1,
+        {
+          "IdRef": 10,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 11,
+          "Value": "Start Element",
+          "RecordTypeEnum": "BinaryObjectString"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 8,
+        "Name": "A4",
+        "MemberCount": 2,
+        "MemberNames": [
+          "A4:N",
+          "A4:P"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "String",
+          "Object"
+        ],
+        "AdditionalInfos": [
+          null,
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": 12,
+          "Value": "player",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ObjectId": 9,
+      "MetadataId": 8,
+      "Values": [
+        {
+          "ObjectId": 13,
+          "Value": "player",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 10,
+        "Name": "Q",
+        "MemberCount": 11,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:PNS:0",
+          "CE:N",
+          "SE:RA:Count",
+          "SE:LT:Count",
+          "SE:LT:0:Key",
+          "SE:LT:0:Value",
+          "Q:PA:Count",
+          "Q:Q",
+          "Q:A"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "Primitive",
+          "Class",
+          "String",
+          "Primitive",
+          "Primitive",
+          "String",
+          "String",
+          "Primitive",
+          "Class",
+          "Class"
+        ],
+        "AdditionalInfos": [
+          null,
+          "Int32",
+          {
+            "TypeName": "Q",
+            "LibraryId": 2
+          },
+          null,
+          "Int32",
+          "Int32",
+          null,
+          null,
+          "Int32",
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          }
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        1,
+        {
+          "IdRef": 14,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 15,
+          "Value": "::You raise you head and gaze upon the c (b6d7f0ee-470b-4f60-a9c2-bf95387bda82)",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        1,
+        {
+          "IdRef": 7,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 17,
+          "Value": "::You raise you head and gaze upon the cavernous firmament doming over you, enthralled by the stalactitic constellations decorated with dangling roots, gleaming crystals and numerous bat colonies. These stalactites unmistakably insinuate their arbitration over the sea and the land below them, for death from above, while pretty much omnipresent in subterranean life, has a significantly more acute, supreme and inescapably terrifying presence here than anywhere else you've ever been before. This realization pierces you mentally not unlike one of those speleothemic spears could physically.::",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        {
+          "IdRef": 8,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 8,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 14,
+        "Name": "Q",
+        "MemberCount": 10,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:N",
+          "SE:RA:Count",
+          "SE:LT:Count",
+          "SE:LT:0:Key",
+          "SE:LT:0:Value",
+          "Q:PA:Count",
+          "Q:Q",
+          "Q:A"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "Primitive",
+          "String",
+          "Primitive",
+          "Primitive",
+          "String",
+          "String",
+          "Primitive",
+          "Class",
+          "Class"
+        ],
+        "AdditionalInfos": [
+          null,
+          "Int32",
+          null,
+          "Int32",
+          "Int32",
+          null,
+          null,
+          "Int32",
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          }
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        0,
+        {
+          "ObjectId": 19,
+          "Value": "::Life underground comes with a plethora (352af0c2-efd5-48ca-aa86-cc853c7ce934)",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        1,
+        {
+          "IdRef": 7,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 21,
+          "Value": "::Life underground comes with a plethora of phobias, but this vast place evokes a uniquely crushing, creeping - choking feeling of smallness and utter insignificance in the grand scheme of things. And it is only being exacerbated by the many sounds violently colliding in this open space - those of air currents, restless waters and wild yet unseen life - all the while reverberating deeply and rhythmically as though all of them are combining into one singular heartbeat of the cavern itself. Somewhere out there, in the far distance, you can almost hear the faint but distinct sounds of drums and horns, the prime instruments of the underture to a mysterious play whose next act has just begun.::",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        {
+          "IdRef": 8,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 9,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "RecordTypeEnum": "MessageEnd"
+    }
+  ]
+}

@@ -1,0 +1,480 @@
+{
+  "Header": "F9538B831F363243BAAE0D17865D085438F14C3141000000",
+  "Records": [
+    {
+      "RootId": 1,
+      "HeaderId": -1,
+      "MajorVersion": 1,
+      "MinorVersion": 0,
+      "RecordTypeEnum": "SerializedStreamHeader"
+    },
+    {
+      "LibraryId": 2,
+      "LibraryName": "X",
+      "RecordTypeEnum": "BinaryLibrary"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 1,
+        "Name": "DM",
+        "MemberCount": 11,
+        "MemberNames": [
+          "DM:DN",
+          "DM:DD",
+          "DM:SE",
+          "DM:LL:Count",
+          "DM:LL:0",
+          "DM:LL:1",
+          "DM:A:Count",
+          "DM:A:0",
+          "DM:A:1",
+          "DM:IC",
+          "DM:P"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "String",
+          "String",
+          "Class",
+          "Primitive",
+          "String",
+          "String",
+          "Primitive",
+          "Class",
+          "Class",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          null,
+          null,
+          {
+            "TypeName": "J",
+            "LibraryId": 2
+          },
+          "Int32",
+          null,
+          null,
+          "Int32",
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Boolean"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": 3,
+          "Value": "jy_vilmer",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 4,
+          "Value": "",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "IdRef": 5,
+          "RecordTypeEnum": "MemberReference"
+        },
+        2,
+        {
+          "ObjectId": 6,
+          "Value": "English",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 7,
+          "Value": "English",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        2,
+        {
+          "IdRef": 8,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 9,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        true
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 5,
+        "Name": "J",
+        "MemberCount": 4,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:PNS:0",
+          "CE:N"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "Primitive",
+          "Class",
+          "String"
+        ],
+        "AdditionalInfos": [
+          null,
+          "Int32",
+          {
+            "TypeName": "Q",
+            "LibraryId": 2
+          },
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        1,
+        {
+          "IdRef": 10,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 11,
+          "Value": "Start Element",
+          "RecordTypeEnum": "BinaryObjectString"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 8,
+        "Name": "A4",
+        "MemberCount": 2,
+        "MemberNames": [
+          "A4:N",
+          "A4:P"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "String",
+          "Object"
+        ],
+        "AdditionalInfos": [
+          null,
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": 12,
+          "Value": "vilmer",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ObjectId": 9,
+      "MetadataId": 8,
+      "Values": [
+        {
+          "ObjectId": 13,
+          "Value": "player",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 10,
+        "Name": "Q",
+        "MemberCount": 12,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:N",
+          "SE:RA:Count",
+          "SE:RA:0",
+          "SE:RA:1",
+          "SE:LT:Count",
+          "SE:LT:0:Key",
+          "SE:LT:0:Value",
+          "Q:PA:Count",
+          "Q:Q",
+          "Q:A"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "Primitive",
+          "String",
+          "Primitive",
+          "Class",
+          "Class",
+          "Primitive",
+          "String",
+          "String",
+          "Primitive",
+          "Class",
+          "Class"
+        ],
+        "AdditionalInfos": [
+          null,
+          "Int32",
+          null,
+          "Int32",
+          {
+            "TypeName": "SBFV",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "EJA",
+            "LibraryId": 2
+          },
+          "Int32",
+          null,
+          null,
+          "Int32",
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          }
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        0,
+        {
+          "ObjectId": 14,
+          "Value": "You chose the wrong house to bust into,  (b262dcae-728f-4d78-97b3-3a62a59fee77)",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        2,
+        {
+          "IdRef": 15,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 16,
+          "RecordTypeEnum": "MemberReference"
+        },
+        1,
+        {
+          "IdRef": 7,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 18,
+          "Value": "You chose the wrong house to bust into, $(#jack/sister).",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        {
+          "IdRef": 8,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 9,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 15,
+        "Name": "SBFV",
+        "MemberCount": 3,
+        "MemberNames": [
+          "BA:N",
+          "SFVA:P",
+          "SBFV:V"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "String",
+          "String",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          null,
+          null,
+          "Boolean"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": 21,
+          "Value": "f510b1bd-ff9c-4609-9b06-6dcbe220d06b",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 22,
+          "Value": "context.npc_jyvilmer_met",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        true
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 16,
+        "Name": "EJA",
+        "MemberCount": 2,
+        "MemberNames": [
+          "BA:N",
+          "EJA:J"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "String",
+          "Class"
+        ],
+        "AdditionalInfos": [
+          null,
+          {
+            "TypeName": "U01",
+            "LibraryId": 2
+          }
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": 23,
+          "Value": "dc5b64e3-453e-47d9-a59c-d2b1f810f6cd",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "IdRef": 24,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 24,
+        "Name": "U01",
+        "MemberCount": 8,
+        "MemberNames": [
+          "J1:N",
+          "U01:S",
+          "U01:T",
+          "U01:A",
+          "U01:U",
+          "U01:V",
+          "U01:D",
+          "U01:C"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "String",
+          "String",
+          "Class",
+          "Object",
+          "Primitive",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          null,
+          null,
+          null,
+          {
+            "TypeName": "eATTI",
+            "LibraryId": 2
+          },
+          null,
+          "Boolean",
+          "Boolean",
+          "Boolean"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 25,
+          "Value": "jy_house3",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 26,
+          "Value": "player",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ClassInfo": {
+            "ObjectId": -27,
+            "Name": "eATTI",
+            "MemberCount": 1,
+            "MemberNames": [
+              "value__"
+            ]
+          },
+          "MemberTypeInfo": {
+            "BinaryTypeEnums": [
+              "Primitive"
+            ],
+            "AdditionalInfos": [
+              "Int32"
+            ]
+          },
+          "LibraryId": 2,
+          "Values": [
+            0
+          ],
+          "RecordTypeEnum": "ClassWithMembersAndTypes"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        true,
+        false,
+        false
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "RecordTypeEnum": "MessageEnd"
+    }
+  ]
+}

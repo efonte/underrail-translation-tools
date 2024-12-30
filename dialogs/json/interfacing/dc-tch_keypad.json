@@ -1,0 +1,1985 @@
+{
+  "Header": "F9538B831F363243BAAE0D17865D08547DA2DB215D000000",
+  "Records": [
+    {
+      "RootId": 1,
+      "HeaderId": -1,
+      "MajorVersion": 1,
+      "MinorVersion": 0,
+      "RecordTypeEnum": "SerializedStreamHeader"
+    },
+    {
+      "LibraryId": 2,
+      "LibraryName": "X",
+      "RecordTypeEnum": "BinaryLibrary"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 1,
+        "Name": "DM",
+        "MemberCount": 14,
+        "MemberNames": [
+          "DM:DN",
+          "DM:DD",
+          "DM:SE",
+          "DM:LL:Count",
+          "DM:LL:0",
+          "DM:LL:1",
+          "DM:LL:2",
+          "DM:LL:3",
+          "DM:LL:4",
+          "DM:A:Count",
+          "DM:A:0",
+          "DM:A:1",
+          "DM:IC",
+          "DM:P"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "String",
+          "Object",
+          "Class",
+          "Primitive",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "Primitive",
+          "Class",
+          "Class",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          null,
+          null,
+          {
+            "TypeName": "J",
+            "LibraryId": 2
+          },
+          "Int32",
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Int32",
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Boolean"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": 3,
+          "Value": "dc-tch_keypad",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "IdRef": 4,
+          "RecordTypeEnum": "MemberReference"
+        },
+        5,
+        {
+          "ObjectId": 5,
+          "Value": "English",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 6,
+          "Value": "English",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 7,
+          "Value": "English",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 8,
+          "Value": "English",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 9,
+          "Value": "English",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        2,
+        {
+          "IdRef": 10,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 11,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        false
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 4,
+        "Name": "J",
+        "MemberCount": 5,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:PNS:0",
+          "CE:PNS:1",
+          "CE:N"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "Primitive",
+          "Class",
+          "Class",
+          "String"
+        ],
+        "AdditionalInfos": [
+          null,
+          "Int32",
+          {
+            "TypeName": "Q",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "Q",
+            "LibraryId": 2
+          },
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        2,
+        {
+          "IdRef": 12,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 13,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 14,
+          "Value": "Start Element",
+          "RecordTypeEnum": "BinaryObjectString"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 10,
+        "Name": "A4",
+        "MemberCount": 2,
+        "MemberNames": [
+          "A4:N",
+          "A4:P"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "String",
+          "Object"
+        ],
+        "AdditionalInfos": [
+          null,
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": 15,
+          "Value": "interface",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ObjectId": 11,
+      "MetadataId": 10,
+      "Values": [
+        {
+          "ObjectId": 16,
+          "Value": "player",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 12,
+        "Name": "Q",
+        "MemberCount": 11,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:PNS:0",
+          "CE:N",
+          "SE:RA:Count",
+          "SE:LT:Count",
+          "SE:LT:0:Key",
+          "SE:LT:0:Value",
+          "Q:PA:Count",
+          "Q:Q",
+          "Q:A"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Class",
+          "String",
+          "Primitive",
+          "Primitive",
+          "String",
+          "String",
+          "Primitive",
+          "Class",
+          "Class"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "BC",
+            "LibraryId": 2
+          },
+          "Int32",
+          {
+            "TypeName": "Q",
+            "LibraryId": 2
+          },
+          null,
+          "Int32",
+          "Int32",
+          null,
+          null,
+          "Int32",
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          }
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "IdRef": 17,
+          "RecordTypeEnum": "MemberReference"
+        },
+        1,
+        {
+          "IdRef": 18,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 19,
+          "Value": "::You see a numerical keypad in front of (be431a75-98b9-48e0-924e-c76cf5503d12)*",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        1,
+        {
+          "IdRef": 9,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 21,
+          "Value": "::You see a numerical keypad in front of you. On it is a red LED which flashes brightly, and it seems like you'd need to type in the correct code in order to unlock it.::",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        {
+          "IdRef": 10,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 11,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 13,
+        "Name": "Q",
+        "MemberCount": 11,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:N",
+          "SE:RA:Count",
+          "SE:LT:Count",
+          "SE:LT:0:Key",
+          "SE:LT:0:Value",
+          "Q:PA:Count",
+          "Q:PA:0",
+          "Q:Q",
+          "Q:A"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "Primitive",
+          "String",
+          "Primitive",
+          "Primitive",
+          "String",
+          "String",
+          "Primitive",
+          "Class",
+          "Class",
+          "Class"
+        ],
+        "AdditionalInfos": [
+          null,
+          "Int32",
+          null,
+          "Int32",
+          "Int32",
+          null,
+          null,
+          "Int32",
+          {
+            "TypeName": "A3",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          }
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        0,
+        {
+          "ObjectId": 24,
+          "Value": "::The green LED indicates that the door  (d4860dce-ef2c-44a8-9d12-cd537af14e2e)",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        1,
+        {
+          "IdRef": 9,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 26,
+          "Value": "::The green LED indicates that the door is unlocked.::",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        1,
+        {
+          "IdRef": 27,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 10,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 11,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 17,
+        "Name": "BC",
+        "MemberCount": 4,
+        "MemberNames": [
+          "C:N",
+          "CIC:P",
+          "CIC:AD",
+          "BC:V"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "String",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          null,
+          null,
+          "Boolean",
+          "Boolean"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 30,
+          "Value": "context.loc_dc-tch_keypad_unlock",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        true,
+        false
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 18,
+        "Name": "Q",
+        "MemberCount": 18,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:N",
+          "SE:RA:Count",
+          "SE:LT:Count",
+          "SE:LT:0:Key",
+          "SE:LT:0:Value",
+          "Q:PA:Count",
+          "Q:PA:0",
+          "Q:PA:1",
+          "Q:PA:2",
+          "Q:PA:3",
+          "Q:PA:4",
+          "Q:PA:5",
+          "Q:PA:6",
+          "Q:PA:7",
+          "Q:Q",
+          "Q:A"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "Primitive",
+          "String",
+          "Primitive",
+          "Primitive",
+          "String",
+          "String",
+          "Primitive",
+          "Class",
+          "Class",
+          "Class",
+          "Class",
+          "Class",
+          "Class",
+          "Class",
+          "Class",
+          "Class",
+          "Class"
+        ],
+        "AdditionalInfos": [
+          null,
+          "Int32",
+          null,
+          "Int32",
+          "Int32",
+          null,
+          null,
+          "Int32",
+          {
+            "TypeName": "A3",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A3",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A3",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A3",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A3",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A3",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A3",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A3",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          }
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        0,
+        {
+          "ObjectId": 31,
+          "Value": " (0f8b74e9-e446-49b2-b717-a5c66165227f)",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        1,
+        {
+          "IdRef": 9,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 33,
+          "Value": "",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        8,
+        {
+          "IdRef": 34,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 35,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 36,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 37,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 38,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 39,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 40,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 27,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 10,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 11,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 27,
+        "Name": "A3",
+        "MemberCount": 10,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:N",
+          "SE:RA:Count",
+          "SE:LT:Count",
+          "SE:LT:0:Key",
+          "SE:LT:0:Value",
+          "A3:ID",
+          "A3:D",
+          "A3:DC"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "Primitive",
+          "String",
+          "Primitive",
+          "Primitive",
+          "String",
+          "String",
+          "Primitive",
+          "Primitive",
+          "Object"
+        ],
+        "AdditionalInfos": [
+          null,
+          "Int32",
+          null,
+          "Int32",
+          "Int32",
+          null,
+          null,
+          "Boolean",
+          "Boolean",
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        0,
+        {
+          "ObjectId": 44,
+          "Value": "::Leave.:: (7df16aaa-d6a1-4ac8-9026-dd014c55b874)",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        1,
+        {
+          "IdRef": 9,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 46,
+          "Value": "::Leave.::",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        false,
+        false,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 34,
+        "Name": "A3",
+        "MemberCount": 12,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:PNS:0",
+          "CE:PNS:1",
+          "CE:N",
+          "SE:RA:Count",
+          "SE:LT:Count",
+          "SE:LT:0:Key",
+          "SE:LT:0:Value",
+          "A3:ID",
+          "A3:D",
+          "A3:DC"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "Primitive",
+          "Class",
+          "Class",
+          "String",
+          "Primitive",
+          "Primitive",
+          "String",
+          "String",
+          "Primitive",
+          "Primitive",
+          "Object"
+        ],
+        "AdditionalInfos": [
+          null,
+          "Int32",
+          {
+            "TypeName": "Q",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "Q",
+            "LibraryId": 2
+          },
+          null,
+          "Int32",
+          "Int32",
+          null,
+          null,
+          "Boolean",
+          "Boolean",
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        2,
+        {
+          "IdRef": 47,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 48,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 49,
+          "Value": "::[Hacking] Unlock the door:: (10fd204a-131a-492c-bf0f-3853eea8e2f9)",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        1,
+        {
+          "IdRef": 5,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 51,
+          "Value": "::[Hacking] Unlock the door::",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        false,
+        false,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 35,
+        "Name": "A3",
+        "MemberCount": 11,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:PNS:0",
+          "CE:N",
+          "SE:RA:Count",
+          "SE:LT:Count",
+          "SE:LT:0:Key",
+          "SE:LT:0:Value",
+          "A3:ID",
+          "A3:D",
+          "A3:DC"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Class",
+          "String",
+          "Primitive",
+          "Primitive",
+          "String",
+          "String",
+          "Primitive",
+          "Primitive",
+          "Object"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "BC",
+            "LibraryId": 2
+          },
+          "Int32",
+          {
+            "TypeName": "Q",
+            "LibraryId": 2
+          },
+          null,
+          "Int32",
+          "Int32",
+          null,
+          null,
+          "Boolean",
+          "Boolean",
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "IdRef": 52,
+          "RecordTypeEnum": "MemberReference"
+        },
+        1,
+        {
+          "IdRef": 53,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 54,
+          "Value": "::778901:: (094714c3-8677-49ae-8a0d-153154668819)",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        1,
+        {
+          "IdRef": 9,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 56,
+          "Value": "::778901::",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        false,
+        false,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 36,
+        "Name": "A3",
+        "MemberCount": 11,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:PNS:0",
+          "CE:N",
+          "SE:RA:Count",
+          "SE:LT:Count",
+          "SE:LT:0:Key",
+          "SE:LT:0:Value",
+          "A3:ID",
+          "A3:D",
+          "A3:DC"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "Primitive",
+          "Class",
+          "String",
+          "Primitive",
+          "Primitive",
+          "String",
+          "String",
+          "Primitive",
+          "Primitive",
+          "Object"
+        ],
+        "AdditionalInfos": [
+          null,
+          "Int32",
+          {
+            "TypeName": "Q",
+            "LibraryId": 2
+          },
+          null,
+          "Int32",
+          "Int32",
+          null,
+          null,
+          "Boolean",
+          "Boolean",
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        1,
+        {
+          "IdRef": 57,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 58,
+          "Value": "::666:: (2508ca3a-d606-41d9-948d-1c3732b22c97)",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        1,
+        {
+          "IdRef": 9,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 60,
+          "Value": "::666::",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        false,
+        false,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 37,
+        "Name": "A3",
+        "MemberCount": 11,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:PNS:0",
+          "CE:N",
+          "SE:RA:Count",
+          "SE:LT:Count",
+          "SE:LT:0:Key",
+          "SE:LT:0:Value",
+          "A3:ID",
+          "A3:D",
+          "A3:DC"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "Primitive",
+          "Class",
+          "String",
+          "Primitive",
+          "Primitive",
+          "String",
+          "String",
+          "Primitive",
+          "Primitive",
+          "Object"
+        ],
+        "AdditionalInfos": [
+          null,
+          "Int32",
+          {
+            "TypeName": "Q",
+            "LibraryId": 2
+          },
+          null,
+          "Int32",
+          "Int32",
+          null,
+          null,
+          "Boolean",
+          "Boolean",
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        1,
+        {
+          "IdRef": 57,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 62,
+          "Value": "::12345:: (22689fe5-49c2-4224-8b59-520611a66a74)",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        1,
+        {
+          "IdRef": 9,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 64,
+          "Value": "::12345::",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        false,
+        false,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 38,
+        "Name": "A3",
+        "MemberCount": 11,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:PNS:0",
+          "CE:N",
+          "SE:RA:Count",
+          "SE:LT:Count",
+          "SE:LT:0:Key",
+          "SE:LT:0:Value",
+          "A3:ID",
+          "A3:D",
+          "A3:DC"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "Primitive",
+          "Class",
+          "String",
+          "Primitive",
+          "Primitive",
+          "String",
+          "String",
+          "Primitive",
+          "Primitive",
+          "Object"
+        ],
+        "AdditionalInfos": [
+          null,
+          "Int32",
+          {
+            "TypeName": "Q",
+            "LibraryId": 2
+          },
+          null,
+          "Int32",
+          "Int32",
+          null,
+          null,
+          "Boolean",
+          "Boolean",
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        1,
+        {
+          "IdRef": 57,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 66,
+          "Value": "::11111111111111111111111111111111111111 (c388e06a-2f6c-44f4-b999-a161a4c5f3d6)",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        1,
+        {
+          "IdRef": 9,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 68,
+          "Value": "::111111111111111111111111111111111111111::",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        false,
+        false,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 39,
+        "Name": "A3",
+        "MemberCount": 11,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:PNS:0",
+          "CE:N",
+          "SE:RA:Count",
+          "SE:LT:Count",
+          "SE:LT:0:Key",
+          "SE:LT:0:Value",
+          "A3:ID",
+          "A3:D",
+          "A3:DC"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "Primitive",
+          "Class",
+          "String",
+          "Primitive",
+          "Primitive",
+          "String",
+          "String",
+          "Primitive",
+          "Primitive",
+          "Object"
+        ],
+        "AdditionalInfos": [
+          null,
+          "Int32",
+          {
+            "TypeName": "Q",
+            "LibraryId": 2
+          },
+          null,
+          "Int32",
+          "Int32",
+          null,
+          null,
+          "Boolean",
+          "Boolean",
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        1,
+        {
+          "IdRef": 57,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 70,
+          "Value": "::0:: (4432d5c9-ac4b-431d-a28e-8cdce6e82266)",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        1,
+        {
+          "IdRef": 9,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 72,
+          "Value": "::0::",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        false,
+        false,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 40,
+        "Name": "A3",
+        "MemberCount": 11,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:PNS:0",
+          "CE:N",
+          "SE:RA:Count",
+          "SE:LT:Count",
+          "SE:LT:0:Key",
+          "SE:LT:0:Value",
+          "A3:ID",
+          "A3:D",
+          "A3:DC"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "Primitive",
+          "Class",
+          "String",
+          "Primitive",
+          "Primitive",
+          "String",
+          "String",
+          "Primitive",
+          "Primitive",
+          "Object"
+        ],
+        "AdditionalInfos": [
+          null,
+          "Int32",
+          {
+            "TypeName": "Q",
+            "LibraryId": 2
+          },
+          null,
+          "Int32",
+          "Int32",
+          null,
+          null,
+          "Boolean",
+          "Boolean",
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        1,
+        {
+          "IdRef": 57,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 74,
+          "Value": "::5318008:: (4cc44502-e185-4228-a048-c472c1ebeb67)",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        1,
+        {
+          "IdRef": 9,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 76,
+          "Value": "::5318008::",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        false,
+        false,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 47,
+        "Name": "Q",
+        "MemberCount": 11,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:PNS:0",
+          "CE:N",
+          "SE:RA:Count",
+          "SE:LT:Count",
+          "SE:LT:0:Key",
+          "SE:LT:0:Value",
+          "Q:PA:Count",
+          "Q:Q",
+          "Q:A"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Class",
+          "String",
+          "Primitive",
+          "Primitive",
+          "String",
+          "String",
+          "Primitive",
+          "Class",
+          "Class"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "MPMSC",
+            "LibraryId": 2
+          },
+          "Int32",
+          {
+            "TypeName": "Q",
+            "LibraryId": 2
+          },
+          null,
+          "Int32",
+          "Int32",
+          null,
+          null,
+          "Int32",
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          }
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "IdRef": 77,
+          "RecordTypeEnum": "MemberReference"
+        },
+        1,
+        {
+          "IdRef": 53,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 79,
+          "Value": " (f926f157-2fe5-4589-ac9c-09804dd037a2)*",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        1,
+        {
+          "IdRef": 5,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 33,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        {
+          "IdRef": 10,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 11,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 48,
+        "Name": "Q",
+        "MemberCount": 11,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:PNS:0",
+          "CE:N",
+          "SE:RA:Count",
+          "SE:LT:Count",
+          "SE:LT:0:Key",
+          "SE:LT:0:Value",
+          "Q:PA:Count",
+          "Q:Q",
+          "Q:A"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "Primitive",
+          "Class",
+          "String",
+          "Primitive",
+          "Primitive",
+          "String",
+          "String",
+          "Primitive",
+          "Class",
+          "Class"
+        ],
+        "AdditionalInfos": [
+          null,
+          "Int32",
+          {
+            "TypeName": "Q",
+            "LibraryId": 2
+          },
+          null,
+          "Int32",
+          "Int32",
+          null,
+          null,
+          "Int32",
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          }
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        1,
+        {
+          "IdRef": 18,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 85,
+          "Value": "::Nothing happens.:: (289950ba-8118-437e-a459-d8e141b038f0)*",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        1,
+        {
+          "IdRef": 5,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 87,
+          "Value": "::Nothing happens.::",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        {
+          "IdRef": 10,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 11,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ObjectId": 52,
+      "MetadataId": 17,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 90,
+          "Value": "context.loc_dc-tch_knowStorageCode",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        true,
+        true
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 53,
+        "Name": "Q",
+        "MemberCount": 13,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:N",
+          "SE:RA:Count",
+          "SE:RA:0",
+          "SE:RA:1",
+          "SE:LT:Count",
+          "SE:LT:0:Key",
+          "SE:LT:0:Value",
+          "Q:PA:Count",
+          "Q:PA:0",
+          "Q:Q",
+          "Q:A"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "Primitive",
+          "String",
+          "Primitive",
+          "Class",
+          "Class",
+          "Primitive",
+          "String",
+          "String",
+          "Primitive",
+          "Class",
+          "Class",
+          "Class"
+        ],
+        "AdditionalInfos": [
+          null,
+          "Int32",
+          null,
+          "Int32",
+          {
+            "TypeName": "SBFV",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "EJA",
+            "LibraryId": 2
+          },
+          "Int32",
+          null,
+          null,
+          "Int32",
+          {
+            "TypeName": "A3",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          }
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        0,
+        {
+          "ObjectId": 91,
+          "Value": "::The red LED turns off while the green  (2b4f66bd-4cea-47df-a72a-2248de9b709b)",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        2,
+        {
+          "IdRef": 92,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 93,
+          "RecordTypeEnum": "MemberReference"
+        },
+        1,
+        {
+          "IdRef": 9,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 95,
+          "Value": "::The red LED turns off while the green one lights up, and the lock clicks.::",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        1,
+        {
+          "IdRef": 27,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 10,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 11,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 57,
+        "Name": "Q",
+        "MemberCount": 11,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:PNS:0",
+          "CE:N",
+          "SE:RA:Count",
+          "SE:LT:Count",
+          "SE:LT:0:Key",
+          "SE:LT:0:Value",
+          "Q:PA:Count",
+          "Q:Q",
+          "Q:A"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "Primitive",
+          "Class",
+          "String",
+          "Primitive",
+          "Primitive",
+          "String",
+          "String",
+          "Primitive",
+          "Class",
+          "Class"
+        ],
+        "AdditionalInfos": [
+          null,
+          "Int32",
+          {
+            "TypeName": "Q",
+            "LibraryId": 2
+          },
+          null,
+          "Int32",
+          "Int32",
+          null,
+          null,
+          "Int32",
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          }
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        1,
+        {
+          "IdRef": 18,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 100,
+          "Value": "::The code is incorrect.:: (00600b83-f66b-4435-af9a-16bb59b0f2e9)*",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        1,
+        {
+          "IdRef": 9,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 102,
+          "Value": "::The code is incorrect.::",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        {
+          "IdRef": 10,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 11,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 77,
+        "Name": "MPMSC",
+        "MemberCount": 3,
+        "MemberNames": [
+          "C:N",
+          "MPMSC:MV",
+          "MPMSC:SN"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "Primitive",
+          "Class"
+        ],
+        "AdditionalInfos": [
+          null,
+          "Int32",
+          {
+            "TypeName": "eSKE",
+            "LibraryId": 2
+          }
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        130,
+        {
+          "ClassInfo": {
+            "ObjectId": -105,
+            "Name": "eSKE",
+            "MemberCount": 1,
+            "MemberNames": [
+              "value__"
+            ]
+          },
+          "MemberTypeInfo": {
+            "BinaryTypeEnums": [
+              "Primitive"
+            ],
+            "AdditionalInfos": [
+              "Int32"
+            ]
+          },
+          "LibraryId": 2,
+          "Values": [
+            21
+          ],
+          "RecordTypeEnum": "ClassWithMembersAndTypes"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 92,
+        "Name": "SBFV",
+        "MemberCount": 3,
+        "MemberNames": [
+          "BA:N",
+          "SFVA:P",
+          "SBFV:V"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "String",
+          "String",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          null,
+          null,
+          "Boolean"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": 106,
+          "Value": "fc80f5a8-966a-4deb-af9d-83a0a310b3c1",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 107,
+          "Value": "context.loc_dc-tch_keypad_unlock",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        true
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 93,
+        "Name": "EJA",
+        "MemberCount": 2,
+        "MemberNames": [
+          "BA:N",
+          "EJA:J"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "String",
+          "Class"
+        ],
+        "AdditionalInfos": [
+          null,
+          {
+            "TypeName": "SLSJ1",
+            "LibraryId": 2
+          }
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": 108,
+          "Value": "b877460f-45e2-4f90-84bd-89e76cc45767",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "IdRef": 109,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 109,
+        "Name": "SLSJ1",
+        "MemberCount": 7,
+        "MemberNames": [
+          "J1:N",
+          "SLSJ1:I",
+          "SLSJ1:A",
+          "SLSJ1:L",
+          "SLSJ1:J",
+          "SLSJ1:S",
+          "SLSJ1:P"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "Class",
+          "String",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          null,
+          {
+            "TypeName": "%G%",
+            "LibraryId": 2
+          },
+          null,
+          "Boolean",
+          "Boolean",
+          "Boolean",
+          "Boolean"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ClassInfo": {
+            "ObjectId": -110,
+            "Name": "%G%",
+            "MemberCount": 11,
+            "MemberNames": [
+              "_a",
+              "_b",
+              "_c",
+              "_d",
+              "_e",
+              "_f",
+              "_g",
+              "_h",
+              "_i",
+              "_j",
+              "_k"
+            ]
+          },
+          "MemberTypeInfo": {
+            "BinaryTypeEnums": [
+              "Primitive",
+              "Primitive",
+              "Primitive",
+              "Primitive",
+              "Primitive",
+              "Primitive",
+              "Primitive",
+              "Primitive",
+              "Primitive",
+              "Primitive",
+              "Primitive"
+            ],
+            "AdditionalInfos": [
+              "Int32",
+              "Int16",
+              "Int16",
+              "Byte",
+              "Byte",
+              "Byte",
+              "Byte",
+              "Byte",
+              "Byte",
+              "Byte",
+              "Byte"
+            ]
+          },
+          "LibraryId": 2,
+          "Values": [
+            -2018047116,
+            -7812,
+            17221,
+            158,
+            29,
+            128,
+            64,
+            206,
+            180,
+            11,
+            211
+          ],
+          "RecordTypeEnum": "ClassWithMembersAndTypes"
+        },
+        {
+          "ObjectId": 111,
+          "Value": "dc-tch",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        false,
+        true,
+        true,
+        true
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "RecordTypeEnum": "MessageEnd"
+    }
+  ]
+}
