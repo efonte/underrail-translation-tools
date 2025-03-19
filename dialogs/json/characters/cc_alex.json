@@ -1,5 +1,5 @@
 {
-  "Header": "F9538B831F363243BAAE0D17865D0854B36AF3C961000000",
+  "Header": "F9538B831F363243BAAE0D17865D0854B46AF3C961000000",
   "Records": [
     {
       "RootId": 1,
@@ -17,7 +17,7 @@
       "ClassInfo": {
         "ObjectId": 1,
         "Name": "DM",
-        "MemberCount": 33,
+        "MemberCount": 34,
         "MemberNames": [
           "DM:DN",
           "DM:DD",
@@ -47,6 +47,7 @@
           "DM:LL:21",
           "DM:LL:22",
           "DM:LL:23",
+          "DM:LL:24",
           "DM:A:Count",
           "DM:A:0",
           "DM:A:1",
@@ -60,6 +61,7 @@
           "String",
           "Class",
           "Primitive",
+          "String",
           "String",
           "String",
           "String",
@@ -122,6 +124,7 @@
           null,
           null,
           null,
+          null,
           "Int32",
           {
             "TypeName": "A4",
@@ -151,7 +154,7 @@
           "IdRef": 5,
           "RecordTypeEnum": "MemberReference"
         },
-        24,
+        25,
         {
           "ObjectId": 6,
           "Value": "English",
@@ -272,13 +275,18 @@
           "Value": "English",
           "RecordTypeEnum": "BinaryObjectString"
         },
+        {
+          "ObjectId": 30,
+          "Value": "English",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
         2,
         {
-          "IdRef": 30,
+          "IdRef": 31,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 31,
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         },
         false,
@@ -328,15 +336,15 @@
         },
         2,
         {
-          "IdRef": 32,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
           "IdRef": 33,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 34,
+          "IdRef": 34,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 35,
           "Value": "Start Element",
           "RecordTypeEnum": "BinaryObjectString"
         }
@@ -345,7 +353,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 30,
+        "ObjectId": 31,
         "Name": "A4",
         "MemberCount": 2,
         "MemberNames": [
@@ -366,7 +374,7 @@
       "LibraryId": 2,
       "Values": [
         {
-          "ObjectId": 35,
+          "ObjectId": 36,
           "Value": "alex",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -377,11 +385,11 @@
       "RecordTypeEnum": "ClassWithMembersAndTypes"
     },
     {
-      "ObjectId": 31,
-      "MetadataId": 30,
+      "ObjectId": 32,
+      "MetadataId": 31,
       "Values": [
         {
-          "ObjectId": 36,
+          "ObjectId": 37,
           "Value": "player",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -393,7 +401,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 32,
+        "ObjectId": 33,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -456,27 +464,27 @@
       "LibraryId": 2,
       "Values": [
         {
-          "IdRef": 37,
+          "IdRef": 38,
           "RecordTypeEnum": "MemberReference"
         },
         1,
         {
-          "IdRef": 38,
+          "IdRef": 39,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 39,
+          "ObjectId": 40,
           "Value": "::You come up to a short, stocky man loo (1ff90fbe-0889-4dd9-9d17-7da144e77ef5)*",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 41,
+          "ObjectId": 42,
           "Value": "::You come up to a short, stocky man looking at the table in front of him. The table is littered with numerous glasses, out of which only one is full; as he picks it up, your eyes become drawn to a sizable coal-black tattoo on his right arm. You stare at the ink: It depicts an intricate earth fissure which starts from the elbow and moves down to his hand, with tiny, angular cracks radiating from it in all directions. Upon looking more carefully, however, you realize that the center of the tattoo is actually a large scar, effectively making the tattoo its embellishment. Your curious stare provokes an indifferent one from him as well as a couple of words expressed in a mildly annoyed manner.::\r\n\r\nYou need something, $(#bud/sugar)?\r\n",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -485,11 +493,11 @@
         },
         0,
         {
-          "IdRef": 30,
+          "IdRef": 31,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 31,
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -497,7 +505,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 33,
+        "ObjectId": 34,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -561,22 +569,22 @@
         },
         1,
         {
-          "IdRef": 44,
+          "IdRef": 45,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 45,
+          "ObjectId": 46,
           "Value": "Eh? (606da0cd-add1-4ac8-825c-9f95cbd4eb6c)*",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 47,
+          "ObjectId": 48,
           "Value": "Eh?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -585,11 +593,11 @@
         },
         0,
         {
-          "IdRef": 30,
+          "IdRef": 31,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 31,
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -597,7 +605,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 37,
+        "ObjectId": 38,
         "Name": "BC",
         "MemberCount": 4,
         "MemberNames": [
@@ -627,7 +635,7 @@
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 50,
+          "ObjectId": 51,
           "Value": "context.npc_cc_alex_met",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -638,7 +646,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 38,
+        "ObjectId": 39,
         "Name": "Q",
         "MemberCount": 15,
         "MemberNames": [
@@ -720,14 +728,14 @@
         },
         0,
         {
-          "ObjectId": 51,
+          "ObjectId": 52,
           "Value": " (a188492d-a020-4406-bf1f-5f9f03eafacb)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
@@ -738,10 +746,6 @@
           "RecordTypeEnum": "ObjectNull"
         },
         4,
-        {
-          "IdRef": 54,
-          "RecordTypeEnum": "MemberReference"
-        },
         {
           "IdRef": 55,
           "RecordTypeEnum": "MemberReference"
@@ -755,11 +759,15 @@
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 30,
+          "IdRef": 58,
           "RecordTypeEnum": "MemberReference"
         },
         {
           "IdRef": 31,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -767,7 +775,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 44,
+        "ObjectId": 45,
         "Name": "Q",
         "MemberCount": 21,
         "MemberNames": [
@@ -885,14 +893,14 @@
         },
         0,
         {
-          "ObjectId": 60,
+          "ObjectId": 61,
           "Value": " (9b228ff0-63c2-4172-9dc4-1e95bbebb7db)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
@@ -903,10 +911,6 @@
           "RecordTypeEnum": "ObjectNull"
         },
         10,
-        {
-          "IdRef": 63,
-          "RecordTypeEnum": "MemberReference"
-        },
         {
           "IdRef": 64,
           "RecordTypeEnum": "MemberReference"
@@ -944,11 +948,15 @@
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 30,
+          "IdRef": 73,
           "RecordTypeEnum": "MemberReference"
         },
         {
           "IdRef": 31,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -956,7 +964,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 54,
+        "ObjectId": 55,
         "Name": "A3",
         "MemberCount": 13,
         "MemberNames": [
@@ -1017,22 +1025,22 @@
         },
         1,
         {
-          "IdRef": 75,
+          "IdRef": 76,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 76,
+          "ObjectId": 77,
           "Value": "Who are you? (8f8a25d1-6cc1-44a4-b583-f6d53f82a999)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 78,
+          "ObjectId": 79,
           "Value": "Who are you?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -1051,30 +1059,30 @@
       "RecordTypeEnum": "ClassWithMembersAndTypes"
     },
     {
-      "ObjectId": 55,
-      "MetadataId": 54,
+      "ObjectId": 56,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 79,
+          "IdRef": 80,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 80,
+          "ObjectId": 81,
           "Value": "Hi, my name is $(context.player.Name) an (5b347b6e-caf1-4dd0-890f-2db0cfc66276)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 82,
+          "ObjectId": 83,
           "Value": "Hi, my name is $(context.player.Name) and I had some questions.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -1093,30 +1101,30 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 56,
-      "MetadataId": 54,
+      "ObjectId": 57,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 83,
+          "IdRef": 84,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 84,
+          "ObjectId": 85,
           "Value": "You have an interesting tattoo there. (8408ae86-500b-459e-bf30-99757571f87d)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 86,
+          "ObjectId": 87,
           "Value": "You have an interesting tattoo there.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -1136,7 +1144,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 57,
+        "ObjectId": 58,
         "Name": "A3",
         "MemberCount": 12,
         "MemberNames": [
@@ -1191,18 +1199,18 @@
         },
         0,
         {
-          "ObjectId": 87,
+          "ObjectId": 88,
           "Value": "No. ::Leave.:: (203a279d-65d7-4d63-b04f-5e19d85c0dcd)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 6,
+          "IdRef": 7,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 89,
+          "ObjectId": 90,
           "Value": "No. ::Leave.::",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -1222,7 +1230,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 63,
+        "ObjectId": 64,
         "Name": "A3",
         "MemberCount": 13,
         "MemberNames": [
@@ -1282,27 +1290,27 @@
       "LibraryId": 2,
       "Values": [
         {
-          "IdRef": 90,
+          "IdRef": 91,
           "RecordTypeEnum": "MemberReference"
         },
         1,
         {
-          "IdRef": 91,
+          "IdRef": 92,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 92,
+          "ObjectId": 93,
           "Value": "Who are you anyway? (aa5d3234-9d4e-4a20-b1b9-ced00c6fad32)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 94,
+          "ObjectId": 95,
           "Value": "Who are you anyway?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -1322,7 +1330,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 64,
+        "ObjectId": 65,
         "Name": "A3",
         "MemberCount": 14,
         "MemberNames": [
@@ -1388,31 +1396,31 @@
       "LibraryId": 2,
       "Values": [
         {
-          "IdRef": 95,
+          "IdRef": 96,
           "RecordTypeEnum": "MemberReference"
         },
         1,
         {
-          "IdRef": 96,
+          "IdRef": 97,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 97,
+          "ObjectId": 98,
           "Value": "I was wondering if you remember any merc (5afa7824-671e-41dc-b067-f052fe2bed70)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         1,
         {
-          "IdRef": 98,
+          "IdRef": 99,
           "RecordTypeEnum": "MemberReference"
         },
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 100,
+          "ObjectId": 101,
           "Value": "I was wondering if you remember any merchants from SGS ever taking the train you operated. Terry and Lora Baker, husband and wife.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -1432,7 +1440,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 65,
+        "ObjectId": 66,
         "Name": "A3",
         "MemberCount": 14,
         "MemberNames": [
@@ -1498,121 +1506,21 @@
       "LibraryId": 2,
       "Values": [
         {
-          "IdRef": 101,
-          "RecordTypeEnum": "MemberReference"
-        },
-        2,
-        {
           "IdRef": 102,
           "RecordTypeEnum": "MemberReference"
         },
+        2,
         {
           "IdRef": 103,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 104,
+          "IdRef": 104,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 105,
           "Value": "::[Persuade]:: Tell me what happened to  (46545f65-6b46-4812-81de-a947bd906f32)",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        0,
-        1,
-        {
-          "IdRef": 23,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "ObjectId": 106,
-          "Value": "::[Persuade]:: Tell me what happened to your son. Sometimes talking helps.",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        {
-          "RecordTypeEnum": "ObjectNull"
-        },
-        false,
-        false,
-        {
-          "RecordTypeEnum": "ObjectNull"
-        },
-        {
-          "RecordTypeEnum": "ObjectNull"
-        }
-      ],
-      "RecordTypeEnum": "ClassWithMembersAndTypes"
-    },
-    {
-      "ClassInfo": {
-        "ObjectId": 66,
-        "Name": "A3",
-        "MemberCount": 13,
-        "MemberNames": [
-          "CE:CC",
-          "CE:PNS:Count",
-          "CE:PNS:0",
-          "CE:N",
-          "SE:RA:Count",
-          "SE:LT:Count",
-          "SE:LT:0:Key",
-          "SE:LT:0:Value",
-          "SE:UJ",
-          "A3:ID",
-          "A3:D",
-          "A3:DC",
-          "A3:T"
-        ]
-      },
-      "MemberTypeInfo": {
-        "BinaryTypeEnums": [
-          "Class",
-          "Primitive",
-          "Class",
-          "String",
-          "Primitive",
-          "Primitive",
-          "String",
-          "String",
-          "Object",
-          "Primitive",
-          "Primitive",
-          "Object",
-          "Object"
-        ],
-        "AdditionalInfos": [
-          {
-            "TypeName": "CAC",
-            "LibraryId": 2
-          },
-          "Int32",
-          {
-            "TypeName": "Q",
-            "LibraryId": 2
-          },
-          null,
-          "Int32",
-          "Int32",
-          null,
-          null,
-          null,
-          "Boolean",
-          "Boolean",
-          null,
-          null
-        ]
-      },
-      "LibraryId": 2,
-      "Values": [
-        {
-          "IdRef": 107,
-          "RecordTypeEnum": "MemberReference"
-        },
-        1,
-        {
-          "IdRef": 108,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "ObjectId": 109,
-          "Value": "What can you tell me about your tattooed (bda2ee26-64dd-4007-ac42-f37b3985d83c)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
@@ -1622,8 +1530,8 @@
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 111,
-          "Value": "What can you tell me about your tattooed scar?",
+          "ObjectId": 107,
+          "Value": "::[Persuade]:: Tell me what happened to your son. Sometimes talking helps.",
           "RecordTypeEnum": "BinaryObjectString"
         },
         {
@@ -1702,28 +1610,28 @@
       "LibraryId": 2,
       "Values": [
         {
-          "IdRef": 112,
+          "IdRef": 108,
           "RecordTypeEnum": "MemberReference"
         },
         1,
         {
-          "IdRef": 113,
+          "IdRef": 109,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 114,
-          "Value": "Where were the Bakers captured, again? (f7e9bb9b-6fa1-412a-b923-06d78b215ccc)",
+          "ObjectId": 110,
+          "Value": "What can you tell me about your tattooed (bda2ee26-64dd-4007-ac42-f37b3985d83c)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 25,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 116,
-          "Value": "Where were the Bakers captured, again?",
+          "ObjectId": 112,
+          "Value": "What can you tell me about your tattooed scar?",
           "RecordTypeEnum": "BinaryObjectString"
         },
         {
@@ -1743,6 +1651,106 @@
     {
       "ClassInfo": {
         "ObjectId": 68,
+        "Name": "A3",
+        "MemberCount": 13,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:PNS:0",
+          "CE:N",
+          "SE:RA:Count",
+          "SE:LT:Count",
+          "SE:LT:0:Key",
+          "SE:LT:0:Value",
+          "SE:UJ",
+          "A3:ID",
+          "A3:D",
+          "A3:DC",
+          "A3:T"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Class",
+          "String",
+          "Primitive",
+          "Primitive",
+          "String",
+          "String",
+          "Object",
+          "Primitive",
+          "Primitive",
+          "Object",
+          "Object"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "CAC",
+            "LibraryId": 2
+          },
+          "Int32",
+          {
+            "TypeName": "Q",
+            "LibraryId": 2
+          },
+          null,
+          "Int32",
+          "Int32",
+          null,
+          null,
+          null,
+          "Boolean",
+          "Boolean",
+          null,
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "IdRef": 113,
+          "RecordTypeEnum": "MemberReference"
+        },
+        1,
+        {
+          "IdRef": 114,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 115,
+          "Value": "Where were the Bakers captured, again? (f7e9bb9b-6fa1-412a-b923-06d78b215ccc)",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        1,
+        {
+          "IdRef": 24,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 117,
+          "Value": "Where were the Bakers captured, again?",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        false,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 69,
         "Name": "A3",
         "MemberCount": 14,
         "MemberNames": [
@@ -1808,31 +1816,31 @@
       "LibraryId": 2,
       "Values": [
         {
-          "IdRef": 117,
+          "IdRef": 118,
           "RecordTypeEnum": "MemberReference"
         },
         1,
         {
-          "IdRef": 118,
+          "IdRef": 119,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 119,
+          "ObjectId": 120,
           "Value": "I heard you got that tattoo while defend (4b6dd6cd-73c1-441c-bd6e-342c20a08a1e)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         1,
         {
-          "IdRef": 120,
+          "IdRef": 121,
           "RecordTypeEnum": "MemberReference"
         },
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 122,
+          "ObjectId": 123,
           "Value": "I heard you got that tattoo while defending your brother from bandits.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -1852,7 +1860,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 69,
+        "ObjectId": 70,
         "Name": "A3",
         "MemberCount": 13,
         "MemberNames": [
@@ -1912,128 +1920,28 @@
       "LibraryId": 2,
       "Values": [
         {
-          "IdRef": 123,
+          "IdRef": 124,
           "RecordTypeEnum": "MemberReference"
         },
         1,
         {
-          "IdRef": 124,
+          "IdRef": 125,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 125,
+          "ObjectId": 126,
           "Value": "What can you tell me about Underrail Exp (2e1f79fc-33cd-4d34-b90a-0e8711791dd7)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 24,
+          "IdRef": 25,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 127,
+          "ObjectId": 128,
           "Value": "What can you tell me about Underrail Express?",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        {
-          "RecordTypeEnum": "ObjectNull"
-        },
-        false,
-        false,
-        {
-          "RecordTypeEnum": "ObjectNull"
-        },
-        {
-          "RecordTypeEnum": "ObjectNull"
-        }
-      ],
-      "RecordTypeEnum": "ClassWithMembersAndTypes"
-    },
-    {
-      "ClassInfo": {
-        "ObjectId": 70,
-        "Name": "A3",
-        "MemberCount": 13,
-        "MemberNames": [
-          "CE:CC",
-          "CE:PNS:Count",
-          "CE:PNS:0",
-          "CE:N",
-          "SE:RA:Count",
-          "SE:LT:Count",
-          "SE:LT:0:Key",
-          "SE:LT:0:Value",
-          "SE:UJ",
-          "A3:ID",
-          "A3:D",
-          "A3:DC",
-          "A3:T"
-        ]
-      },
-      "MemberTypeInfo": {
-        "BinaryTypeEnums": [
-          "Class",
-          "Primitive",
-          "Class",
-          "String",
-          "Primitive",
-          "Primitive",
-          "String",
-          "String",
-          "Object",
-          "Primitive",
-          "Primitive",
-          "Object",
-          "Object"
-        ],
-        "AdditionalInfos": [
-          {
-            "TypeName": "CAC",
-            "LibraryId": 2
-          },
-          "Int32",
-          {
-            "TypeName": "Q",
-            "LibraryId": 2
-          },
-          null,
-          "Int32",
-          "Int32",
-          null,
-          null,
-          null,
-          "Boolean",
-          "Boolean",
-          null,
-          null
-        ]
-      },
-      "LibraryId": 2,
-      "Values": [
-        {
-          "IdRef": 128,
-          "RecordTypeEnum": "MemberReference"
-        },
-        1,
-        {
-          "IdRef": 129,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "ObjectId": 130,
-          "Value": "Can you not call me \"bud\"? (3d10fc70-cb76-4be9-a691-2bd79581482e)",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        0,
-        1,
-        {
-          "IdRef": 28,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "ObjectId": 132,
-          "Value": "Can you not call me \"bud\"?",
           "RecordTypeEnum": "BinaryObjectString"
         },
         {
@@ -2112,28 +2020,28 @@
       "LibraryId": 2,
       "Values": [
         {
-          "IdRef": 133,
+          "IdRef": 129,
           "RecordTypeEnum": "MemberReference"
         },
         1,
         {
-          "IdRef": 134,
+          "IdRef": 130,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 135,
-          "Value": "Can you not call me \"sugar\"? (7ab3b26b-17bf-46ce-a836-19e7eea111f7)",
+          "ObjectId": 131,
+          "Value": "Can you not call me \"bud\"? (3d10fc70-cb76-4be9-a691-2bd79581482e)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 137,
-          "Value": "Can you not call me \"sugar\"?",
+          "ObjectId": 133,
+          "Value": "Can you not call me \"bud\"?",
           "RecordTypeEnum": "BinaryObjectString"
         },
         {
@@ -2153,6 +2061,106 @@
     {
       "ClassInfo": {
         "ObjectId": 72,
+        "Name": "A3",
+        "MemberCount": 13,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:PNS:0",
+          "CE:N",
+          "SE:RA:Count",
+          "SE:LT:Count",
+          "SE:LT:0:Key",
+          "SE:LT:0:Value",
+          "SE:UJ",
+          "A3:ID",
+          "A3:D",
+          "A3:DC",
+          "A3:T"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Class",
+          "String",
+          "Primitive",
+          "Primitive",
+          "String",
+          "String",
+          "Object",
+          "Primitive",
+          "Primitive",
+          "Object",
+          "Object"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "CAC",
+            "LibraryId": 2
+          },
+          "Int32",
+          {
+            "TypeName": "Q",
+            "LibraryId": 2
+          },
+          null,
+          "Int32",
+          "Int32",
+          null,
+          null,
+          null,
+          "Boolean",
+          "Boolean",
+          null,
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "IdRef": 134,
+          "RecordTypeEnum": "MemberReference"
+        },
+        1,
+        {
+          "IdRef": 135,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 136,
+          "Value": "Can you not call me \"sugar\"? (7ab3b26b-17bf-46ce-a836-19e7eea111f7)",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        1,
+        {
+          "IdRef": 29,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 138,
+          "Value": "Can you not call me \"sugar\"?",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        false,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 73,
         "Name": "A3",
         "MemberCount": 12,
         "MemberNames": [
@@ -2207,18 +2215,18 @@
         },
         0,
         {
-          "ObjectId": 138,
+          "ObjectId": 139,
           "Value": "I gotta go. (20b38c2a-f179-4678-8b7c-1cf43f2aee34)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 140,
+          "ObjectId": 141,
           "Value": "I gotta go.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -2238,7 +2246,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 75,
+        "ObjectId": 76,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -2302,22 +2310,22 @@
         },
         1,
         {
-          "IdRef": 141,
+          "IdRef": 142,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 142,
+          "ObjectId": 143,
           "Value": "Who are *you*? (5eeb3f85-f583-4c1f-a43b-e2b94370f88a)*",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 144,
+          "ObjectId": 145,
           "Value": "Who are *you*?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -2326,11 +2334,11 @@
         },
         0,
         {
-          "IdRef": 30,
+          "IdRef": 31,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 31,
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -2338,7 +2346,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 79,
+        "ObjectId": 80,
         "Name": "Q",
         "MemberCount": 13,
         "MemberNames": [
@@ -2408,18 +2416,18 @@
         },
         0,
         {
-          "ObjectId": 147,
+          "ObjectId": 148,
           "Value": "Questions, questions... a man gets tired (4225315b-1d52-49fd-a57a-e1f827287aa9)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 149,
+          "ObjectId": 150,
           "Value": "Questions, questions... a man gets tired of those after a while, especially if they are being asked by random strangers.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -2428,19 +2436,19 @@
         },
         2,
         {
-          "IdRef": 150,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
           "IdRef": 151,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 30,
+          "IdRef": 152,
           "RecordTypeEnum": "MemberReference"
         },
         {
           "IdRef": 31,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -2448,7 +2456,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 83,
+        "ObjectId": 84,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -2512,22 +2520,22 @@
         },
         1,
         {
-          "IdRef": 141,
+          "IdRef": 142,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 155,
+          "ObjectId": 156,
           "Value": "Who the hell are you and what do you wan (f84a1975-2c4b-4a1d-ba5f-9a9815229d04)*",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 157,
+          "ObjectId": 158,
           "Value": "Who the hell are you and what do you want?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -2536,25 +2544,25 @@
         },
         0,
         {
-          "IdRef": 30,
+          "IdRef": 31,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 31,
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
       "RecordTypeEnum": "ClassWithMembersAndTypes"
     },
     {
-      "ObjectId": 90,
-      "MetadataId": 37,
+      "ObjectId": 91,
+      "MetadataId": 38,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 160,
+          "ObjectId": 161,
           "Value": "context.npc_cc_alex_askWhoHeIs",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -2565,7 +2573,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 91,
+        "ObjectId": 92,
         "Name": "Q",
         "MemberCount": 14,
         "MemberNames": [
@@ -2641,18 +2649,18 @@
         },
         0,
         {
-          "ObjectId": 161,
+          "ObjectId": 162,
           "Value": "Why do you ask? (00a71703-fded-4e78-83f6-04469f2d63c6)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 163,
+          "ObjectId": 164,
           "Value": "Why do you ask?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -2660,10 +2668,6 @@
           "RecordTypeEnum": "ObjectNull"
         },
         3,
-        {
-          "IdRef": 164,
-          "RecordTypeEnum": "MemberReference"
-        },
         {
           "IdRef": 165,
           "RecordTypeEnum": "MemberReference"
@@ -2673,11 +2677,15 @@
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 30,
+          "IdRef": 167,
           "RecordTypeEnum": "MemberReference"
         },
         {
           "IdRef": 31,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -2685,7 +2693,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 95,
+        "ObjectId": 96,
         "Name": "CAC",
         "MemberCount": 5,
         "MemberNames": [
@@ -2728,15 +2736,15 @@
         },
         3,
         {
-          "IdRef": 169,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
           "IdRef": 170,
           "RecordTypeEnum": "MemberReference"
         },
         {
           "IdRef": 171,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 172,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -2744,7 +2752,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 96,
+        "ObjectId": 97,
         "Name": "Q",
         "MemberCount": 13,
         "MemberNames": [
@@ -2814,18 +2822,18 @@
         },
         0,
         {
-          "ObjectId": 172,
+          "ObjectId": 173,
           "Value": "::Your question seems to have struck a c (aa19768d-9524-44d9-af75-ff4449ffb30f)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 174,
+          "ObjectId": 175,
           "Value": "::Your question seems to have struck a chord with him, since he puts down his drink and turns to you.::\r\n\r\nHusband and wife from SGS? South Gate Station?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -2834,19 +2842,19 @@
         },
         2,
         {
-          "IdRef": 175,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
           "IdRef": 176,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 30,
+          "IdRef": 177,
           "RecordTypeEnum": "MemberReference"
         },
         {
           "IdRef": 31,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -2854,7 +2862,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 98,
+        "ObjectId": 99,
         "Name": "SBFV",
         "MemberCount": 3,
         "MemberNames": [
@@ -2878,12 +2886,12 @@
       "LibraryId": 2,
       "Values": [
         {
-          "ObjectId": 179,
+          "ObjectId": 180,
           "Value": "517bd13c-6337-4043-951a-1df44a2d4790",
           "RecordTypeEnum": "BinaryObjectString"
         },
         {
-          "ObjectId": 180,
+          "ObjectId": 181,
           "Value": "context.npc_cc_trainOperator_toldAboutAcidHuntersAttackBakers",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -2893,7 +2901,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 101,
+        "ObjectId": 102,
         "Name": "CAC",
         "MemberCount": 4,
         "MemberNames": [
@@ -2930,11 +2938,11 @@
         },
         2,
         {
-          "IdRef": 181,
+          "IdRef": 182,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 182,
+          "IdRef": 183,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -2942,7 +2950,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 102,
+        "ObjectId": 103,
         "Name": "Q",
         "MemberCount": 13,
         "MemberNames": [
@@ -3011,31 +3019,31 @@
       "LibraryId": 2,
       "Values": [
         {
-          "IdRef": 183,
+          "IdRef": 184,
           "RecordTypeEnum": "MemberReference"
         },
         1,
         {
-          "IdRef": 184,
+          "IdRef": 185,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 185,
+          "ObjectId": 186,
           "Value": "It won't help. I've talked to people bef (9fbe6529-01fe-4c35-bb1e-153c4caa872f)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         1,
         {
-          "IdRef": 186,
+          "IdRef": 187,
           "RecordTypeEnum": "MemberReference"
         },
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 188,
+          "ObjectId": 189,
           "Value": "It won't help. I've talked to people before. It doesn't help.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -3044,11 +3052,11 @@
         },
         0,
         {
-          "IdRef": 30,
+          "IdRef": 31,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 31,
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -3056,7 +3064,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 103,
+        "ObjectId": 104,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -3120,22 +3128,22 @@
         },
         1,
         {
-          "IdRef": 44,
+          "IdRef": 45,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 192,
+          "ObjectId": 193,
           "Value": "Stop asking me about that, aight? Just.. (ee476620-83b9-4cf4-9c26-540e5aff00d5)*",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 194,
+          "ObjectId": 195,
           "Value": "Stop asking me about that, aight? Just... leave it.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -3144,11 +3152,11 @@
         },
         0,
         {
-          "IdRef": 30,
+          "IdRef": 31,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 31,
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -3156,7 +3164,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 107,
+        "ObjectId": 108,
         "Name": "CAC",
         "MemberCount": 4,
         "MemberNames": [
@@ -3193,11 +3201,11 @@
         },
         2,
         {
-          "IdRef": 197,
+          "IdRef": 198,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 198,
+          "IdRef": 199,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -3205,7 +3213,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 108,
+        "ObjectId": 109,
         "Name": "Q",
         "MemberCount": 13,
         "MemberNames": [
@@ -3275,18 +3283,18 @@
         },
         0,
         {
-          "ObjectId": 199,
+          "ObjectId": 200,
           "Value": "::He takes a look at his scar, staring a (c190fb67-605d-4326-b64a-1659c88774fc)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 24,
+          "IdRef": 25,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 201,
+          "ObjectId": 202,
           "Value": "::He takes a look at his scar, staring at it for a few moments, taking a sip of his drink in the process.::\r\n\r\nThe scar is from an accident. The tattoo is from a tattoo shop.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -3295,19 +3303,19 @@
         },
         2,
         {
-          "IdRef": 202,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
           "IdRef": 203,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 30,
+          "IdRef": 204,
           "RecordTypeEnum": "MemberReference"
         },
         {
           "IdRef": 31,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -3315,7 +3323,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 112,
+        "ObjectId": 113,
         "Name": "CAC",
         "MemberCount": 4,
         "MemberNames": [
@@ -3352,11 +3360,11 @@
         },
         2,
         {
-          "IdRef": 206,
+          "IdRef": 207,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 207,
+          "IdRef": 208,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -3364,7 +3372,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 113,
+        "ObjectId": 114,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -3428,22 +3436,22 @@
         },
         1,
         {
-          "IdRef": 208,
+          "IdRef": 209,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 209,
+          "ObjectId": 210,
           "Value": "Rail Crossing train station. The gangste (980451a2-58fe-4684-9662-df42649f354b)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 211,
+          "ObjectId": 212,
           "Value": "Rail Crossing train station. The gangsters took them to the caves north.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -3452,28 +3460,24 @@
         },
         0,
         {
-          "IdRef": 30,
+          "IdRef": 31,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 31,
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
       "RecordTypeEnum": "ClassWithMembersAndTypes"
     },
     {
-      "ObjectId": 117,
-      "MetadataId": 95,
+      "ObjectId": 118,
+      "MetadataId": 96,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         3,
-        {
-          "IdRef": 214,
-          "RecordTypeEnum": "MemberReference"
-        },
         {
           "IdRef": 215,
           "RecordTypeEnum": "MemberReference"
@@ -3481,13 +3485,17 @@
         {
           "IdRef": 216,
           "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 217,
+          "RecordTypeEnum": "MemberReference"
         }
       ],
       "RecordTypeEnum": "ClassWithId"
     },
     {
       "ClassInfo": {
-        "ObjectId": 118,
+        "ObjectId": 119,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -3551,18 +3559,18 @@
         },
         0,
         {
-          "ObjectId": 217,
+          "ObjectId": 218,
           "Value": "::He is about to take another sip from t (94eb8bf9-5b20-4ff9-8d2c-9d61992dbd05)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 219,
+          "ObjectId": 220,
           "Value": "::He is about to take another sip from the glass when your words strike him like one of the trains he operates. He puts the glass down and turns to you.::\r\n\r\nWho told you that?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -3571,31 +3579,31 @@
         },
         1,
         {
-          "IdRef": 220,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "IdRef": 30,
+          "IdRef": 221,
           "RecordTypeEnum": "MemberReference"
         },
         {
           "IdRef": 31,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
       "RecordTypeEnum": "ClassWithMembersAndTypes"
     },
     {
-      "ObjectId": 120,
-      "MetadataId": 98,
+      "ObjectId": 121,
+      "MetadataId": 99,
       "Values": [
         {
-          "ObjectId": 223,
+          "ObjectId": 224,
           "Value": "4ffaf7fa-77e8-44b6-9635-692750804965",
           "RecordTypeEnum": "BinaryObjectString"
         },
         {
-          "ObjectId": 224,
+          "ObjectId": 225,
           "Value": "context.npc_cc_gorge_toldSonKilled",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -3604,14 +3612,14 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 123,
-      "MetadataId": 37,
+      "ObjectId": 124,
+      "MetadataId": 38,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 225,
+          "ObjectId": 226,
           "Value": "context.npc_cc_alex_askWhoHeIs",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -3622,7 +3630,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 124,
+        "ObjectId": 125,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -3686,22 +3694,22 @@
         },
         1,
         {
-          "IdRef": 226,
+          "IdRef": 227,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 227,
+          "ObjectId": 228,
           "Value": "Go bug someone else about it, aight? The (825ef96b-f5b7-4ee1-bf85-cd7c96a6893a)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 229,
+          "ObjectId": 230,
           "Value": "Go bug someone else about it, aight? The reason I come to places like this is so that I don't have to think about my freakin' job, and now you're reminding me of it.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -3710,60 +3718,11 @@
         },
         0,
         {
-          "IdRef": 30,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
           "IdRef": 31,
           "RecordTypeEnum": "MemberReference"
-        }
-      ],
-      "RecordTypeEnum": "ClassWithMembersAndTypes"
-    },
-    {
-      "ClassInfo": {
-        "ObjectId": 128,
-        "Name": "CAC",
-        "MemberCount": 4,
-        "MemberNames": [
-          "C:N",
-          "CC:EC:Count",
-          "CC:EC:0",
-          "CC:EC:1"
-        ]
-      },
-      "MemberTypeInfo": {
-        "BinaryTypeEnums": [
-          "Object",
-          "Primitive",
-          "Class",
-          "Class"
-        ],
-        "AdditionalInfos": [
-          null,
-          "Int32",
-          {
-            "TypeName": "PGC",
-            "LibraryId": 2
-          },
-          {
-            "TypeName": "BC",
-            "LibraryId": 2
-          }
-        ]
-      },
-      "LibraryId": 2,
-      "Values": [
-        {
-          "RecordTypeEnum": "ObjectNull"
-        },
-        2,
-        {
-          "IdRef": 232,
-          "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 233,
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -3772,106 +3731,6 @@
     {
       "ClassInfo": {
         "ObjectId": 129,
-        "Name": "Q",
-        "MemberCount": 12,
-        "MemberNames": [
-          "CE:CC",
-          "CE:PNS:Count",
-          "CE:PNS:0",
-          "CE:N",
-          "SE:RA:Count",
-          "SE:LT:Count",
-          "SE:LT:0:Key",
-          "SE:LT:0:Value",
-          "SE:UJ",
-          "Q:PA:Count",
-          "Q:Q",
-          "Q:A"
-        ]
-      },
-      "MemberTypeInfo": {
-        "BinaryTypeEnums": [
-          "Object",
-          "Primitive",
-          "Class",
-          "String",
-          "Primitive",
-          "Primitive",
-          "String",
-          "String",
-          "Object",
-          "Primitive",
-          "Class",
-          "Class"
-        ],
-        "AdditionalInfos": [
-          null,
-          "Int32",
-          {
-            "TypeName": "Q",
-            "LibraryId": 2
-          },
-          null,
-          "Int32",
-          "Int32",
-          null,
-          null,
-          null,
-          "Int32",
-          {
-            "TypeName": "A4",
-            "LibraryId": 2
-          },
-          {
-            "TypeName": "A4",
-            "LibraryId": 2
-          }
-        ]
-      },
-      "LibraryId": 2,
-      "Values": [
-        {
-          "RecordTypeEnum": "ObjectNull"
-        },
-        1,
-        {
-          "IdRef": 234,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "ObjectId": 235,
-          "Value": "::He gives you an indifferent look.:: Ai (5a04e0da-e814-4ef7-a3a5-4903c055598f)",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        0,
-        1,
-        {
-          "IdRef": 28,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "ObjectId": 237,
-          "Value": "::He gives you an indifferent look.:: Aight, bud, not a problem.",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        {
-          "RecordTypeEnum": "ObjectNull"
-        },
-        0,
-        {
-          "IdRef": 30,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "IdRef": 31,
-          "RecordTypeEnum": "MemberReference"
-        }
-      ],
-      "RecordTypeEnum": "ClassWithMembersAndTypes"
-    },
-    {
-      "ClassInfo": {
-        "ObjectId": 133,
         "Name": "CAC",
         "MemberCount": 4,
         "MemberNames": [
@@ -3908,11 +3767,11 @@
         },
         2,
         {
-          "IdRef": 240,
+          "IdRef": 233,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 241,
+          "IdRef": 234,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -3920,7 +3779,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 134,
+        "ObjectId": 130,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -3984,22 +3843,171 @@
         },
         1,
         {
-          "IdRef": 234,
+          "IdRef": 235,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 243,
+          "ObjectId": 236,
+          "Value": "::He gives you an indifferent look.:: Ai (5a04e0da-e814-4ef7-a3a5-4903c055598f)",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        1,
+        {
+          "IdRef": 29,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 238,
+          "Value": "::He gives you an indifferent look.:: Aight, bud, not a problem.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        0,
+        {
+          "IdRef": 31,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 32,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 134,
+        "Name": "CAC",
+        "MemberCount": 4,
+        "MemberNames": [
+          "C:N",
+          "CC:EC:Count",
+          "CC:EC:0",
+          "CC:EC:1"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "Primitive",
+          "Class",
+          "Class"
+        ],
+        "AdditionalInfos": [
+          null,
+          "Int32",
+          {
+            "TypeName": "PGC",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "BC",
+            "LibraryId": 2
+          }
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        2,
+        {
+          "IdRef": 241,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 242,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 135,
+        "Name": "Q",
+        "MemberCount": 12,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:PNS:0",
+          "CE:N",
+          "SE:RA:Count",
+          "SE:LT:Count",
+          "SE:LT:0:Key",
+          "SE:LT:0:Value",
+          "SE:UJ",
+          "Q:PA:Count",
+          "Q:Q",
+          "Q:A"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "Primitive",
+          "Class",
+          "String",
+          "Primitive",
+          "Primitive",
+          "String",
+          "String",
+          "Object",
+          "Primitive",
+          "Class",
+          "Class"
+        ],
+        "AdditionalInfos": [
+          null,
+          "Int32",
+          {
+            "TypeName": "Q",
+            "LibraryId": 2
+          },
+          null,
+          "Int32",
+          "Int32",
+          null,
+          null,
+          null,
+          "Int32",
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          }
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        1,
+        {
+          "IdRef": 235,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 244,
           "Value": "::He gives you an indifferent look.:: Ai (74183e96-89cf-40ac-ab1d-453048925810)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 245,
+          "ObjectId": 246,
           "Value": "::He gives you an indifferent look.:: Aight, sugar, not a problem.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -4008,11 +4016,11 @@
         },
         0,
         {
-          "IdRef": 30,
+          "IdRef": 31,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 31,
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -4020,7 +4028,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 141,
+        "ObjectId": 142,
         "Name": "Q",
         "MemberCount": 13,
         "MemberNames": [
@@ -4090,14 +4098,14 @@
         },
         0,
         {
-          "ObjectId": 248,
+          "ObjectId": 249,
           "Value": " (26622cda-953a-4603-94cb-351c0008a1cd)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
@@ -4109,49 +4117,49 @@
         },
         2,
         {
-          "IdRef": 251,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
           "IdRef": 252,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 30,
+          "IdRef": 253,
           "RecordTypeEnum": "MemberReference"
         },
         {
           "IdRef": 31,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
       "RecordTypeEnum": "ClassWithMembersAndTypes"
     },
     {
-      "ObjectId": 150,
-      "MetadataId": 54,
+      "ObjectId": 151,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 255,
+          "IdRef": 256,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 256,
+          "ObjectId": 257,
           "Value": "Is that a yes or a no? (ab646f72-0c59-48d4-9fdb-07d5a744c14f)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 258,
+          "ObjectId": 259,
           "Value": "Is that a yes or a no?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -4170,30 +4178,30 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 151,
-      "MetadataId": 54,
+      "ObjectId": 152,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 259,
+          "IdRef": 260,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 260,
+          "ObjectId": 261,
           "Value": "Well, I told you my name - so I'm not a  (4d33df93-65f1-45af-ae45-1fff81d0559f)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 262,
+          "ObjectId": 263,
           "Value": "Well, I told you my name - so I'm not a complete stranger.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -4212,30 +4220,30 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 164,
-      "MetadataId": 54,
+      "ObjectId": 165,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 263,
+          "IdRef": 264,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 264,
+          "ObjectId": 265,
           "Value": "You seem somewhat familiar. (078bb448-d6d1-48c0-b26c-1b039b291f50)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 266,
+          "ObjectId": 267,
           "Value": "You seem somewhat familiar.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -4255,7 +4263,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 165,
+        "ObjectId": 166,
         "Name": "A3",
         "MemberCount": 13,
         "MemberNames": [
@@ -4315,27 +4323,27 @@
       "LibraryId": 2,
       "Values": [
         {
-          "IdRef": 267,
+          "IdRef": 268,
           "RecordTypeEnum": "MemberReference"
         },
         1,
         {
-          "IdRef": 268,
+          "IdRef": 269,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 269,
+          "ObjectId": 270,
           "Value": "Gene told me you are one of Underrail Ex (493fcd62-aac2-40d1-aa03-aea155c6fd47)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 271,
+          "ObjectId": 272,
           "Value": "Gene told me you are one of Underrail Express train operators.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -4354,30 +4362,30 @@
       "RecordTypeEnum": "ClassWithMembersAndTypes"
     },
     {
-      "ObjectId": 166,
-      "MetadataId": 54,
+      "ObjectId": 167,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 272,
+          "IdRef": 273,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 273,
+          "ObjectId": 274,
           "Value": "Never mind. Let me ask you something els (5717b22f-0842-4d54-ab80-e24ba80f9d80)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 24,
+          "IdRef": 25,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 275,
+          "ObjectId": 276,
           "Value": "Never mind. Let me ask you something else.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -4396,14 +4404,14 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 169,
-      "MetadataId": 37,
+      "ObjectId": 170,
+      "MetadataId": 38,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 276,
+          "ObjectId": 277,
           "Value": "context.npc_cc_alex_askWhoHeIs",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -4413,14 +4421,14 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 170,
-      "MetadataId": 37,
+      "ObjectId": 171,
+      "MetadataId": 38,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 277,
+          "ObjectId": 278,
           "Value": "context.npc_cc_trainOperator_toldAboutAcidHuntersAttackBakers",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -4430,14 +4438,14 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 171,
-      "MetadataId": 37,
+      "ObjectId": 172,
+      "MetadataId": 38,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 278,
+          "ObjectId": 279,
           "Value": "context.quest_findMissingMerchants_started",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -4447,30 +4455,30 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 175,
-      "MetadataId": 54,
+      "ObjectId": 176,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 279,
+          "IdRef": 280,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 280,
+          "ObjectId": 281,
           "Value": "*Yes*! Do you know anything about them? (9729742a-a6e8-426a-9d0f-d93cd683400f)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 282,
+          "ObjectId": 283,
           "Value": "*Yes*! Do you know anything about them?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -4489,30 +4497,30 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 176,
-      "MetadataId": 54,
+      "ObjectId": 177,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 279,
+          "IdRef": 280,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 284,
+          "ObjectId": 285,
           "Value": "They went to Core City but never made it (5f99378e-7c08-4c3e-9d37-94a90f8291a0)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 286,
+          "ObjectId": 287,
           "Value": "They went to Core City but never made it back to SGS. I'm trying to learn what happened to them.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -4531,14 +4539,14 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 181,
-      "MetadataId": 37,
+      "ObjectId": 182,
+      "MetadataId": 38,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 287,
+          "ObjectId": 288,
           "Value": "context.npc_cc_gorge_toldSonKilled",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -4548,14 +4556,14 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 182,
-      "MetadataId": 37,
+      "ObjectId": 183,
+      "MetadataId": 38,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 288,
+          "ObjectId": 289,
           "Value": "context.npc_cc_gorge_toldWholeStory",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -4566,7 +4574,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 183,
+        "ObjectId": 184,
         "Name": "MPMSC",
         "MemberCount": 3,
         "MemberNames": [
@@ -4598,7 +4606,7 @@
         75,
         {
           "ClassInfo": {
-            "ObjectId": -289,
+            "ObjectId": -290,
             "Name": "eSKE",
             "MemberCount": 1,
             "MemberNames": [
@@ -4624,7 +4632,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 184,
+        "ObjectId": 185,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -4688,107 +4696,12 @@
         },
         1,
         {
-          "IdRef": 290,
+          "IdRef": 291,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 291,
+          "ObjectId": 292,
           "Value": "::He continues after a pause.:: His name (157fc3cc-68eb-46d1-a0b6-dbec80c6ea1b)",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        0,
-        1,
-        {
-          "IdRef": 23,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "ObjectId": 293,
-          "Value": "::He continues after a pause.:: His name was Timothy. His mother died at birth, so I was all he had, and he was all I had. Until some... some freakin' lowlife scumbags, some dirtbags broke into our house one day, many years ago. We didn't have anything valuable, and I told them that. But they... they weren't there for valuables - but for blood. Psychos. Bastards!\r\n\r\nI tried to protect him. I failed. I squizeed the lives out of those rats as hard as I could, but for my boy... it was too late. The grin on the man's face while he was killing my... my boy still haunts me. I see it even now. It's like he...",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        {
-          "RecordTypeEnum": "ObjectNull"
-        },
-        0,
-        {
-          "IdRef": 30,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "IdRef": 31,
-          "RecordTypeEnum": "MemberReference"
-        }
-      ],
-      "RecordTypeEnum": "ClassWithMembersAndTypes"
-    },
-    {
-      "ObjectId": 186,
-      "MetadataId": 98,
-      "Values": [
-        {
-          "ObjectId": 296,
-          "Value": "4f5130b4-e820-4390-bc60-51fd2a79569d",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        {
-          "ObjectId": 297,
-          "Value": "context.npc_cc_gorge_toldWholeStory",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        true
-      ],
-      "RecordTypeEnum": "ClassWithId"
-    },
-    {
-      "ObjectId": 197,
-      "MetadataId": 37,
-      "Values": [
-        {
-          "RecordTypeEnum": "ObjectNull"
-        },
-        {
-          "ObjectId": 298,
-          "Value": "context.npc_cc_alex_askTattoo",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        true,
-        false
-      ],
-      "RecordTypeEnum": "ClassWithId"
-    },
-    {
-      "ObjectId": 198,
-      "MetadataId": 37,
-      "Values": [
-        {
-          "RecordTypeEnum": "ObjectNull"
-        },
-        {
-          "ObjectId": 299,
-          "Value": "context.npc_cc_gorge_toldWholeStory",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        true,
-        false
-      ],
-      "RecordTypeEnum": "ClassWithId"
-    },
-    {
-      "ObjectId": 202,
-      "MetadataId": 54,
-      "Values": [
-        {
-          "RecordTypeEnum": "ObjectNull"
-        },
-        1,
-        {
-          "IdRef": 300,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "ObjectId": 301,
-          "Value": "Can you tell me a bit more about it? (1259c894-47fe-4381-8478-ba565beabcb4)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
@@ -4798,7 +4711,102 @@
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 303,
+          "ObjectId": 294,
+          "Value": "::He continues after a pause.:: His name was Timothy. His mother died at birth, so I was all he had, and he was all I had. Until some... some freakin' lowlife scumbags, some dirtbags broke into our house one day, many years ago. We didn't have anything valuable, and I told them that. But they... they weren't there for valuables - but for blood. Psychos. Bastards!\r\n\r\nI tried to protect him. I failed. I squeezed the lives out of those rats as hard as I could, but for my boy... it was too late. The grin on the man's face while he was killing my... my boy still haunts me. I see it even now. It's like he...",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        0,
+        {
+          "IdRef": 31,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 32,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ObjectId": 187,
+      "MetadataId": 99,
+      "Values": [
+        {
+          "ObjectId": 297,
+          "Value": "4f5130b4-e820-4390-bc60-51fd2a79569d",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 298,
+          "Value": "context.npc_cc_gorge_toldWholeStory",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        true
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 198,
+      "MetadataId": 38,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 299,
+          "Value": "context.npc_cc_alex_askTattoo",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        true,
+        false
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 199,
+      "MetadataId": 38,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 300,
+          "Value": "context.npc_cc_gorge_toldWholeStory",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        true,
+        false
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 203,
+      "MetadataId": 55,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        1,
+        {
+          "IdRef": 301,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 302,
+          "Value": "Can you tell me a bit more about it? (1259c894-47fe-4381-8478-ba565beabcb4)",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        1,
+        {
+          "IdRef": 25,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 304,
           "Value": "Can you tell me a bit more about it?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -4817,30 +4825,30 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 203,
-      "MetadataId": 54,
+      "ObjectId": 204,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 272,
+          "IdRef": 273,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 305,
+          "ObjectId": 306,
           "Value": "That's good enough for me. I had other t (e5d51486-9e61-4273-848e-fa65afb4d2c5)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 24,
+          "IdRef": 25,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 307,
+          "ObjectId": 308,
           "Value": "That's good enough for me. I had other things to ask you.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -4859,14 +4867,14 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 206,
-      "MetadataId": 37,
+      "ObjectId": 207,
+      "MetadataId": 38,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 308,
+          "ObjectId": 309,
           "Value": "context.npc_cc_trainOperator_toldAboutAcidHuntersAttackBakers",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -4876,14 +4884,14 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 207,
-      "MetadataId": 37,
+      "ObjectId": 208,
+      "MetadataId": 38,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 309,
+          "ObjectId": 310,
           "Value": "context.quest_findMissingMerchants_finished",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -4894,7 +4902,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 208,
+        "ObjectId": 209,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -4958,22 +4966,22 @@
         },
         1,
         {
-          "IdRef": 44,
+          "IdRef": 45,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 311,
+          "ObjectId": 312,
           "Value": "That's all I know. (eaee2418-5bc7-46f9-896f-8b73fee874a6)*",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 313,
+          "ObjectId": 314,
           "Value": "That's all I know.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -4982,25 +4990,25 @@
         },
         0,
         {
-          "IdRef": 30,
+          "IdRef": 31,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 31,
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
       "RecordTypeEnum": "ClassWithMembersAndTypes"
     },
     {
-      "ObjectId": 214,
-      "MetadataId": 37,
+      "ObjectId": 215,
+      "MetadataId": 38,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 316,
+          "ObjectId": 317,
           "Value": "context.npc_cc_geneToldRumorsAboutGorge",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -5010,14 +5018,14 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 215,
-      "MetadataId": 37,
+      "ObjectId": 216,
+      "MetadataId": 38,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 317,
+          "ObjectId": 318,
           "Value": "context.npc_cc_alex_askTattoo",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -5027,14 +5035,14 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 216,
-      "MetadataId": 37,
+      "ObjectId": 217,
+      "MetadataId": 38,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 318,
+          "ObjectId": 319,
           "Value": "context.npc_cc_gorge_toldSonKilled",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -5044,30 +5052,30 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 220,
-      "MetadataId": 54,
+      "ObjectId": 221,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 319,
+          "IdRef": 320,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 320,
+          "ObjectId": 321,
           "Value": "Gene, the barkeeper. (d8f14799-db1d-44f0-9a3c-2c7b4a305746)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 322,
+          "ObjectId": 323,
           "Value": "Gene, the barkeeper.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -5087,7 +5095,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 226,
+        "ObjectId": 227,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -5151,22 +5159,22 @@
         },
         1,
         {
-          "IdRef": 44,
+          "IdRef": 45,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 324,
+          "ObjectId": 325,
           "Value": "Let me drink in freakin' peace. (add139c5-9e7b-4c93-983a-e958cca8ce95)*",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 326,
+          "ObjectId": 327,
           "Value": "Let me drink in freakin' peace.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -5175,11 +5183,11 @@
         },
         0,
         {
-          "IdRef": 30,
+          "IdRef": 31,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 31,
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -5187,7 +5195,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 232,
+        "ObjectId": 233,
         "Name": "PGC",
         "MemberCount": 2,
         "MemberNames": [
@@ -5215,7 +5223,7 @@
         },
         {
           "ClassInfo": {
-            "ObjectId": -329,
+            "ObjectId": -330,
             "Name": "eG",
             "MemberCount": 1,
             "MemberNames": [
@@ -5240,14 +5248,14 @@
       "RecordTypeEnum": "ClassWithMembersAndTypes"
     },
     {
-      "ObjectId": 233,
-      "MetadataId": 37,
+      "ObjectId": 234,
+      "MetadataId": 38,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 330,
+          "ObjectId": 331,
           "Value": "context.npc_cc_alex_don'tCallMeThat",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -5258,7 +5266,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 234,
+        "ObjectId": 235,
         "Name": "Q",
         "MemberCount": 13,
         "MemberNames": [
@@ -5328,26 +5336,26 @@
         },
         1,
         {
-          "IdRef": 44,
+          "IdRef": 45,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 332,
+          "ObjectId": 333,
           "Value": "Better? (f8760918-2fc7-4c98-996d-0c461e737c04)*",
           "RecordTypeEnum": "BinaryObjectString"
         },
         1,
         {
-          "IdRef": 333,
+          "IdRef": 334,
           "RecordTypeEnum": "MemberReference"
         },
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 335,
+          "ObjectId": 336,
           "Value": "Better?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -5356,26 +5364,26 @@
         },
         0,
         {
-          "IdRef": 30,
+          "IdRef": 31,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 31,
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
       "RecordTypeEnum": "ClassWithMembersAndTypes"
     },
     {
-      "ObjectId": 240,
-      "MetadataId": 232,
+      "ObjectId": 241,
+      "MetadataId": 233,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": -338,
-          "MetadataId": -329,
+          "ObjectId": -339,
+          "MetadataId": -330,
           "Values": [
             1
           ],
@@ -5385,14 +5393,14 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 241,
-      "MetadataId": 37,
+      "ObjectId": 242,
+      "MetadataId": 38,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 339,
+          "ObjectId": 340,
           "Value": "context.npc_cc_alex_don'tCallMeThat",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -5402,30 +5410,30 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 251,
-      "MetadataId": 54,
+      "ObjectId": 252,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 79,
+          "IdRef": 80,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 341,
+          "ObjectId": 342,
           "Value": "My name is $(context.player.Name) and I  (87fe2ef9-bd0d-4a88-9609-ff99beba7485)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 343,
+          "ObjectId": 344,
           "Value": "My name is $(context.player.Name) and I had some questions.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -5445,7 +5453,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 252,
+        "ObjectId": 253,
         "Name": "A3",
         "MemberCount": 12,
         "MemberNames": [
@@ -5500,18 +5508,18 @@
         },
         0,
         {
-          "ObjectId": 344,
+          "ObjectId": 345,
           "Value": "No one. Sorry for bothering you. (1e344f30-5eef-40ee-8df9-86605129a462)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 346,
+          "ObjectId": 347,
           "Value": "No one. Sorry for bothering you.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -5531,7 +5539,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 255,
+        "ObjectId": 256,
         "Name": "Q",
         "MemberCount": 13,
         "MemberNames": [
@@ -5601,26 +5609,26 @@
         },
         1,
         {
-          "IdRef": 44,
+          "IdRef": 45,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 348,
+          "ObjectId": 349,
           "Value": "::He inspects you for a few seconds too  (baf994cb-2070-40a3-b506-6abeb07d522e)*",
           "RecordTypeEnum": "BinaryObjectString"
         },
         1,
         {
-          "IdRef": 349,
+          "IdRef": 350,
           "RecordTypeEnum": "MemberReference"
         },
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 351,
+          "ObjectId": 352,
           "Value": "::He inspects you for a few seconds too long.:: I'll bite - ask your questions. Now whether you'll get an answer, that's a whole different matter. ::He returns to his drink.::",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -5629,11 +5637,11 @@
         },
         0,
         {
-          "IdRef": 30,
+          "IdRef": 31,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 31,
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -5641,7 +5649,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 259,
+        "ObjectId": 260,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -5705,18 +5713,18 @@
         },
         0,
         {
-          "ObjectId": 354,
+          "ObjectId": 355,
           "Value": "::He chuckles.:: No, you said *a* name.  (eb14a9bd-5de2-4e49-a381-923b3a649f4e)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 356,
+          "ObjectId": 357,
           "Value": "::He chuckles.:: No, you said *a* name. I don't know if it's really yours, $(#bud/sugar). You could be anyone for all I know.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -5725,15 +5733,15 @@
         },
         1,
         {
-          "IdRef": 357,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "IdRef": 30,
+          "IdRef": 358,
           "RecordTypeEnum": "MemberReference"
         },
         {
           "IdRef": 31,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -5741,7 +5749,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 263,
+        "ObjectId": 264,
         "Name": "Q",
         "MemberCount": 13,
         "MemberNames": [
@@ -5811,18 +5819,18 @@
         },
         0,
         {
-          "ObjectId": 360,
+          "ObjectId": 361,
           "Value": "::He answers without looking at you.:: F (5023cba3-10f0-49b6-848b-3fc9857feea8)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 362,
+          "ObjectId": 363,
           "Value": "::He answers without looking at you.:: From where?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -5831,33 +5839,33 @@
         },
         2,
         {
-          "IdRef": 363,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
           "IdRef": 364,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 30,
+          "IdRef": 365,
           "RecordTypeEnum": "MemberReference"
         },
         {
           "IdRef": 31,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
       "RecordTypeEnum": "ClassWithMembersAndTypes"
     },
     {
-      "ObjectId": 267,
-      "MetadataId": 37,
+      "ObjectId": 268,
+      "MetadataId": 38,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 367,
+          "ObjectId": 368,
           "Value": "context.npc_cc_gene_toldAlexIdentity",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -5868,7 +5876,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 268,
+        "ObjectId": 269,
         "Name": "Q",
         "MemberCount": 13,
         "MemberNames": [
@@ -5938,26 +5946,26 @@
         },
         1,
         {
-          "IdRef": 368,
+          "IdRef": 369,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 369,
+          "ObjectId": 370,
           "Value": "::He downs the remainder of his drink in (63780eb4-fb9d-4e39-8def-8870843e9f5d)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         1,
         {
-          "IdRef": 370,
+          "IdRef": 371,
           "RecordTypeEnum": "MemberReference"
         },
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 372,
+          "ObjectId": 373,
           "Value": "::He downs the remainder of his drink in a single gulp, then follows it by contorting his face and holding the expression for a few seconds. When he opens his eyes again he raises his hand and signals the bartender to bring him another drink.::\r\n\r\nYeah, you were told right. I operate one of the trains circling the Lower Underrail.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -5966,11 +5974,11 @@
         },
         0,
         {
-          "IdRef": 30,
+          "IdRef": 31,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 31,
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -5978,7 +5986,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 272,
+        "ObjectId": 273,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -6042,22 +6050,22 @@
         },
         1,
         {
-          "IdRef": 44,
+          "IdRef": 45,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 376,
+          "ObjectId": 377,
           "Value": "Aight. (92fca56b-85b2-4018-b186-80c7d7288466)*",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 24,
+          "IdRef": 25,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 378,
+          "ObjectId": 379,
           "Value": "Aight.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -6066,11 +6074,11 @@
         },
         0,
         {
-          "IdRef": 30,
+          "IdRef": 31,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 31,
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -6078,7 +6086,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 279,
+        "ObjectId": 280,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -6142,22 +6150,22 @@
         },
         1,
         {
-          "IdRef": 381,
+          "IdRef": 382,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 382,
+          "ObjectId": 383,
           "Value": "::He makes a long pause, takes full shot (8b157734-4b61-48c2-b9b2-957c1f885e21)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 384,
+          "ObjectId": 385,
           "Value": "::He makes a long pause, takes full shot of whatever he is having and contorts his face again. This time it took him a bit longer to recuperate, but when he's done he turns to you once more.::\r\n\r\nAight, listen $(#bud/sugar) - I think I know about those people. ::He signals the bartender for another drink.::",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -6166,11 +6174,11 @@
         },
         0,
         {
-          "IdRef": 30,
+          "IdRef": 31,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 31,
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -6178,7 +6186,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 290,
+        "ObjectId": 291,
         "Name": "Q",
         "MemberCount": 16,
         "MemberNames": [
@@ -6266,18 +6274,18 @@
         },
         0,
         {
-          "ObjectId": 387,
+          "ObjectId": 388,
           "Value": "::He makes a lenghty pause before contin (1ae28c68-05a9-477b-b285-0f8438072490)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 389,
+          "ObjectId": 390,
           "Value": "::He makes a lenghty pause before continuing.:: This scar, one of them slashed my arm with a knife. And the tattoo... I did that myself. My life was torn apart so I... well... ::He abruptly stops talking and finishes his drink.::",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -6285,10 +6293,6 @@
           "RecordTypeEnum": "ObjectNull"
         },
         5,
-        {
-          "IdRef": 390,
-          "RecordTypeEnum": "MemberReference"
-        },
         {
           "IdRef": 391,
           "RecordTypeEnum": "MemberReference"
@@ -6306,11 +6310,15 @@
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 30,
+          "IdRef": 395,
           "RecordTypeEnum": "MemberReference"
         },
         {
           "IdRef": 31,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -6318,7 +6326,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 300,
+        "ObjectId": 301,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -6382,18 +6390,18 @@
         },
         0,
         {
-          "ObjectId": 397,
+          "ObjectId": 398,
           "Value": "Nope. ::He takes a sip of his drink.:: (92ebc021-d1b5-4e6d-821f-598c14b9c09b)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 399,
+          "ObjectId": 400,
           "Value": "Nope. ::He takes a sip of his drink.::",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -6402,15 +6410,15 @@
         },
         1,
         {
-          "IdRef": 400,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "IdRef": 30,
+          "IdRef": 401,
           "RecordTypeEnum": "MemberReference"
         },
         {
           "IdRef": 31,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -6418,7 +6426,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 319,
+        "ObjectId": 320,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -6482,22 +6490,22 @@
         },
         1,
         {
-          "IdRef": 403,
+          "IdRef": 404,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 404,
+          "ObjectId": 405,
           "Value": "Well, he was wrong... (9bcaa5d8-fb25-421c-9d7b-df439707e18b)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 406,
+          "ObjectId": 407,
           "Value": "Well, he was wrong...",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -6506,27 +6514,27 @@
         },
         0,
         {
-          "IdRef": 30,
+          "IdRef": 31,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 31,
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
       "RecordTypeEnum": "ClassWithMembersAndTypes"
     },
     {
-      "ObjectId": 333,
-      "MetadataId": 98,
+      "ObjectId": 334,
+      "MetadataId": 99,
       "Values": [
         {
-          "ObjectId": 409,
+          "ObjectId": 410,
           "Value": "7384811f-1996-47cc-bfec-37c2ca2ed0c0",
           "RecordTypeEnum": "BinaryObjectString"
         },
         {
-          "ObjectId": 410,
+          "ObjectId": 411,
           "Value": "context.npc_cc_alex_don'tCallMeThat",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -6535,16 +6543,16 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 349,
-      "MetadataId": 98,
+      "ObjectId": 350,
+      "MetadataId": 99,
       "Values": [
         {
-          "ObjectId": 411,
+          "ObjectId": 412,
           "Value": "6d0a9880-1f27-4831-87ea-c775b70b5d18",
           "RecordTypeEnum": "BinaryObjectString"
         },
         {
-          "ObjectId": 412,
+          "ObjectId": 413,
           "Value": "context.npc_cc_alex_met",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -6553,30 +6561,30 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 357,
-      "MetadataId": 54,
+      "ObjectId": 358,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 255,
+          "IdRef": 256,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 414,
+          "ObjectId": 415,
           "Value": "Still, can I just ask you few questions? (47d3d9b9-41fe-418c-969c-62daf2c9e6b7)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 416,
+          "ObjectId": 417,
           "Value": "Still, can I just ask you few questions?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -6596,7 +6604,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 363,
+        "ObjectId": 364,
         "Name": "A3",
         "MemberCount": 13,
         "MemberNames": [
@@ -6656,27 +6664,27 @@
       "LibraryId": 2,
       "Values": [
         {
-          "IdRef": 417,
+          "IdRef": 418,
           "RecordTypeEnum": "MemberReference"
         },
         1,
         {
-          "IdRef": 268,
+          "IdRef": 269,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 419,
+          "ObjectId": 420,
           "Value": "Gene told me you are an Underrail Expres (ed2e260b-0d71-4e7d-bf00-58dc7865e652)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 24,
+          "IdRef": 25,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 421,
+          "ObjectId": 422,
           "Value": "Gene told me you are an Underrail Express train operator. Maybe I've seen you before.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -6695,30 +6703,30 @@
       "RecordTypeEnum": "ClassWithMembersAndTypes"
     },
     {
-      "ObjectId": 364,
-      "MetadataId": 54,
+      "ObjectId": 365,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 422,
+          "IdRef": 423,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 423,
+          "ObjectId": 424,
           "Value": "You ask a lot of questions, do you know  (11fae286-c80a-4460-b254-be36eaac9395)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 425,
+          "ObjectId": 426,
           "Value": "You ask a lot of questions, do you know that?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -6738,7 +6746,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 368,
+        "ObjectId": 369,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -6802,22 +6810,22 @@
         },
         1,
         {
-          "IdRef": 44,
+          "IdRef": 45,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 427,
+          "ObjectId": 428,
           "Value": "What's it to ya, $(#bud/sugar)? You got  (f0a06f06-be69-40bf-9a40-b1b43e80b21a)*",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 429,
+          "ObjectId": 430,
           "Value": "What's it to ya, $(#bud/sugar)? You got a better job to offer, perhaps?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -6826,27 +6834,27 @@
         },
         0,
         {
-          "IdRef": 30,
+          "IdRef": 31,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 31,
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
       "RecordTypeEnum": "ClassWithMembersAndTypes"
     },
     {
-      "ObjectId": 370,
-      "MetadataId": 98,
+      "ObjectId": 371,
+      "MetadataId": 99,
       "Values": [
         {
-          "ObjectId": 432,
+          "ObjectId": 433,
           "Value": "1152cc44-9ad9-44d7-9724-2986e9094b3e",
           "RecordTypeEnum": "BinaryObjectString"
         },
         {
-          "ObjectId": 433,
+          "ObjectId": 434,
           "Value": "context.npc_cc_alex_askWhoHeIs",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -6856,7 +6864,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 381,
+        "ObjectId": 382,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -6920,22 +6928,22 @@
         },
         1,
         {
-          "IdRef": 434,
+          "IdRef": 435,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 435,
+          "ObjectId": 436,
           "Value": "Usually I don't care about people. Peopl (1c1118ff-3826-4a81-b7d5-de6355142b23)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 437,
+          "ObjectId": 438,
           "Value": "Usually I don't care about people. People - they're jerks, scum. People, I meet and forget - their name, appearance, what we talked about... just like I'm going to forget you and this whole stupid conversation. But those two, I remembered those two. For a strange reason, but I did.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -6944,41 +6952,41 @@
         },
         0,
         {
-          "IdRef": 30,
+          "IdRef": 31,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 31,
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
       "RecordTypeEnum": "ClassWithMembersAndTypes"
     },
     {
-      "ObjectId": 390,
-      "MetadataId": 54,
+      "ObjectId": 391,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 440,
+          "IdRef": 441,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 441,
+          "ObjectId": 442,
           "Value": "I'm very sorry about your boy. Things li (5cf6024e-4144-4774-8c66-8603e96c6abf)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 443,
+          "ObjectId": 444,
           "Value": "I'm very sorry about your boy. Things like that shouldn't happen.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -6997,30 +7005,30 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 391,
-      "MetadataId": 54,
+      "ObjectId": 392,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 440,
+          "IdRef": 441,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 445,
+          "ObjectId": 446,
           "Value": "I understand it is a terrible loss, and  (47a09ded-337b-4358-a2d3-55e3b9ad6c05)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 447,
+          "ObjectId": 448,
           "Value": "I understand it is a terrible loss, and it saddens me to hear stories like this. But, you have to be strong. Help others - help yourself! Don't drown your life in liquor.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -7039,30 +7047,30 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 392,
-      "MetadataId": 54,
+      "ObjectId": 393,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 440,
+          "IdRef": 441,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 449,
+          "ObjectId": 450,
           "Value": "So you get yourself wasted every chance  (a58249fd-cccd-4a66-8798-f48a16955079)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 451,
+          "ObjectId": 452,
           "Value": "So you get yourself wasted every chance you get? Is that the man your son would've wanted you to become?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -7081,30 +7089,30 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 393,
-      "MetadataId": 54,
+      "ObjectId": 394,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 440,
+          "IdRef": 441,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 453,
+          "ObjectId": 454,
           "Value": "Your son died, yet you are still alive.  (149a5bf2-9c77-427d-9039-6a492bb31f4c)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 455,
+          "ObjectId": 456,
           "Value": "Your son died, yet you are still alive. Maybe you were more concerned whether you were going to survive, not little Tim.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -7123,30 +7131,30 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 394,
-      "MetadataId": 54,
+      "ObjectId": 395,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 440,
+          "IdRef": 441,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 457,
+          "ObjectId": 458,
           "Value": "I have no comment. (c959b2ec-1dce-49a8-88aa-5622a5b8fcc7)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 459,
+          "ObjectId": 460,
           "Value": "I have no comment.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -7165,30 +7173,30 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 400,
-      "MetadataId": 54,
+      "ObjectId": 401,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 460,
+          "IdRef": 461,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 461,
+          "ObjectId": 462,
           "Value": "Why not? (1a1b080c-5838-42c6-93d0-7ed4fa1adff3)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 463,
+          "ObjectId": 464,
           "Value": "Why not?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -7208,7 +7216,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 403,
+        "ObjectId": 404,
         "Name": "Q",
         "MemberCount": 13,
         "MemberNames": [
@@ -7278,18 +7286,18 @@
         },
         0,
         {
-          "ObjectId": 464,
+          "ObjectId": 465,
           "Value": "::Gorge goes for the glass, but freezes  (ec2dbc02-4fd9-43f1-a995-1dca2df248e8)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 466,
+          "ObjectId": 467,
           "Value": "::Gorge goes for the glass, but freezes after a second. He remains like that for a few moments, then faces you again.::\r\n\r\nHe was wrong, aight. It... wasn't my brother. It was my son.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -7298,33 +7306,33 @@
         },
         2,
         {
-          "IdRef": 467,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
           "IdRef": 468,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 30,
+          "IdRef": 469,
           "RecordTypeEnum": "MemberReference"
         },
         {
           "IdRef": 31,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
       "RecordTypeEnum": "ClassWithMembersAndTypes"
     },
     {
-      "ObjectId": 417,
-      "MetadataId": 37,
+      "ObjectId": 418,
+      "MetadataId": 38,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 471,
+          "ObjectId": 472,
           "Value": "context.npc_cc_gene_toldAlexIdentity",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -7335,7 +7343,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 422,
+        "ObjectId": 423,
         "Name": "Q",
         "MemberCount": 13,
         "MemberNames": [
@@ -7405,18 +7413,18 @@
         },
         0,
         {
-          "ObjectId": 472,
+          "ObjectId": 473,
           "Value": "Well, $(#bud/sugar), so do you. Now, wha (057111f3-8102-4fa5-9a36-6161982bdc99)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 474,
+          "ObjectId": 475,
           "Value": "Well, $(#bud/sugar), so do you. Now, what did you say about me being familiar?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -7425,19 +7433,19 @@
         },
         2,
         {
-          "IdRef": 165,
+          "IdRef": 166,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 476,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "IdRef": 30,
+          "IdRef": 477,
           "RecordTypeEnum": "MemberReference"
         },
         {
           "IdRef": 31,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -7445,7 +7453,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 434,
+        "ObjectId": 435,
         "Name": "Q",
         "MemberCount": 13,
         "MemberNames": [
@@ -7515,18 +7523,18 @@
         },
         0,
         {
-          "ObjectId": 479,
+          "ObjectId": 480,
           "Value": "::He continues after his drink arrives.: (1345a4ce-cbf4-49a0-867b-6db697d7c433)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 481,
+          "ObjectId": 482,
           "Value": "::He continues after his drink arrives.:: Aight, let's get things rolling. I remember first seeing them right here in Core City. I was chillin' by my train when they approached me and asked where the train was headed. I told them to Rail Crossing, and they boarded the train. I heard them mention SGS at some point, can't be bothered to remember exactly when, but I think you and I are thinking of the same people.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -7535,19 +7543,19 @@
         },
         2,
         {
-          "IdRef": 482,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
           "IdRef": 483,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 30,
+          "IdRef": 484,
           "RecordTypeEnum": "MemberReference"
         },
         {
           "IdRef": 31,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -7555,7 +7563,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 440,
+        "ObjectId": 441,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -7619,22 +7627,22 @@
         },
         1,
         {
-          "IdRef": 486,
+          "IdRef": 487,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 487,
+          "ObjectId": 488,
           "Value": "::Before you even get the chance to spea (520e7f45-a9dc-4691-a2af-9197bdefdbd2)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 489,
+          "ObjectId": 490,
           "Value": "::Before you even get the chance to speak your thoughts, Gorge angrily interrupts you.::\r\n\r\nWhatever you were gonna say - I don't care. It's meaningless. All this was meaningless. Now you can politely DROP OFF! And if you ask me about my son, scar, tattoo or... or anything like that again, I'm gonna smash your freakin' windpipe. You dig that, $(#bud/sugar)?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -7643,11 +7651,11 @@
         },
         0,
         {
-          "IdRef": 30,
+          "IdRef": 31,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 31,
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -7655,7 +7663,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 460,
+        "ObjectId": 461,
         "Name": "Q",
         "MemberCount": 15,
         "MemberNames": [
@@ -7737,22 +7745,22 @@
         },
         0,
         {
-          "ObjectId": 492,
+          "ObjectId": 493,
           "Value": "Why should I? (90e78fca-a27e-4cb8-b3fd-1a960d7bfe84)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         1,
         {
-          "IdRef": 493,
+          "IdRef": 494,
           "RecordTypeEnum": "MemberReference"
         },
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 495,
+          "ObjectId": 496,
           "Value": "Why should I?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -7760,10 +7768,6 @@
           "RecordTypeEnum": "ObjectNull"
         },
         3,
-        {
-          "IdRef": 496,
-          "RecordTypeEnum": "MemberReference"
-        },
         {
           "IdRef": 497,
           "RecordTypeEnum": "MemberReference"
@@ -7773,41 +7777,45 @@
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 30,
+          "IdRef": 499,
           "RecordTypeEnum": "MemberReference"
         },
         {
           "IdRef": 31,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
       "RecordTypeEnum": "ClassWithMembersAndTypes"
     },
     {
-      "ObjectId": 467,
-      "MetadataId": 54,
+      "ObjectId": 468,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 501,
+          "IdRef": 502,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 502,
+          "ObjectId": 503,
           "Value": "I'm very sorry to hear that. (13474aa3-be4c-4bf4-99c8-87a0fe71c1d4)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 504,
+          "ObjectId": 505,
           "Value": "I'm very sorry to hear that.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -7826,30 +7834,30 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 468,
-      "MetadataId": 54,
+      "ObjectId": 469,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 505,
+          "IdRef": 506,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 506,
+          "ObjectId": 507,
           "Value": "Can you tell me more about what happened (d3ffd3b5-7670-4794-b701-18c917903d02)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 508,
+          "ObjectId": 509,
           "Value": "Can you tell me more about what happened?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -7868,30 +7876,30 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 476,
-      "MetadataId": 54,
+      "ObjectId": 477,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 272,
+          "IdRef": 273,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 510,
+          "ObjectId": 511,
           "Value": "Forget about it. I had other questions f (ec19c603-0f84-4758-bfba-98b2c402736c)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 24,
+          "IdRef": 25,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 512,
+          "ObjectId": 513,
           "Value": "Forget about it. I had other questions for you.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -7910,30 +7918,30 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 482,
-      "MetadataId": 54,
+      "ObjectId": 483,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 513,
+          "IdRef": 514,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 514,
+          "ObjectId": 515,
           "Value": "Rail Crossing, why would they go to Rail (4ca71009-8fa2-4dac-a661-aa1ad8a7537f)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 516,
+          "ObjectId": 517,
           "Value": "Rail Crossing, why would they go to Rail Crossing?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -7952,30 +7960,30 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 483,
-      "MetadataId": 54,
+      "ObjectId": 484,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 517,
+          "IdRef": 518,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 518,
+          "ObjectId": 519,
           "Value": "Go on... (b1081f4f-5c38-4271-b4b2-2c56c09447b9)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 520,
+          "ObjectId": 521,
           "Value": "Go on...",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -7995,7 +8003,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 486,
+        "ObjectId": 487,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -8059,22 +8067,22 @@
         },
         1,
         {
-          "IdRef": 44,
+          "IdRef": 45,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 522,
+          "ObjectId": 523,
           "Value": "::He signals the bartender for another d (e0b7ca45-3517-4d51-a025-c5be60d01707)*",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 524,
+          "ObjectId": 525,
           "Value": "::He signals the bartender for another drink, then turns to you?::\r\n\r\nGet it? Aight?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -8083,27 +8091,27 @@
         },
         0,
         {
-          "IdRef": 30,
+          "IdRef": 31,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 31,
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
       "RecordTypeEnum": "ClassWithMembersAndTypes"
     },
     {
-      "ObjectId": 493,
-      "MetadataId": 98,
+      "ObjectId": 494,
+      "MetadataId": 99,
       "Values": [
         {
-          "ObjectId": 527,
+          "ObjectId": 528,
           "Value": "f639bae3-2e40-4106-885b-e873c342e0c1",
           "RecordTypeEnum": "BinaryObjectString"
         },
         {
-          "ObjectId": 528,
+          "ObjectId": 529,
           "Value": "context.npc_cc_alex_askTattoo",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -8112,30 +8120,30 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 496,
-      "MetadataId": 54,
+      "ObjectId": 497,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 529,
+          "IdRef": 530,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 530,
+          "ObjectId": 531,
           "Value": "Because I asked you nicely. (5ccdf15d-9087-498f-a979-f0bf8a019610)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 532,
+          "ObjectId": 533,
           "Value": "Because I asked you nicely.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -8154,30 +8162,30 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 497,
-      "MetadataId": 54,
+      "ObjectId": 498,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 529,
+          "IdRef": 530,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 534,
+          "ObjectId": 535,
           "Value": "Because I really want to know. (98097b8c-7374-4808-98c2-b1a057162362)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 536,
+          "ObjectId": 537,
           "Value": "Because I really want to know.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -8196,30 +8204,30 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 498,
-      "MetadataId": 54,
+      "ObjectId": 499,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 272,
+          "IdRef": 273,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 538,
+          "ObjectId": 539,
           "Value": "Let's forget about this. I have more imp (13df8c36-49be-4d42-9005-c8415c93dd9f)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 540,
+          "ObjectId": 541,
           "Value": "Let's forget about this. I have more important things to ask you.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -8239,7 +8247,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 501,
+        "ObjectId": 502,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -8303,18 +8311,18 @@
         },
         0,
         {
-          "ObjectId": 541,
+          "ObjectId": 542,
           "Value": "I gain nothing out of you being sorry, s (24de6127-8b15-4719-bcbb-7cc4597da6e8)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 543,
+          "ObjectId": 544,
           "Value": "I gain nothing out of you being sorry, so spare me.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -8323,15 +8331,15 @@
         },
         1,
         {
-          "IdRef": 468,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "IdRef": 30,
+          "IdRef": 469,
           "RecordTypeEnum": "MemberReference"
         },
         {
           "IdRef": 31,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -8339,7 +8347,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 505,
+        "ObjectId": 506,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -8403,22 +8411,22 @@
         },
         1,
         {
-          "IdRef": 44,
+          "IdRef": 45,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 548,
+          "ObjectId": 549,
           "Value": "Look, you ask too many questions, $(#bud (579342c7-371f-41d2-9c95-1cd4da18a3aa)*",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 550,
+          "ObjectId": 551,
           "Value": "Look, you ask too many questions, $(#bud/sugar). I don't know why I'm even freakin' talking to you.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -8427,11 +8435,11 @@
         },
         0,
         {
-          "IdRef": 30,
+          "IdRef": 31,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 31,
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -8439,7 +8447,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 513,
+        "ObjectId": 514,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -8503,22 +8511,22 @@
         },
         1,
         {
-          "IdRef": 517,
+          "IdRef": 518,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 554,
+          "ObjectId": 555,
           "Value": "How would I know that, $(#bud/sugar)? Al (0d0cda13-0a9c-481f-aceb-3bc3959ebbeb)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 556,
+          "ObjectId": 557,
           "Value": "How would I know that, $(#bud/sugar)? All I knew about them was that they were headed for Rail Crossing - that's it.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -8527,11 +8535,11 @@
         },
         0,
         {
-          "IdRef": 30,
+          "IdRef": 31,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 31,
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -8539,7 +8547,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 517,
+        "ObjectId": 518,
         "Name": "Q",
         "MemberCount": 13,
         "MemberNames": [
@@ -8609,18 +8617,18 @@
         },
         0,
         {
-          "ObjectId": 559,
+          "ObjectId": 560,
           "Value": "So we arrived at the Rail Crossing stati (51b17f27-2e86-4569-9117-63aea5642571)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 561,
+          "ObjectId": 562,
           "Value": "So we arrived at the Rail Crossing station. I walked outside to stretch my freakin' legs when I saw those two friends of yours being harassed by some gang at the station, which was mostly empty at the time. So, these damn gangsters pulled out their weapons and forced the duo into the caves north. Dragged them, actually. That was the last I've seen of them.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -8629,19 +8637,19 @@
         },
         2,
         {
-          "IdRef": 562,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
           "IdRef": 563,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 30,
+          "IdRef": 564,
           "RecordTypeEnum": "MemberReference"
         },
         {
           "IdRef": 31,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -8649,7 +8657,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 529,
+        "ObjectId": 530,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -8713,22 +8721,22 @@
         },
         1,
         {
-          "IdRef": 44,
+          "IdRef": 45,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 567,
+          "ObjectId": 568,
           "Value": "Well, tough luck. Any more questions? (8cb105dc-d870-4800-bb03-2cd977290c7f)*",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 23,
+          "IdRef": 24,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 569,
+          "ObjectId": 570,
           "Value": "Well, tough luck. Any more questions?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -8737,41 +8745,41 @@
         },
         0,
         {
-          "IdRef": 30,
+          "IdRef": 31,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 31,
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
       "RecordTypeEnum": "ClassWithMembersAndTypes"
     },
     {
-      "ObjectId": 562,
-      "MetadataId": 54,
+      "ObjectId": 563,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 572,
+          "IdRef": 573,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 573,
+          "ObjectId": 574,
           "Value": "Why didn't you do anything to help them? (df024884-4f41-4539-8467-5e708968b89e)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 575,
+          "ObjectId": 576,
           "Value": "Why didn't you do anything to help them? How could you have just stood there and watched all that?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -8790,30 +8798,30 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 563,
-      "MetadataId": 54,
+      "ObjectId": 564,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 576,
+          "IdRef": 577,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 577,
+          "ObjectId": 578,
           "Value": "Can you tell me anything about the gang  (22530987-7f2a-4b4f-bc57-4c2896238935)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 579,
+          "ObjectId": 580,
           "Value": "Can you tell me anything about the gang that kidnapped them?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -8833,7 +8841,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 572,
+        "ObjectId": 573,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -8897,18 +8905,18 @@
         },
         0,
         {
-          "ObjectId": 580,
+          "ObjectId": 581,
           "Value": "::He chuckles.:: Help them? Don't be stu (2664247e-b590-4e18-80b4-637196139344)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 582,
+          "ObjectId": 583,
           "Value": "::He chuckles.:: Help them? Don't be stupid, $(#bud/sister). Every day I see people getting killed like pigs, or beaten or, or pulled away somewhere into the darkness. If I tried to help every single poor soul I'd be a goner by now. Dead. Ice cold, $(#bud/sister). I mind my own business and let the world do its freakin' thing.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -8917,15 +8925,15 @@
         },
         1,
         {
-          "IdRef": 563,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "IdRef": 30,
+          "IdRef": 564,
           "RecordTypeEnum": "MemberReference"
         },
         {
           "IdRef": 31,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -8933,7 +8941,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 576,
+        "ObjectId": 577,
         "Name": "Q",
         "MemberCount": 13,
         "MemberNames": [
@@ -9003,8 +9011,59 @@
         },
         0,
         {
-          "ObjectId": 586,
+          "ObjectId": 587,
           "Value": "Gangsters like any other gangsters - fil (e61532e7-5a69-40e9-b270-47d0d4685094)",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        1,
+        {
+          "IdRef": 29,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 589,
+          "Value": "Gangsters like any other gangsters - filthy, dumb and packing major firepower. ::He laughs.:: Hmmm - actually, those folks had chemical pistols as far as I can remember. That's the only thing I can tell you about them.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        2,
+        {
+          "IdRef": 590,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 591,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 31,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 32,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ObjectId": 590,
+      "MetadataId": 55,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        1,
+        {
+          "IdRef": 594,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 595,
+          "Value": "You just told me you don't care about pe (e2785329-4c4f-4775-a6e8-84a75abafeac)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
@@ -9014,58 +9073,7 @@
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 588,
-          "Value": "Gangsters like any other gangsters - filthy, dumb and packing major firepower. ::He laughs.:: Hmmm - actually, those folks had chemical pistols as far as I can remember. That's the only thing I can tell you about them.",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        {
-          "RecordTypeEnum": "ObjectNull"
-        },
-        2,
-        {
-          "IdRef": 589,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "IdRef": 590,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "IdRef": 30,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "IdRef": 31,
-          "RecordTypeEnum": "MemberReference"
-        }
-      ],
-      "RecordTypeEnum": "ClassWithMembersAndTypes"
-    },
-    {
-      "ObjectId": 589,
-      "MetadataId": 54,
-      "Values": [
-        {
-          "RecordTypeEnum": "ObjectNull"
-        },
-        1,
-        {
-          "IdRef": 593,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "ObjectId": 594,
-          "Value": "You just told me you don't care about pe (e2785329-4c4f-4775-a6e8-84a75abafeac)",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        0,
-        1,
-        {
-          "IdRef": 27,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "ObjectId": 596,
+          "ObjectId": 597,
           "Value": "You just told me you don't care about people and forget everyone, yet you remembered Terry and Lora. How come?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -9084,30 +9092,30 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 590,
-      "MetadataId": 54,
+      "ObjectId": 591,
+      "MetadataId": 55,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         1,
         {
-          "IdRef": 597,
+          "IdRef": 598,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 598,
+          "ObjectId": 599,
           "Value": "Is that all you know? (9a081d18-354e-4366-b90c-b3e67ac2048c)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 27,
+          "IdRef": 28,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 600,
+          "ObjectId": 601,
           "Value": "Is that all you know?",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -9127,7 +9135,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 593,
+        "ObjectId": 594,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -9191,18 +9199,18 @@
         },
         0,
         {
-          "ObjectId": 601,
+          "ObjectId": 602,
           "Value": "::He pauses to think, then takes a solid (fbab3128-41f1-4799-994e-3d41a9469172)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 27,
+          "IdRef": 28,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 603,
+          "ObjectId": 604,
           "Value": "::He pauses to think, then takes a solid gulp of his drink.::\r\n\r\nI don't know. I usually get sick when I see people care so much about each other, like those two did. At least from what I saw at the station. Maybe it's the negative emotion I felt that got engraved in my mind. I don't know. Don't care, though.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -9211,15 +9219,15 @@
         },
         1,
         {
-          "IdRef": 590,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "IdRef": 30,
+          "IdRef": 591,
           "RecordTypeEnum": "MemberReference"
         },
         {
           "IdRef": 31,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -9227,7 +9235,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 597,
+        "ObjectId": 598,
         "Name": "Q",
         "MemberCount": 12,
         "MemberNames": [
@@ -9291,22 +9299,22 @@
         },
         1,
         {
-          "IdRef": 44,
+          "IdRef": 45,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 608,
+          "ObjectId": 609,
           "Value": "::He finishes his drink.:: That is all.  (d0acde46-e47c-4517-aee4-f0aaffe8c3b6)*",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 610,
+          "ObjectId": 611,
           "Value": "::He finishes his drink.:: That is all. Hope that's what you wanted, $(#bud/sister), and to give you some advice while we're here: Forget about your friends - they are probably rotting somewhere in the caves right now. I've seen a lot of that stuff and... just forget about them.",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -9315,11 +9323,11 @@
         },
         0,
         {
-          "IdRef": 30,
+          "IdRef": 31,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 31,
+          "IdRef": 32,
           "RecordTypeEnum": "MemberReference"
         }
       ],

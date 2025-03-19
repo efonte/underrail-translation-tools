@@ -1,5 +1,5 @@
 {
-  "Header": "F9538B831F363243BAAE0D17865D0854D16588D54C000000",
+  "Header": "F9538B831F363243BAAE0D17865D0854B46AF3C961000000",
   "Records": [
     {
       "RootId": 1,
@@ -17,7 +17,7 @@
       "ClassInfo": {
         "ObjectId": 1,
         "Name": "DM",
-        "MemberCount": 31,
+        "MemberCount": 32,
         "MemberNames": [
           "DM:DN",
           "DM:DD",
@@ -45,6 +45,7 @@
           "DM:LL:19",
           "DM:LL:20",
           "DM:LL:21",
+          "DM:LL:22",
           "DM:A:Count",
           "DM:A:0",
           "DM:A:1",
@@ -58,6 +59,7 @@
           "Object",
           "Class",
           "Primitive",
+          "String",
           "String",
           "String",
           "String",
@@ -116,6 +118,7 @@
           null,
           null,
           null,
+          null,
           "Int32",
           {
             "TypeName": "A4",
@@ -143,7 +146,7 @@
           "IdRef": 4,
           "RecordTypeEnum": "MemberReference"
         },
-        22,
+        23,
         {
           "ObjectId": 5,
           "Value": "English",
@@ -254,13 +257,18 @@
           "Value": "English",
           "RecordTypeEnum": "BinaryObjectString"
         },
+        {
+          "ObjectId": 27,
+          "Value": "English",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
         2,
         {
-          "IdRef": 27,
+          "IdRef": 28,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         },
         true,
@@ -304,11 +312,11 @@
         },
         1,
         {
-          "IdRef": 29,
+          "IdRef": 30,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 30,
+          "ObjectId": 31,
           "Value": "Start Element",
           "RecordTypeEnum": "BinaryObjectString"
         }
@@ -317,7 +325,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 27,
+        "ObjectId": 28,
         "Name": "A4",
         "MemberCount": 2,
         "MemberNames": [
@@ -338,7 +346,7 @@
       "LibraryId": 2,
       "Values": [
         {
-          "ObjectId": 31,
+          "ObjectId": 32,
           "Value": "speaker",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -349,11 +357,11 @@
       "RecordTypeEnum": "ClassWithMembersAndTypes"
     },
     {
-      "ObjectId": 28,
-      "MetadataId": 27,
+      "ObjectId": 29,
+      "MetadataId": 28,
       "Values": [
         {
-          "ObjectId": 32,
+          "ObjectId": 33,
           "Value": "player",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -365,9 +373,9 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 29,
+        "ObjectId": 30,
         "Name": "Q",
-        "MemberCount": 31,
+        "MemberCount": 32,
         "MemberNames": [
           "CE:CC",
           "CE:PNS:Count",
@@ -397,6 +405,7 @@
           "SE:LT:Count",
           "SE:LT:0:Key",
           "SE:LT:0:Value",
+          "SE:UJ",
           "Q:PA:Count",
           "Q:Q",
           "Q:A"
@@ -432,6 +441,7 @@
           "Primitive",
           "String",
           "String",
+          "Object",
           "Primitive",
           "Class",
           "Class"
@@ -528,6 +538,7 @@
           "Int32",
           null,
           null,
+          null,
           "Int32",
           {
             "TypeName": "A4",
@@ -545,10 +556,6 @@
           "RecordTypeEnum": "ObjectNull"
         },
         20,
-        {
-          "IdRef": 33,
-          "RecordTypeEnum": "MemberReference"
-        },
         {
           "IdRef": 34,
           "RecordTypeEnum": "MemberReference"
@@ -626,120 +633,39 @@
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 53,
+          "IdRef": 53,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 54,
           "Value": " (f525accc-296c-4ccd-9395-d3a675290532)*",
           "RecordTypeEnum": "BinaryObjectString"
         },
         1,
         {
-          "IdRef": 54,
+          "IdRef": 55,
           "RecordTypeEnum": "MemberReference"
         },
         1,
         {
-          "IdRef": 26,
+          "IdRef": 27,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 56,
+          "ObjectId": 57,
           "Value": "",
           "RecordTypeEnum": "BinaryObjectString"
         },
-        0,
         {
-          "IdRef": 27,
-          "RecordTypeEnum": "MemberReference"
+          "RecordTypeEnum": "ObjectNull"
         },
+        0,
         {
           "IdRef": 28,
           "RecordTypeEnum": "MemberReference"
-        }
-      ],
-      "RecordTypeEnum": "ClassWithMembersAndTypes"
-    },
-    {
-      "ClassInfo": {
-        "ObjectId": 33,
-        "Name": "Q",
-        "MemberCount": 10,
-        "MemberNames": [
-          "CE:CC",
-          "CE:PNS:Count",
-          "CE:N",
-          "SE:RA:Count",
-          "SE:LT:Count",
-          "SE:LT:0:Key",
-          "SE:LT:0:Value",
-          "Q:PA:Count",
-          "Q:Q",
-          "Q:A"
-        ]
-      },
-      "MemberTypeInfo": {
-        "BinaryTypeEnums": [
-          "Class",
-          "Primitive",
-          "String",
-          "Primitive",
-          "Primitive",
-          "String",
-          "String",
-          "Primitive",
-          "Class",
-          "Class"
-        ],
-        "AdditionalInfos": [
-          {
-            "TypeName": "CAC",
-            "LibraryId": 2
-          },
-          "Int32",
-          null,
-          "Int32",
-          "Int32",
-          null,
-          null,
-          "Int32",
-          {
-            "TypeName": "A4",
-            "LibraryId": 2
-          },
-          {
-            "TypeName": "A4",
-            "LibraryId": 2
-          }
-        ]
-      },
-      "LibraryId": 2,
-      "Values": [
-        {
-          "IdRef": 59,
-          "RecordTypeEnum": "MemberReference"
-        },
-        0,
-        {
-          "ObjectId": 60,
-          "Value": "Never trusted that psiworker. (5a71f45a-a553-4c02-8836-49639aa3b7f8)",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        0,
-        1,
-        {
-          "IdRef": 5,
-          "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 62,
-          "Value": "Never trusted that psiworker.",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        0,
-        {
-          "IdRef": 27,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -749,7 +675,7 @@
       "ClassInfo": {
         "ObjectId": 34,
         "Name": "Q",
-        "MemberCount": 10,
+        "MemberCount": 11,
         "MemberNames": [
           "CE:CC",
           "CE:PNS:Count",
@@ -758,6 +684,7 @@
           "SE:LT:Count",
           "SE:LT:0:Key",
           "SE:LT:0:Value",
+          "SE:UJ",
           "Q:PA:Count",
           "Q:Q",
           "Q:A"
@@ -772,6 +699,7 @@
           "Primitive",
           "String",
           "String",
+          "Object",
           "Primitive",
           "Class",
           "Class"
@@ -787,6 +715,7 @@
           "Int32",
           null,
           null,
+          null,
           "Int32",
           {
             "TypeName": "A4",
@@ -801,34 +730,36 @@
       "LibraryId": 2,
       "Values": [
         {
-          "IdRef": 65,
+          "IdRef": 60,
           "RecordTypeEnum": "MemberReference"
         },
         0,
         {
-          "ObjectId": 66,
-          "Value": "Did he... turn into an old man? (3b7cc1c7-cf6c-4d6b-81bd-c267abd66f78)",
+          "ObjectId": 61,
+          "Value": "Never trusted that psiworker. (5a71f45a-a553-4c02-8836-49639aa3b7f8)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "ObjectId": 67,
-          "Value": "English",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        {
-          "ObjectId": 68,
-          "Value": "Did he... turn into an old man?",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        0,
-        {
-          "IdRef": 69,
+          "IdRef": 6,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 70,
+          "ObjectId": 63,
+          "Value": "Never trusted that psiworker.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        0,
+        {
+          "IdRef": 28,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -838,7 +769,7 @@
       "ClassInfo": {
         "ObjectId": 35,
         "Name": "Q",
-        "MemberCount": 10,
+        "MemberCount": 11,
         "MemberNames": [
           "CE:CC",
           "CE:PNS:Count",
@@ -847,6 +778,7 @@
           "SE:LT:Count",
           "SE:LT:0:Key",
           "SE:LT:0:Value",
+          "SE:UJ",
           "Q:PA:Count",
           "Q:Q",
           "Q:A"
@@ -854,23 +786,28 @@
       },
       "MemberTypeInfo": {
         "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "String",
+          "Primitive",
+          "Primitive",
+          "String",
+          "String",
           "Object",
-          "Primitive",
-          "String",
-          "Primitive",
-          "Primitive",
-          "String",
-          "String",
           "Primitive",
           "Class",
           "Class"
         ],
         "AdditionalInfos": [
-          null,
+          {
+            "TypeName": "CAC",
+            "LibraryId": 2
+          },
           "Int32",
           null,
           "Int32",
           "Int32",
+          null,
           null,
           null,
           "Int32",
@@ -887,32 +824,37 @@
       "LibraryId": 2,
       "Values": [
         {
-          "RecordTypeEnum": "ObjectNull"
+          "IdRef": 66,
+          "RecordTypeEnum": "MemberReference"
         },
         0,
         {
-          "ObjectId": 71,
-          "Value": "Yo. (342cb567-0d0b-445f-bcad-0569aebf5368)",
+          "ObjectId": 67,
+          "Value": "Did he... turn into an old man? (3b7cc1c7-cf6c-4d6b-81bd-c267abd66f78)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 26,
-          "RecordTypeEnum": "MemberReference"
+          "ObjectId": 68,
+          "Value": "English",
+          "RecordTypeEnum": "BinaryObjectString"
         },
         {
-          "ObjectId": 73,
-          "Value": "Yo.",
+          "ObjectId": 69,
+          "Value": "Did he... turn into an old man?",
           "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
         },
         0,
         {
-          "IdRef": 27,
+          "IdRef": 70,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 28,
+          "IdRef": 71,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -928,10 +870,10 @@
           "CE:PNS:Count",
           "CE:N",
           "SE:RA:Count",
-          "SE:RA:0",
           "SE:LT:Count",
           "SE:LT:0:Key",
           "SE:LT:0:Value",
+          "SE:UJ",
           "Q:PA:Count",
           "Q:Q",
           "Q:A"
@@ -943,10 +885,10 @@
           "Primitive",
           "String",
           "Primitive",
-          "Class",
           "Primitive",
           "String",
           "String",
+          "Object",
           "Primitive",
           "Class",
           "Class"
@@ -956,11 +898,8 @@
           "Int32",
           null,
           "Int32",
-          {
-            "TypeName": "SBFV",
-            "LibraryId": 2
-          },
           "Int32",
+          null,
           null,
           null,
           "Int32",
@@ -981,32 +920,31 @@
         },
         0,
         {
-          "ObjectId": 76,
-          "Value": "The Arena is gonna be full for the Smash (28fa43c0-b836-4d8c-ba52-f8bc65ebe897)",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        1,
-        {
-          "IdRef": 77,
-          "RecordTypeEnum": "MemberReference"
-        },
-        1,
-        {
-          "IdRef": 26,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "ObjectId": 79,
-          "Value": "The Arena is gonna be full for the Smasher Bros fight.",
+          "ObjectId": 72,
+          "Value": "Yo. (342cb567-0d0b-445f-bcad-0569aebf5368)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
+        1,
         {
           "IdRef": 27,
           "RecordTypeEnum": "MemberReference"
         },
         {
+          "ObjectId": 74,
+          "Value": "Yo.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        0,
+        {
           "IdRef": 28,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -1016,7 +954,7 @@
       "ClassInfo": {
         "ObjectId": 37,
         "Name": "Q",
-        "MemberCount": 11,
+        "MemberCount": 12,
         "MemberNames": [
           "CE:CC",
           "CE:PNS:Count",
@@ -1026,6 +964,7 @@
           "SE:LT:Count",
           "SE:LT:0:Key",
           "SE:LT:0:Value",
+          "SE:UJ",
           "Q:PA:Count",
           "Q:Q",
           "Q:A"
@@ -1041,6 +980,7 @@
           "Primitive",
           "String",
           "String",
+          "Object",
           "Primitive",
           "Class",
           "Class"
@@ -1055,6 +995,7 @@
             "LibraryId": 2
           },
           "Int32",
+          null,
           null,
           null,
           "Int32",
@@ -1075,32 +1016,35 @@
         },
         0,
         {
-          "ObjectId": 82,
-          "Value": "Me and my family often visit the Arena. (5dda1ae6-8e4c-4c81-aec5-ec4143566252)",
+          "ObjectId": 77,
+          "Value": "The Arena is gonna be full for the Smash (28fa43c0-b836-4d8c-ba52-f8bc65ebe897)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         1,
         {
-          "IdRef": 83,
+          "IdRef": 78,
           "RecordTypeEnum": "MemberReference"
         },
         1,
-        {
-          "IdRef": 26,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "ObjectId": 85,
-          "Value": "Me and my family often visit the Arena.",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        0,
         {
           "IdRef": 27,
           "RecordTypeEnum": "MemberReference"
         },
         {
+          "ObjectId": 80,
+          "Value": "The Arena is gonna be full for the Smasher Bros fight.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        0,
+        {
           "IdRef": 28,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -1110,15 +1054,17 @@
       "ClassInfo": {
         "ObjectId": 38,
         "Name": "Q",
-        "MemberCount": 10,
+        "MemberCount": 12,
         "MemberNames": [
           "CE:CC",
           "CE:PNS:Count",
           "CE:N",
           "SE:RA:Count",
+          "SE:RA:0",
           "SE:LT:Count",
           "SE:LT:0:Key",
           "SE:LT:0:Value",
+          "SE:UJ",
           "Q:PA:Count",
           "Q:Q",
           "Q:A"
@@ -1126,26 +1072,30 @@
       },
       "MemberTypeInfo": {
         "BinaryTypeEnums": [
+          "Object",
+          "Primitive",
+          "String",
+          "Primitive",
           "Class",
           "Primitive",
           "String",
-          "Primitive",
-          "Primitive",
           "String",
-          "String",
+          "Object",
           "Primitive",
           "Class",
           "Class"
         ],
         "AdditionalInfos": [
+          null,
+          "Int32",
+          null,
+          "Int32",
           {
-            "TypeName": "CAC",
+            "TypeName": "SBFV",
             "LibraryId": 2
           },
           "Int32",
           null,
-          "Int32",
-          "Int32",
           null,
           null,
           "Int32",
@@ -1162,33 +1112,39 @@
       "LibraryId": 2,
       "Values": [
         {
-          "IdRef": 88,
-          "RecordTypeEnum": "MemberReference"
+          "RecordTypeEnum": "ObjectNull"
         },
         0,
         {
-          "ObjectId": 89,
-          "Value": "Foundry's mine has recently been reopene (31b744c8-5d9e-4cc8-a80d-adff8cdc844a)",
+          "ObjectId": 83,
+          "Value": "Me and my family often visit the Arena. (5dda1ae6-8e4c-4c81-aec5-ec4143566252)",
           "RecordTypeEnum": "BinaryObjectString"
         },
-        0,
         1,
         {
-          "IdRef": 24,
+          "IdRef": 84,
           "RecordTypeEnum": "MemberReference"
         },
-        {
-          "ObjectId": 91,
-          "Value": "Foundry's mine has recently been reopened. Don't know why they even closed it in the first place.",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        0,
+        1,
         {
           "IdRef": 27,
           "RecordTypeEnum": "MemberReference"
         },
         {
+          "ObjectId": 86,
+          "Value": "Me and my family often visit the Arena.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        0,
+        {
           "IdRef": 28,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -1198,7 +1154,7 @@
       "ClassInfo": {
         "ObjectId": 39,
         "Name": "Q",
-        "MemberCount": 10,
+        "MemberCount": 11,
         "MemberNames": [
           "CE:CC",
           "CE:PNS:Count",
@@ -1207,6 +1163,7 @@
           "SE:LT:Count",
           "SE:LT:0:Key",
           "SE:LT:0:Value",
+          "SE:UJ",
           "Q:PA:Count",
           "Q:Q",
           "Q:A"
@@ -1221,182 +1178,7 @@
           "Primitive",
           "String",
           "String",
-          "Primitive",
-          "Class",
-          "Class"
-        ],
-        "AdditionalInfos": [
-          {
-            "TypeName": "BC",
-            "LibraryId": 2
-          },
-          "Int32",
-          null,
-          "Int32",
-          "Int32",
-          null,
-          null,
-          "Int32",
-          {
-            "TypeName": "A4",
-            "LibraryId": 2
-          },
-          {
-            "TypeName": "A4",
-            "LibraryId": 2
-          }
-        ]
-      },
-      "LibraryId": 2,
-      "Values": [
-        {
-          "IdRef": 94,
-          "RecordTypeEnum": "MemberReference"
-        },
-        0,
-        {
-          "ObjectId": 95,
-          "Value": "I hope we captured some of those Faceles (796858ea-ef36-4bee-a931-a4cfccb309d0)",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        0,
-        1,
-        {
-          "IdRef": 13,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "ObjectId": 97,
-          "Value": "I hope we captured some of those Faceless. Arena meat! ::Laughs.::",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        0,
-        {
-          "IdRef": 27,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "IdRef": 28,
-          "RecordTypeEnum": "MemberReference"
-        }
-      ],
-      "RecordTypeEnum": "ClassWithMembersAndTypes"
-    },
-    {
-      "ClassInfo": {
-        "ObjectId": 40,
-        "Name": "Q",
-        "MemberCount": 10,
-        "MemberNames": [
-          "CE:CC",
-          "CE:PNS:Count",
-          "CE:N",
-          "SE:RA:Count",
-          "SE:LT:Count",
-          "SE:LT:0:Key",
-          "SE:LT:0:Value",
-          "Q:PA:Count",
-          "Q:Q",
-          "Q:A"
-        ]
-      },
-      "MemberTypeInfo": {
-        "BinaryTypeEnums": [
-          "Class",
-          "Primitive",
-          "String",
-          "Primitive",
-          "Primitive",
-          "String",
-          "String",
-          "Primitive",
-          "Class",
-          "Class"
-        ],
-        "AdditionalInfos": [
-          {
-            "TypeName": "BC",
-            "LibraryId": 2
-          },
-          "Int32",
-          null,
-          "Int32",
-          "Int32",
-          null,
-          null,
-          "Int32",
-          {
-            "TypeName": "A4",
-            "LibraryId": 2
-          },
-          {
-            "TypeName": "A4",
-            "LibraryId": 2
-          }
-        ]
-      },
-      "LibraryId": 2,
-      "Values": [
-        {
-          "IdRef": 100,
-          "RecordTypeEnum": "MemberReference"
-        },
-        0,
-        {
-          "ObjectId": 101,
-          "Value": "I knew it! $(context.playerArenaTitle) b (7f836c01-6c67-47bc-8208-9d20a01f50ca)",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        0,
-        1,
-        {
-          "IdRef": 19,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "ObjectId": 103,
-          "Value": "I knew it! $(context.playerArenaTitle) became the Invictus!",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        0,
-        {
-          "IdRef": 27,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "IdRef": 28,
-          "RecordTypeEnum": "MemberReference"
-        }
-      ],
-      "RecordTypeEnum": "ClassWithMembersAndTypes"
-    },
-    {
-      "ClassInfo": {
-        "ObjectId": 41,
-        "Name": "Q",
-        "MemberCount": 10,
-        "MemberNames": [
-          "CE:CC",
-          "CE:PNS:Count",
-          "CE:N",
-          "SE:RA:Count",
-          "SE:LT:Count",
-          "SE:LT:0:Key",
-          "SE:LT:0:Value",
-          "Q:PA:Count",
-          "Q:Q",
-          "Q:A"
-        ]
-      },
-      "MemberTypeInfo": {
-        "BinaryTypeEnums": [
-          "Class",
-          "Primitive",
-          "String",
-          "Primitive",
-          "Primitive",
-          "String",
-          "String",
+          "Object",
           "Primitive",
           "Class",
           "Class"
@@ -1412,6 +1194,7 @@
           "Int32",
           null,
           null,
+          null,
           "Int32",
           {
             "TypeName": "A4",
@@ -1426,33 +1209,36 @@
       "LibraryId": 2,
       "Values": [
         {
-          "IdRef": 106,
+          "IdRef": 89,
           "RecordTypeEnum": "MemberReference"
         },
         0,
         {
-          "ObjectId": 107,
-          "Value": "There's a guy selling...um, was it Achil (93b7ec4d-8dcd-42a0-b89f-70e968428f25)",
+          "ObjectId": 90,
+          "Value": "Foundry's mine has recently been reopene (31b744c8-5d9e-4cc8-a80d-adff8cdc844a)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 14,
+          "IdRef": 25,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 109,
-          "Value": "There's a guy selling...um, was it Achilles? Some strength drug or something.",
+          "ObjectId": 92,
+          "Value": "Foundry's mine has recently been reopened. Don't know why they even closed it in the first place.",
           "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
         },
         0,
         {
-          "IdRef": 27,
+          "IdRef": 28,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -1460,9 +1246,9 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 42,
+        "ObjectId": 40,
         "Name": "Q",
-        "MemberCount": 10,
+        "MemberCount": 11,
         "MemberNames": [
           "CE:CC",
           "CE:PNS:Count",
@@ -1471,6 +1257,7 @@
           "SE:LT:Count",
           "SE:LT:0:Key",
           "SE:LT:0:Value",
+          "SE:UJ",
           "Q:PA:Count",
           "Q:Q",
           "Q:A"
@@ -1485,6 +1272,289 @@
           "Primitive",
           "String",
           "String",
+          "Object",
+          "Primitive",
+          "Class",
+          "Class"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "BC",
+            "LibraryId": 2
+          },
+          "Int32",
+          null,
+          "Int32",
+          "Int32",
+          null,
+          null,
+          null,
+          "Int32",
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          }
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "IdRef": 95,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        {
+          "ObjectId": 96,
+          "Value": "I hope we captured some of those Faceles (796858ea-ef36-4bee-a931-a4cfccb309d0)",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        1,
+        {
+          "IdRef": 14,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 98,
+          "Value": "I hope we captured some of those Faceless. Arena meat! ::Laughs.::",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        0,
+        {
+          "IdRef": 28,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 29,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 41,
+        "Name": "Q",
+        "MemberCount": 11,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:N",
+          "SE:RA:Count",
+          "SE:LT:Count",
+          "SE:LT:0:Key",
+          "SE:LT:0:Value",
+          "SE:UJ",
+          "Q:PA:Count",
+          "Q:Q",
+          "Q:A"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "String",
+          "Primitive",
+          "Primitive",
+          "String",
+          "String",
+          "Object",
+          "Primitive",
+          "Class",
+          "Class"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "BC",
+            "LibraryId": 2
+          },
+          "Int32",
+          null,
+          "Int32",
+          "Int32",
+          null,
+          null,
+          null,
+          "Int32",
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          }
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "IdRef": 101,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        {
+          "ObjectId": 102,
+          "Value": "I knew it! $(context.playerArenaTitle) b (7f836c01-6c67-47bc-8208-9d20a01f50ca)",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        1,
+        {
+          "IdRef": 20,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 104,
+          "Value": "I knew it! $(context.playerArenaTitle) became the Invictus!",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        0,
+        {
+          "IdRef": 28,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 29,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 42,
+        "Name": "Q",
+        "MemberCount": 11,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:N",
+          "SE:RA:Count",
+          "SE:LT:Count",
+          "SE:LT:0:Key",
+          "SE:LT:0:Value",
+          "SE:UJ",
+          "Q:PA:Count",
+          "Q:Q",
+          "Q:A"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "String",
+          "Primitive",
+          "Primitive",
+          "String",
+          "String",
+          "Object",
+          "Primitive",
+          "Class",
+          "Class"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "CAC",
+            "LibraryId": 2
+          },
+          "Int32",
+          null,
+          "Int32",
+          "Int32",
+          null,
+          null,
+          null,
+          "Int32",
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          }
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "IdRef": 107,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        {
+          "ObjectId": 108,
+          "Value": "There's a guy selling...um, was it Achil (93b7ec4d-8dcd-42a0-b89f-70e968428f25)",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        1,
+        {
+          "IdRef": 15,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 110,
+          "Value": "There's a guy selling...um, was it Achilles? Some strength drug or something.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        0,
+        {
+          "IdRef": 28,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 29,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 43,
+        "Name": "Q",
+        "MemberCount": 11,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:N",
+          "SE:RA:Count",
+          "SE:LT:Count",
+          "SE:LT:0:Key",
+          "SE:LT:0:Value",
+          "SE:UJ",
+          "Q:PA:Count",
+          "Q:Q",
+          "Q:A"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "String",
+          "Primitive",
+          "Primitive",
+          "String",
+          "String",
+          "Object",
           "Primitive",
           "Class",
           "Class"
@@ -1500,6 +1570,7 @@
           "Int32",
           null,
           null,
+          null,
           "Int32",
           {
             "TypeName": "A4",
@@ -1514,33 +1585,36 @@
       "LibraryId": 2,
       "Values": [
         {
-          "IdRef": 112,
+          "IdRef": 113,
           "RecordTypeEnum": "MemberReference"
         },
         0,
         {
-          "ObjectId": 113,
+          "ObjectId": 114,
           "Value": "Heard about the motioner killings? (2d1c5d78-07b7-42dc-add7-e4712d152060)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 17,
+          "IdRef": 18,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 115,
+          "ObjectId": 116,
           "Value": "Heard about the motioner killings?",
           "RecordTypeEnum": "BinaryObjectString"
         },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
         0,
         {
-          "IdRef": 27,
+          "IdRef": 28,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -1548,9 +1622,9 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 43,
+        "ObjectId": 44,
         "Name": "Q",
-        "MemberCount": 10,
+        "MemberCount": 11,
         "MemberNames": [
           "CE:CC",
           "CE:PNS:Count",
@@ -1559,6 +1633,7 @@
           "SE:LT:Count",
           "SE:LT:0:Key",
           "SE:LT:0:Value",
+          "SE:UJ",
           "Q:PA:Count",
           "Q:Q",
           "Q:A"
@@ -1573,6 +1648,7 @@
           "Primitive",
           "String",
           "String",
+          "Object",
           "Primitive",
           "Class",
           "Class"
@@ -1588,6 +1664,7 @@
           "Int32",
           null,
           null,
+          null,
           "Int32",
           {
             "TypeName": "A4",
@@ -1602,33 +1679,36 @@
       "LibraryId": 2,
       "Values": [
         {
-          "IdRef": 118,
+          "IdRef": 119,
           "RecordTypeEnum": "MemberReference"
         },
         0,
         {
-          "ObjectId": 119,
+          "ObjectId": 120,
           "Value": "Heard the Free Drones really dominated P (d33fb9d3-46a2-4ae5-b5e6-6b17d2291e61)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 13,
+          "IdRef": 14,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 121,
+          "ObjectId": 122,
           "Value": "Heard the Free Drones really dominated Protectorate forces near Junkyard.",
           "RecordTypeEnum": "BinaryObjectString"
         },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
         0,
         {
-          "IdRef": 27,
+          "IdRef": 28,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -1636,9 +1716,9 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 44,
+        "ObjectId": 45,
         "Name": "Q",
-        "MemberCount": 10,
+        "MemberCount": 11,
         "MemberNames": [
           "CE:CC",
           "CE:PNS:Count",
@@ -1647,6 +1727,7 @@
           "SE:LT:Count",
           "SE:LT:0:Key",
           "SE:LT:0:Value",
+          "SE:UJ",
           "Q:PA:Count",
           "Q:Q",
           "Q:A"
@@ -1661,6 +1742,7 @@
           "Primitive",
           "String",
           "String",
+          "Object",
           "Primitive",
           "Class",
           "Class"
@@ -1676,6 +1758,7 @@
           "Int32",
           null,
           null,
+          null,
           "Int32",
           {
             "TypeName": "A4",
@@ -1690,33 +1773,36 @@
       "LibraryId": 2,
       "Values": [
         {
-          "IdRef": 124,
+          "IdRef": 125,
           "RecordTypeEnum": "MemberReference"
         },
         0,
         {
-          "ObjectId": 125,
+          "ObjectId": 126,
           "Value": "That $(context.playerArenaTitle) $(#fell (c82000b4-536c-4eae-895f-68c30d8eba12)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 19,
+          "IdRef": 20,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 127,
+          "ObjectId": 128,
           "Value": "That $(context.playerArenaTitle) $(#fellow/lass) looks like one promising gladiator.",
           "RecordTypeEnum": "BinaryObjectString"
         },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
         0,
         {
-          "IdRef": 27,
+          "IdRef": 28,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -1724,9 +1810,9 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 45,
+        "ObjectId": 46,
         "Name": "Q",
-        "MemberCount": 10,
+        "MemberCount": 11,
         "MemberNames": [
           "CE:CC",
           "CE:PNS:Count",
@@ -1735,6 +1821,7 @@
           "SE:LT:Count",
           "SE:LT:0:Key",
           "SE:LT:0:Value",
+          "SE:UJ",
           "Q:PA:Count",
           "Q:Q",
           "Q:A"
@@ -1749,6 +1836,7 @@
           "Primitive",
           "String",
           "String",
+          "Object",
           "Primitive",
           "Class",
           "Class"
@@ -1764,6 +1852,7 @@
           "Int32",
           null,
           null,
+          null,
           "Int32",
           {
             "TypeName": "A4",
@@ -1778,117 +1867,36 @@
       "LibraryId": 2,
       "Values": [
         {
-          "IdRef": 130,
+          "IdRef": 131,
           "RecordTypeEnum": "MemberReference"
         },
         0,
         {
-          "ObjectId": 131,
+          "ObjectId": 132,
           "Value": "Heard about that midget that broke into  (84e8ac4c-0cea-43d9-a4eb-d4972794d299)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 8,
+          "IdRef": 9,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 133,
+          "ObjectId": 134,
           "Value": "Heard about that midget that broke into Ray's shop?",
           "RecordTypeEnum": "BinaryObjectString"
         },
-        0,
-        {
-          "IdRef": 27,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "IdRef": 28,
-          "RecordTypeEnum": "MemberReference"
-        }
-      ],
-      "RecordTypeEnum": "ClassWithMembersAndTypes"
-    },
-    {
-      "ClassInfo": {
-        "ObjectId": 46,
-        "Name": "Q",
-        "MemberCount": 10,
-        "MemberNames": [
-          "CE:CC",
-          "CE:PNS:Count",
-          "CE:N",
-          "SE:RA:Count",
-          "SE:LT:Count",
-          "SE:LT:0:Key",
-          "SE:LT:0:Value",
-          "Q:PA:Count",
-          "Q:Q",
-          "Q:A"
-        ]
-      },
-      "MemberTypeInfo": {
-        "BinaryTypeEnums": [
-          "Object",
-          "Primitive",
-          "String",
-          "Primitive",
-          "Primitive",
-          "String",
-          "String",
-          "Primitive",
-          "Class",
-          "Class"
-        ],
-        "AdditionalInfos": [
-          null,
-          "Int32",
-          null,
-          "Int32",
-          "Int32",
-          null,
-          null,
-          "Int32",
-          {
-            "TypeName": "A4",
-            "LibraryId": 2
-          },
-          {
-            "TypeName": "A4",
-            "LibraryId": 2
-          }
-        ]
-      },
-      "LibraryId": 2,
-      "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         0,
         {
-          "ObjectId": 136,
-          "Value": "Core City can be a dangerous place, so t (96e85439-e0af-4550-a230-8968c0025676)",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        0,
-        1,
-        {
-          "IdRef": 26,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "ObjectId": 138,
-          "Value": "Core City can be a dangerous place, so take care.",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        0,
-        {
-          "IdRef": 27,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
           "IdRef": 28,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -1904,10 +1912,10 @@
           "CE:PNS:Count",
           "CE:N",
           "SE:RA:Count",
-          "SE:RA:0",
           "SE:LT:Count",
           "SE:LT:0:Key",
           "SE:LT:0:Value",
+          "SE:UJ",
           "Q:PA:Count",
           "Q:Q",
           "Q:A"
@@ -1919,10 +1927,10 @@
           "Primitive",
           "String",
           "Primitive",
-          "Class",
           "Primitive",
           "String",
           "String",
+          "Object",
           "Primitive",
           "Class",
           "Class"
@@ -1932,11 +1940,8 @@
           "Int32",
           null,
           "Int32",
-          {
-            "TypeName": "SBFV",
-            "LibraryId": 2
-          },
           "Int32",
+          null,
           null,
           null,
           "Int32",
@@ -1957,32 +1962,31 @@
         },
         0,
         {
-          "ObjectId": 141,
-          "Value": "Some dude is painting cool graffiti arou (a6bd586d-8ee6-4aa1-adbc-1cc10b139f5e)",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        1,
-        {
-          "IdRef": 142,
-          "RecordTypeEnum": "MemberReference"
-        },
-        1,
-        {
-          "IdRef": 26,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "ObjectId": 144,
-          "Value": "Some dude is painting cool graffiti around the city. Not the Free Drones' ones - actual grafitti.",
+          "ObjectId": 137,
+          "Value": "Core City can be a dangerous place, so t (96e85439-e0af-4550-a230-8968c0025676)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
+        1,
         {
           "IdRef": 27,
           "RecordTypeEnum": "MemberReference"
         },
         {
+          "ObjectId": 139,
+          "Value": "Core City can be a dangerous place, so take care.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        0,
+        {
           "IdRef": 28,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -1992,7 +1996,7 @@
       "ClassInfo": {
         "ObjectId": 48,
         "Name": "Q",
-        "MemberCount": 11,
+        "MemberCount": 12,
         "MemberNames": [
           "CE:CC",
           "CE:PNS:Count",
@@ -2002,6 +2006,7 @@
           "SE:LT:Count",
           "SE:LT:0:Key",
           "SE:LT:0:Value",
+          "SE:UJ",
           "Q:PA:Count",
           "Q:Q",
           "Q:A"
@@ -2017,6 +2022,7 @@
           "Primitive",
           "String",
           "String",
+          "Object",
           "Primitive",
           "Class",
           "Class"
@@ -2031,6 +2037,7 @@
             "LibraryId": 2
           },
           "Int32",
+          null,
           null,
           null,
           "Int32",
@@ -2051,32 +2058,35 @@
         },
         0,
         {
-          "ObjectId": 147,
-          "Value": "People come from the most remote parts o (e90462ae-b8d3-4726-a934-daef973521ca)",
+          "ObjectId": 142,
+          "Value": "Some dude is painting cool graffiti arou (a6bd586d-8ee6-4aa1-adbc-1cc10b139f5e)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         1,
         {
-          "IdRef": 148,
+          "IdRef": 143,
           "RecordTypeEnum": "MemberReference"
         },
         1,
-        {
-          "IdRef": 26,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "ObjectId": 150,
-          "Value": "People come from the most remote parts of the Underrail just to visit the Arena.",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        0,
         {
           "IdRef": 27,
           "RecordTypeEnum": "MemberReference"
         },
         {
+          "ObjectId": 145,
+          "Value": "Some dude is painting cool graffiti around the city. Not the Free Drones' ones - actual grafitti.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        0,
+        {
           "IdRef": 28,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -2086,7 +2096,7 @@
       "ClassInfo": {
         "ObjectId": 49,
         "Name": "Q",
-        "MemberCount": 11,
+        "MemberCount": 12,
         "MemberNames": [
           "CE:CC",
           "CE:PNS:Count",
@@ -2096,6 +2106,107 @@
           "SE:LT:Count",
           "SE:LT:0:Key",
           "SE:LT:0:Value",
+          "SE:UJ",
+          "Q:PA:Count",
+          "Q:Q",
+          "Q:A"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "Primitive",
+          "String",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "String",
+          "String",
+          "Object",
+          "Primitive",
+          "Class",
+          "Class"
+        ],
+        "AdditionalInfos": [
+          null,
+          "Int32",
+          null,
+          "Int32",
+          {
+            "TypeName": "SBFV",
+            "LibraryId": 2
+          },
+          "Int32",
+          null,
+          null,
+          null,
+          "Int32",
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          }
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        0,
+        {
+          "ObjectId": 148,
+          "Value": "People come from the most remote parts o (e90462ae-b8d3-4726-a934-daef973521ca)",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        1,
+        {
+          "IdRef": 149,
+          "RecordTypeEnum": "MemberReference"
+        },
+        1,
+        {
+          "IdRef": 27,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 151,
+          "Value": "People come from the most remote parts of the Underrail just to visit the Arena.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        0,
+        {
+          "IdRef": 28,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 29,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 50,
+        "Name": "Q",
+        "MemberCount": 12,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:N",
+          "SE:RA:Count",
+          "SE:RA:0",
+          "SE:LT:Count",
+          "SE:LT:0:Key",
+          "SE:LT:0:Value",
+          "SE:UJ",
           "Q:PA:Count",
           "Q:Q",
           "Q:A"
@@ -2111,6 +2222,7 @@
           "Primitive",
           "String",
           "String",
+          "Object",
           "Primitive",
           "Class",
           "Class"
@@ -2130,6 +2242,7 @@
           "Int32",
           null,
           null,
+          null,
           "Int32",
           {
             "TypeName": "A4",
@@ -2144,121 +2257,40 @@
       "LibraryId": 2,
       "Values": [
         {
-          "IdRef": 153,
+          "IdRef": 154,
           "RecordTypeEnum": "MemberReference"
         },
         0,
         {
-          "ObjectId": 154,
+          "ObjectId": 155,
           "Value": "Hope the Faceless don't reach the Arena. (f2c7e0fd-0b3f-4cc6-9dc7-cd57ba4bc0db)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         1,
         {
-          "IdRef": 155,
+          "IdRef": 156,
           "RecordTypeEnum": "MemberReference"
         },
         1,
         {
-          "IdRef": 12,
+          "IdRef": 13,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 157,
+          "ObjectId": 158,
           "Value": "Hope the Faceless don't reach the Arena...",
           "RecordTypeEnum": "BinaryObjectString"
         },
-        0,
-        {
-          "IdRef": 27,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "IdRef": 28,
-          "RecordTypeEnum": "MemberReference"
-        }
-      ],
-      "RecordTypeEnum": "ClassWithMembersAndTypes"
-    },
-    {
-      "ClassInfo": {
-        "ObjectId": 50,
-        "Name": "Q",
-        "MemberCount": 10,
-        "MemberNames": [
-          "CE:CC",
-          "CE:PNS:Count",
-          "CE:N",
-          "SE:RA:Count",
-          "SE:LT:Count",
-          "SE:LT:0:Key",
-          "SE:LT:0:Value",
-          "Q:PA:Count",
-          "Q:Q",
-          "Q:A"
-        ]
-      },
-      "MemberTypeInfo": {
-        "BinaryTypeEnums": [
-          "Object",
-          "Primitive",
-          "String",
-          "Primitive",
-          "Primitive",
-          "String",
-          "String",
-          "Primitive",
-          "Class",
-          "Class"
-        ],
-        "AdditionalInfos": [
-          null,
-          "Int32",
-          null,
-          "Int32",
-          "Int32",
-          null,
-          null,
-          "Int32",
-          {
-            "TypeName": "A4",
-            "LibraryId": 2
-          },
-          {
-            "TypeName": "A4",
-            "LibraryId": 2
-          }
-        ]
-      },
-      "LibraryId": 2,
-      "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         0,
         {
-          "ObjectId": 160,
-          "Value": "Knight's kid is dead? Wow, never saw tha (cd7856d2-bbb8-4c80-be00-1d928f932f67)",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        0,
-        1,
-        {
-          "IdRef": 16,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "ObjectId": 162,
-          "Value": "Knight's kid is dead? Wow, never saw that coming...",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        0,
-        {
-          "IdRef": 27,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
           "IdRef": 28,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -2268,7 +2300,7 @@
       "ClassInfo": {
         "ObjectId": 51,
         "Name": "Q",
-        "MemberCount": 10,
+        "MemberCount": 11,
         "MemberNames": [
           "CE:CC",
           "CE:PNS:Count",
@@ -2277,6 +2309,7 @@
           "SE:LT:Count",
           "SE:LT:0:Key",
           "SE:LT:0:Value",
+          "SE:UJ",
           "Q:PA:Count",
           "Q:Q",
           "Q:A"
@@ -2291,6 +2324,101 @@
           "Primitive",
           "String",
           "String",
+          "Object",
+          "Primitive",
+          "Class",
+          "Class"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "BC",
+            "LibraryId": 2
+          },
+          "Int32",
+          null,
+          "Int32",
+          "Int32",
+          null,
+          null,
+          null,
+          "Int32",
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "A4",
+            "LibraryId": 2
+          }
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "IdRef": 161,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        {
+          "ObjectId": 162,
+          "Value": "Knight's kid is dead? Wow, never saw tha (cd7856d2-bbb8-4c80-be00-1d928f932f67)",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        0,
+        1,
+        {
+          "IdRef": 17,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 164,
+          "Value": "Knight's kid is dead? Wow, never saw that coming...",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        0,
+        {
+          "IdRef": 28,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 29,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 52,
+        "Name": "Q",
+        "MemberCount": 11,
+        "MemberNames": [
+          "CE:CC",
+          "CE:PNS:Count",
+          "CE:N",
+          "SE:RA:Count",
+          "SE:LT:Count",
+          "SE:LT:0:Key",
+          "SE:LT:0:Value",
+          "SE:UJ",
+          "Q:PA:Count",
+          "Q:Q",
+          "Q:A"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "String",
+          "Primitive",
+          "Primitive",
+          "String",
+          "String",
+          "Object",
           "Primitive",
           "Class",
           "Class"
@@ -2306,6 +2434,7 @@
           "Int32",
           null,
           null,
+          null,
           "Int32",
           {
             "TypeName": "A4",
@@ -2320,33 +2449,36 @@
       "LibraryId": 2,
       "Values": [
         {
-          "IdRef": 165,
+          "IdRef": 167,
           "RecordTypeEnum": "MemberReference"
         },
         0,
         {
-          "ObjectId": 166,
+          "ObjectId": 168,
           "Value": "I wonder what happened in that warehouse (ea81e281-bed7-4c61-840d-1b9613cc7e84)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 15,
+          "IdRef": 16,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 168,
+          "ObjectId": 170,
           "Value": "I wonder what happened in that warehouse everyone's been talking about...",
           "RecordTypeEnum": "BinaryObjectString"
         },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
         0,
         {
-          "IdRef": 27,
+          "IdRef": 28,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -2354,9 +2486,9 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 52,
+        "ObjectId": 53,
         "Name": "Q",
-        "MemberCount": 10,
+        "MemberCount": 11,
         "MemberNames": [
           "CE:CC",
           "CE:PNS:Count",
@@ -2365,6 +2497,7 @@
           "SE:LT:Count",
           "SE:LT:0:Key",
           "SE:LT:0:Value",
+          "SE:UJ",
           "Q:PA:Count",
           "Q:Q",
           "Q:A"
@@ -2379,6 +2512,7 @@
           "Primitive",
           "String",
           "String",
+          "Object",
           "Primitive",
           "Class",
           "Class"
@@ -2394,6 +2528,7 @@
           "Int32",
           null,
           null,
+          null,
           "Int32",
           {
             "TypeName": "A4",
@@ -2408,33 +2543,36 @@
       "LibraryId": 2,
       "Values": [
         {
-          "IdRef": 171,
+          "IdRef": 173,
           "RecordTypeEnum": "MemberReference"
         },
         0,
         {
-          "ObjectId": 172,
+          "ObjectId": 174,
           "Value": "Whoa, what's with all the ads in the cit (f25f52e0-8a48-4dc5-a836-3e1767184d7a)",
           "RecordTypeEnum": "BinaryObjectString"
         },
         0,
         1,
         {
-          "IdRef": 14,
+          "IdRef": 15,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "ObjectId": 174,
+          "ObjectId": 176,
           "Value": "Whoa, what's with all the ads in the city?",
           "RecordTypeEnum": "BinaryObjectString"
         },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
         0,
         {
-          "IdRef": 27,
+          "IdRef": 28,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 28,
+          "IdRef": 29,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -2442,7 +2580,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 54,
+        "ObjectId": 55,
         "Name": "FAPA",
         "MemberCount": 1,
         "MemberNames": [
@@ -2460,7 +2598,7 @@
       "LibraryId": 2,
       "Values": [
         {
-          "ObjectId": 177,
+          "ObjectId": 179,
           "Value": "7e43b87d-3255-46fc-9eba-49927e15b9cb",
           "RecordTypeEnum": "BinaryObjectString"
         }
@@ -2469,7 +2607,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 59,
+        "ObjectId": 60,
         "Name": "CAC",
         "MemberCount": 5,
         "MemberNames": [
@@ -2512,28 +2650,9 @@
         },
         3,
         {
-          "IdRef": 178,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
-          "IdRef": 179,
-          "RecordTypeEnum": "MemberReference"
-        },
-        {
           "IdRef": 180,
           "RecordTypeEnum": "MemberReference"
-        }
-      ],
-      "RecordTypeEnum": "ClassWithMembersAndTypes"
-    },
-    {
-      "ObjectId": 65,
-      "MetadataId": 59,
-      "Values": [
-        {
-          "RecordTypeEnum": "ObjectNull"
         },
-        3,
         {
           "IdRef": 181,
           "RecordTypeEnum": "MemberReference"
@@ -2541,20 +2660,39 @@
         {
           "IdRef": 182,
           "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ObjectId": 66,
+      "MetadataId": 60,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
         },
+        3,
         {
           "IdRef": 183,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 184,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 185,
           "RecordTypeEnum": "MemberReference"
         }
       ],
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 69,
-      "MetadataId": 27,
+      "ObjectId": 70,
+      "MetadataId": 28,
       "Values": [
         {
-          "ObjectId": 184,
+          "ObjectId": 186,
           "Value": "speaker",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -2565,11 +2703,11 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 70,
-      "MetadataId": 27,
+      "ObjectId": 71,
+      "MetadataId": 28,
       "Values": [
         {
-          "ObjectId": 185,
+          "ObjectId": 187,
           "Value": "player",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -2581,7 +2719,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 77,
+        "ObjectId": 78,
         "Name": "SBFV",
         "MemberCount": 3,
         "MemberNames": [
@@ -2605,26 +2743,8 @@
       "LibraryId": 2,
       "Values": [
         {
-          "ObjectId": 186,
-          "Value": "030199da-fe2f-4e1f-b568-c71f36cc2a4d",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        {
-          "ObjectId": 187,
-          "Value": "context.loc_cc_knowArena",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        true
-      ],
-      "RecordTypeEnum": "ClassWithMembersAndTypes"
-    },
-    {
-      "ObjectId": 83,
-      "MetadataId": 77,
-      "Values": [
-        {
           "ObjectId": 188,
-          "Value": "a29b15f3-4aa2-40aa-8645-211ec99dcb00",
+          "Value": "030199da-fe2f-4e1f-b568-c71f36cc2a4d",
           "RecordTypeEnum": "BinaryObjectString"
         },
         {
@@ -2634,11 +2754,29 @@
         },
         true
       ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ObjectId": 84,
+      "MetadataId": 78,
+      "Values": [
+        {
+          "ObjectId": 190,
+          "Value": "a29b15f3-4aa2-40aa-8645-211ec99dcb00",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 191,
+          "Value": "context.loc_cc_knowArena",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        true
+      ],
       "RecordTypeEnum": "ClassWithId"
     },
     {
       "ClassInfo": {
-        "ObjectId": 88,
+        "ObjectId": 89,
         "Name": "CAC",
         "MemberCount": 3,
         "MemberNames": [
@@ -2669,7 +2807,7 @@
         },
         1,
         {
-          "IdRef": 190,
+          "IdRef": 192,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -2677,7 +2815,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 94,
+        "ObjectId": 95,
         "Name": "BC",
         "MemberCount": 4,
         "MemberNames": [
@@ -2707,7 +2845,7 @@
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 191,
+          "ObjectId": 193,
           "Value": "context.loc_cc_facelessRetreated",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -2717,14 +2855,14 @@
       "RecordTypeEnum": "ClassWithMembersAndTypes"
     },
     {
-      "ObjectId": 100,
-      "MetadataId": 94,
+      "ObjectId": 101,
+      "MetadataId": 95,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 192,
+          "ObjectId": 194,
           "Value": "context.loc_cc_arenaFinished",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -2735,7 +2873,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 106,
+        "ObjectId": 107,
         "Name": "CAC",
         "MemberCount": 4,
         "MemberNames": [
@@ -2772,11 +2910,11 @@
         },
         2,
         {
-          "IdRef": 193,
+          "IdRef": 195,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 194,
+          "IdRef": 196,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -2784,7 +2922,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 112,
+        "ObjectId": 113,
         "Name": "ICC",
         "MemberCount": 5,
         "MemberNames": [
@@ -2820,7 +2958,7 @@
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 195,
+          "ObjectId": 197,
           "Value": "context.loc_cc_passage_killMotioners",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -2828,7 +2966,7 @@
         5,
         {
           "ClassInfo": {
-            "ObjectId": -196,
+            "ObjectId": -198,
             "Name": "eCT2",
             "MemberCount": 1,
             "MemberNames": [
@@ -2853,14 +2991,14 @@
       "RecordTypeEnum": "ClassWithMembersAndTypes"
     },
     {
-      "ObjectId": 118,
-      "MetadataId": 94,
+      "ObjectId": 119,
+      "MetadataId": 95,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 197,
+          "ObjectId": 199,
           "Value": "context.quest_fd_AttackSROCompleted",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -2871,7 +3009,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 124,
+        "ObjectId": 125,
         "Name": "CAC",
         "MemberCount": 4,
         "MemberNames": [
@@ -2908,11 +3046,11 @@
         },
         2,
         {
-          "IdRef": 198,
+          "IdRef": 200,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 199,
+          "IdRef": 201,
           "RecordTypeEnum": "MemberReference"
         }
       ],
@@ -2920,7 +3058,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 130,
+        "ObjectId": 131,
         "Name": "SC1",
         "MemberCount": 5,
         "MemberNames": [
@@ -2953,13 +3091,13 @@
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 200,
+          "ObjectId": 202,
           "Value": "context.npc_cc_ray_describeBreakIn_height",
           "RecordTypeEnum": "BinaryObjectString"
         },
         true,
         {
-          "ObjectId": 201,
+          "ObjectId": 203,
           "Value": "midget",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -2968,16 +3106,16 @@
       "RecordTypeEnum": "ClassWithMembersAndTypes"
     },
     {
-      "ObjectId": 142,
-      "MetadataId": 77,
+      "ObjectId": 143,
+      "MetadataId": 78,
       "Values": [
         {
-          "ObjectId": 202,
+          "ObjectId": 204,
           "Value": "a3b98619-a604-4e0d-b954-09745bc14865",
           "RecordTypeEnum": "BinaryObjectString"
         },
         {
-          "ObjectId": 203,
+          "ObjectId": 205,
           "Value": "context.faction_knowFreeDrones",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -2986,16 +3124,16 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 148,
-      "MetadataId": 77,
+      "ObjectId": 149,
+      "MetadataId": 78,
       "Values": [
         {
-          "ObjectId": 204,
+          "ObjectId": 206,
           "Value": "cfbbca09-2df4-4143-b5e1-6112661cd735",
           "RecordTypeEnum": "BinaryObjectString"
         },
         {
-          "ObjectId": 205,
+          "ObjectId": 207,
           "Value": "context.loc_cc_knowArena",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -3004,14 +3142,14 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 153,
-      "MetadataId": 94,
+      "ObjectId": 154,
+      "MetadataId": 95,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 206,
+          "ObjectId": 208,
           "Value": "context.loc_cc_facelessRetreated",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -3021,16 +3159,16 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 155,
-      "MetadataId": 77,
+      "ObjectId": 156,
+      "MetadataId": 78,
       "Values": [
         {
-          "ObjectId": 207,
+          "ObjectId": 209,
           "Value": "39243d9e-426e-4d84-b4ee-dc14190457b7",
           "RecordTypeEnum": "BinaryObjectString"
         },
         {
-          "ObjectId": 208,
+          "ObjectId": 210,
           "Value": "context.loc_cc_knowArena",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -3039,8 +3177,25 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
+      "ObjectId": 161,
+      "MetadataId": 95,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 211,
+          "Value": "context.cc_acidHunters_finished",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        true,
+        true
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
       "ClassInfo": {
-        "ObjectId": 165,
+        "ObjectId": 167,
         "Name": "COC",
         "MemberCount": 5,
         "MemberNames": [
@@ -3083,29 +3238,29 @@
         },
         3,
         {
-          "IdRef": 209,
+          "IdRef": 212,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 210,
+          "IdRef": 213,
           "RecordTypeEnum": "MemberReference"
         },
         {
-          "IdRef": 211,
+          "IdRef": 214,
           "RecordTypeEnum": "MemberReference"
         }
       ],
       "RecordTypeEnum": "ClassWithMembersAndTypes"
     },
     {
-      "ObjectId": 171,
-      "MetadataId": 94,
+      "ObjectId": 173,
+      "MetadataId": 95,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 212,
+          "ObjectId": 215,
           "Value": "context.npc_cc_daniel_exposed",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -3115,14 +3270,14 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 178,
-      "MetadataId": 94,
+      "ObjectId": 180,
+      "MetadataId": 95,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 213,
+          "ObjectId": 216,
           "Value": "context.npc_xpbl_ethan_died_coreCity",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -3133,7 +3288,7 @@
     },
     {
       "ClassInfo": {
-        "ObjectId": 179,
+        "ObjectId": 181,
         "Name": "PIIAC",
         "MemberCount": 3,
         "MemberNames": [
@@ -3160,7 +3315,7 @@
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 214,
+          "ObjectId": 217,
           "Value": "cc_bar",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -3169,58 +3324,8 @@
       "RecordTypeEnum": "ClassWithMembersAndTypes"
     },
     {
-      "ObjectId": 180,
-      "MetadataId": 94,
-      "Values": [
-        {
-          "RecordTypeEnum": "ObjectNull"
-        },
-        {
-          "ObjectId": 215,
-          "Value": "context.npc_xpbl_ethan_angered_coreCity",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        true,
-        false
-      ],
-      "RecordTypeEnum": "ClassWithId"
-    },
-    {
-      "ObjectId": 181,
-      "MetadataId": 94,
-      "Values": [
-        {
-          "RecordTypeEnum": "ObjectNull"
-        },
-        {
-          "ObjectId": 216,
-          "Value": "context.npc_xpbl_ethan_old",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        true,
-        true
-      ],
-      "RecordTypeEnum": "ClassWithId"
-    },
-    {
       "ObjectId": 182,
-      "MetadataId": 179,
-      "Values": [
-        {
-          "RecordTypeEnum": "ObjectNull"
-        },
-        {
-          "ObjectId": 217,
-          "Value": "cc_bar",
-          "RecordTypeEnum": "BinaryObjectString"
-        },
-        false
-      ],
-      "RecordTypeEnum": "ClassWithId"
-    },
-    {
-      "ObjectId": 183,
-      "MetadataId": 94,
+      "MetadataId": 95,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
@@ -3231,19 +3336,69 @@
           "RecordTypeEnum": "BinaryObjectString"
         },
         true,
-        true
+        false
       ],
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 190,
-      "MetadataId": 94,
+      "ObjectId": 183,
+      "MetadataId": 95,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
           "ObjectId": 219,
+          "Value": "context.npc_xpbl_ethan_old",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        true,
+        true
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 184,
+      "MetadataId": 181,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 220,
+          "Value": "cc_bar",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        false
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 185,
+      "MetadataId": 95,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 221,
+          "Value": "context.npc_xpbl_ethan_angered_coreCity",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        true,
+        true
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 192,
+      "MetadataId": 95,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 222,
           "Value": "context.loc_fo_mineReopened",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -3253,14 +3408,14 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 193,
-      "MetadataId": 94,
+      "ObjectId": 195,
+      "MetadataId": 95,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 220,
+          "ObjectId": 223,
           "Value": "context.npc_cc_daniel_exposed",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -3270,14 +3425,14 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 194,
-      "MetadataId": 94,
+      "ObjectId": 196,
+      "MetadataId": 95,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 221,
+          "ObjectId": 224,
           "Value": "context.quest_watch_DanielArdaStarted",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -3287,14 +3442,14 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 198,
-      "MetadataId": 94,
+      "ObjectId": 200,
+      "MetadataId": 95,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 222,
+          "ObjectId": 225,
           "Value": "context.loc_cc_arena_bullseyeDefeated",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -3304,14 +3459,14 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 199,
-      "MetadataId": 94,
+      "ObjectId": 201,
+      "MetadataId": 95,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 223,
+          "ObjectId": 226,
           "Value": "context.loc_cc_arenaFinished",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -3321,14 +3476,14 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 209,
-      "MetadataId": 94,
+      "ObjectId": 212,
+      "MetadataId": 95,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 224,
+          "ObjectId": 227,
           "Value": "context.quest_cc_ps_ClearWarehouseCompleted",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -3338,14 +3493,14 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 210,
-      "MetadataId": 94,
+      "ObjectId": 213,
+      "MetadataId": 95,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 225,
+          "ObjectId": 228,
           "Value": "context.quest_cc_jkk_disableWarehouseSecurityCompleted",
           "RecordTypeEnum": "BinaryObjectString"
         },
@@ -3355,14 +3510,14 @@
       "RecordTypeEnum": "ClassWithId"
     },
     {
-      "ObjectId": 211,
-      "MetadataId": 94,
+      "ObjectId": 214,
+      "MetadataId": 95,
       "Values": [
         {
           "RecordTypeEnum": "ObjectNull"
         },
         {
-          "ObjectId": 226,
+          "ObjectId": 229,
           "Value": "context.quest_cc_ct_defendWarehouseCompleted",
           "RecordTypeEnum": "BinaryObjectString"
         },
