@@ -1020,7 +1020,8 @@ def extract_texts_to_csv(
                         # Build CSV row
                         row = [
                             processed_text,
-                            processed_text,
+                            # processed_text,
+                            "",
                         ]  # [Original, Translation]
                         if include_file_path:
                             row.insert(0, str(file_path))
@@ -1054,13 +1055,13 @@ def replace_texts_from_csv(
     # If include_file_path is True, the CSV includes the file path in the first column.
     if include_file_path:
         translations = {
-            row[-2].replace("\\n", "\n"): row[-1].replace("\\n", "\n")
+            row[-2].replace("\\n", "\r\n"): row[-1].replace("\\n", "\r\n")
             for row in csv_data
             if row[0] == str(file_path) and row[-2] != row[-1]
         }
     else:
         translations = {
-            row[0].replace("\\n", "\n"): row[1].replace("\\n", "\n")
+            row[0].replace("\\n", "\r\n"): row[1].replace("\\n", "\r\n")
             for row in csv_data
             if row[0] != row[1]
         }
