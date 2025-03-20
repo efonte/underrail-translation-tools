@@ -1,4 +1,5 @@
 import csv as csv_module
+import gzip
 import json
 import struct
 from enum import Enum
@@ -161,10 +162,7 @@ class NetSerializer:
                 return struct.unpack(fmt, self.read(size))[0]
             else:
                 self.write(struct.pack(fmt, value))
-
-        elif primitive_type == PrimitiveType.Char:
-            return self.read_write_string(value, mode)
-        elif primitive_type == PrimitiveType.String:
+        elif primitive_type in (PrimitiveType.Char, PrimitiveType.String):
             return self.read_write_string(value, mode)
         elif primitive_type == PrimitiveType.Decimal:
             return self.read_write_decimal(value, mode)
@@ -280,18 +278,11 @@ class NetSerializer:
     def read_write_class_info(self, value: Dict[str, Any] = None, mode: str = "read"):
         """Handle reading/writing the initial class info, such as name, ID, etc."""
         object_id = self.read_write_primitive(
-            PrimitiveType.Int32,
-            None if mode == "read" else value["ObjectId"],
-            mode,
+            PrimitiveType.Int32, None if mode == "read" else value["ObjectId"], mode
         )
-        name = self.read_write_string(
-            None if mode == "read" else value["Name"],
-            mode,
-        )
+        name = self.read_write_string(None if mode == "read" else value["Name"], mode)
         member_count = self.read_write_primitive(
-            PrimitiveType.Int32,
-            None if mode == "read" else value["MemberCount"],
-            mode,
+            PrimitiveType.Int32, None if mode == "read" else value["MemberCount"], mode
         )
         if mode == "read":
             return {
@@ -332,10 +323,7 @@ class NetSerializer:
                 self.read_write_binary_type_info(binary_type, info, mode="write")
 
     def read_write_binary_type_info(
-        self,
-        binary_type: BinaryType,
-        value: Any = None,
-        mode: str = "read",
+        self, binary_type: BinaryType, value: Any = None, mode: str = "read"
     ):
         """Dispatcher for additional type-specific info for certain binary types."""
         if binary_type in (BinaryType.Primitive, BinaryType.PrimitiveArray):
@@ -360,14 +348,10 @@ class NetSerializer:
     def read_write_array_info(self, value: Dict[str, Any] = None, mode: str = "read"):
         """Read or write basic Array info containing ObjectId and array length."""
         object_id = self.read_write_primitive(
-            PrimitiveType.Int32,
-            None if mode == "read" else value["ObjectId"],
-            mode,
+            PrimitiveType.Int32, None if mode == "read" else value["ObjectId"], mode
         )
         length = self.read_write_primitive(
-            PrimitiveType.Int32,
-            None if mode == "read" else value["Length"],
-            mode,
+            PrimitiveType.Int32, None if mode == "read" else value["Length"], mode
         )
         if mode == "read":
             return {"ObjectId": object_id, "Length": length}
@@ -423,7 +407,6 @@ class NetSerializer:
             RecordType.ArraySingleObject: self.handle_array_single_object,
             RecordType.ArraySingleString: self.handle_array_single_string,
         }
-
         if records is not None:
             self.records = records
         handler = handlers.get(record_type)
@@ -438,14 +421,10 @@ class NetSerializer:
     def handle_serialized_stream_header(self, record=None, mode="read"):
         """Handle the overall stream header (root, version, etc.)."""
         root_id = self.read_write_primitive(
-            PrimitiveType.Int32,
-            None if mode == "read" else record["RootId"],
-            mode,
+            PrimitiveType.Int32, None if mode == "read" else record["RootId"], mode
         )
         header_id = self.read_write_primitive(
-            PrimitiveType.Int32,
-            None if mode == "read" else record["HeaderId"],
-            mode,
+            PrimitiveType.Int32, None if mode == "read" else record["HeaderId"], mode
         )
         major_version = self.read_write_primitive(
             PrimitiveType.Int32,
@@ -468,9 +447,7 @@ class NetSerializer:
     def handle_binary_object_string(self, record=None, mode="read"):
         """Handle a string record that contains an ObjectId and the string value."""
         obj_id = self.read_write_primitive(
-            PrimitiveType.Int32,
-            None if mode == "read" else record["ObjectId"],
-            mode,
+            PrimitiveType.Int32, None if mode == "read" else record["ObjectId"], mode
         )
         value = self.read_write_string(
             None if mode == "read" else record["Value"], mode
@@ -481,27 +458,22 @@ class NetSerializer:
     def handle_class_with_id(self, record=None, mode="read"):
         """Handle a class record that references metadata by ID."""
         obj_id = self.read_write_primitive(
-            PrimitiveType.Int32,
-            None if mode == "read" else record["ObjectId"],
-            mode,
+            PrimitiveType.Int32, None if mode == "read" else record["ObjectId"], mode
         )
         metadata_id = self.read_write_primitive(
-            PrimitiveType.Int32,
-            None if mode == "read" else record["MetadataId"],
-            mode,
+            PrimitiveType.Int32, None if mode == "read" else record["MetadataId"], mode
         )
         if mode == "read":
             record_data = {"ObjectId": obj_id, "MetadataId": metadata_id}
             self.read_write_class_values(record_data)
             return record_data
         else:
-            self.read_write_class_values(record, record, mode="write")
+            self.read_write_class_values(record, mode="write")
 
     def handle_system_class_with_members(self, record=None, mode="read"):
         """Handle a system class record with members, but no type info for members."""
         class_info = self.read_write_class_info(
-            None if mode == "read" else record["ClassInfo"],
-            mode,
+            None if mode == "read" else record["ClassInfo"], mode
         )
         if mode == "read":
             return {"ClassInfo": class_info}
@@ -509,13 +481,10 @@ class NetSerializer:
     def handle_class_with_members(self, record=None, mode="read"):
         """Handle a normal class record with members, but no explicit type info."""
         class_info = self.read_write_class_info(
-            None if mode == "read" else record["ClassInfo"],
-            mode,
+            None if mode == "read" else record["ClassInfo"], mode
         )
         library_id = self.read_write_primitive(
-            PrimitiveType.Int32,
-            None if mode == "read" else record["LibraryId"],
-            mode,
+            PrimitiveType.Int32, None if mode == "read" else record["LibraryId"], mode
         )
         if mode == "read":
             return {"ClassInfo": class_info, "LibraryId": library_id}
@@ -529,18 +498,13 @@ class NetSerializer:
     ):
         """Handle a class record with explicit type info for each member."""
         class_info = self.read_write_class_info(
-            None if mode == "read" else record["ClassInfo"],
-            mode,
+            None if mode == "read" else record["ClassInfo"], mode
         )
         if mode == "read":
             member_type_info = self.read_write_member_type_info(
                 class_info["MemberCount"], mode="read"
             )
-
-            record_data = {
-                "ClassInfo": class_info,
-                "MemberTypeInfo": member_type_info,
-            }
+            record_data = {"ClassInfo": class_info, "MemberTypeInfo": member_type_info}
             if not system:
                 record_data["LibraryId"] = self.read_write_primitive(
                     PrimitiveType.Int32, mode="read"
@@ -562,7 +526,7 @@ class NetSerializer:
                 self.read_write_primitive(
                     PrimitiveType.Int32, record["LibraryId"], mode="write"
                 )
-            self.read_write_class_values(record, record, mode="write")
+            self.read_write_class_values(record, mode="write")
 
     def handle_binary_array(self, record=None, mode="read"):
         """Handle a multi-element array record."""
@@ -670,9 +634,7 @@ class NetSerializer:
     def handle_member_reference(self, record=None, mode="read"):
         """Handle reference to an existing object by its ID."""
         id_ref = self.read_write_primitive(
-            PrimitiveType.Int32,
-            None if mode == "read" else record["IdRef"],
-            mode,
+            PrimitiveType.Int32, None if mode == "read" else record["IdRef"], mode
         )
         if mode == "read":
             record_data = {"IdRef": id_ref}
@@ -692,26 +654,18 @@ class NetSerializer:
     def handle_binary_library(self, record=None, mode="read"):
         """Handle library references (ID/name)."""
         library_id = self.read_write_primitive(
-            PrimitiveType.Int32,
-            None if mode == "read" else record["LibraryId"],
-            mode,
+            PrimitiveType.Int32, None if mode == "read" else record["LibraryId"], mode
         )
         library_name = self.read_write_string(
-            None if mode == "read" else record["LibraryName"],
-            mode,
+            None if mode == "read" else record["LibraryName"], mode
         )
         if mode == "read":
-            return {
-                "LibraryId": library_id,
-                "LibraryName": library_name,
-            }
+            return {"LibraryId": library_id, "LibraryName": library_name}
 
     def handle_object_null_multiple_256(self, record=None, mode="read"):
         """Handle multiple null references (count up to 256)."""
         null_count = self.read_write_primitive(
-            PrimitiveType.Byte,
-            None if mode == "read" else record["NullCount"],
-            mode,
+            PrimitiveType.Byte, None if mode == "read" else record["NullCount"], mode
         )
         if mode == "read":
             return {"NullCount": null_count}
@@ -719,9 +673,7 @@ class NetSerializer:
     def handle_object_null_multiple(self, record=None, mode="read"):
         """Handle multiple null references (count as Int32)."""
         null_count = self.read_write_primitive(
-            PrimitiveType.Int32,
-            None if mode == "read" else record["NullCount"],
-            mode,
+            PrimitiveType.Int32, None if mode == "read" else record["NullCount"], mode
         )
         if mode == "read":
             return {"NullCount": null_count}
@@ -729,13 +681,10 @@ class NetSerializer:
     def handle_array_single_primitive(self, record=None, mode="read"):
         """Handle array of a single primitive type."""
         array_info = self.read_write_array_info(
-            None if mode == "read" else record["ArrayInfo"],
-            mode,
+            None if mode == "read" else record["ArrayInfo"], mode
         )
         primitive_type = self.read_write_enum(
-            PrimitiveType,
-            None if mode == "read" else record["PrimitiveTypeEnum"],
-            mode,
+            PrimitiveType, None if mode == "read" else record["PrimitiveTypeEnum"], mode
         )
         if mode == "read":
             values = [
@@ -764,15 +713,11 @@ class NetSerializer:
     def handle_array_single(self, record=None, mode="read"):
         """Generic handler for arrays of single elements (object/string)."""
         array_info = self.read_write_array_info(
-            None if mode == "read" else record["ArrayInfo"],
-            mode,
+            None if mode == "read" else record["ArrayInfo"], mode
         )
         if mode == "read":
             values = self.read_write_array_values(array_info["Length"], mode="read")
-            return {
-                "ArrayInfo": array_info,
-                "Values": values,
-            }
+            return {"ArrayInfo": array_info, "Values": values}
         else:
             for val in record["Values"]:
                 self.read_write_record(val, mode="write", records=self.records)
@@ -878,12 +823,34 @@ class UDLG:
         self.records: List[Dict[str, Any]] = []
 
     def parse(self) -> Dict[str, Any]:
-        """Decode (parse) the UDLG stream and return a dict with header and records."""
+        """Decode (parse) the UDLG stream and return a dict with header, records, and compression flag."""
+        # Read the fixed 24-byte header
         self.header = self.serializer.read(24)
+
+        # Check if the payload is compressed by inspecting the next 2 bytes
+        current_pos = self.serializer.stream.tell()
+        possible_magic = self.serializer.stream.read(2)
+        if possible_magic == b"\x1F\x8B":
+            # Gzip magic bytes detected. Rewind and decompress the rest.
+            self.serializer.stream.seek(current_pos)
+            compressed_data = self.serializer.stream.read()
+            try:
+                decompressed_payload = gzip.decompress(compressed_data)
+            except Exception as e:
+                raise IOError("Error decompressing gzip payload: " + str(e))
+            # Replace the stream with the decompressed payload
+            self.serializer.stream = BytesIO(decompressed_payload)
+            compressed_flag = True
+        else:
+            # Not compressed; reset the pointer back
+            self.serializer.stream.seek(current_pos)
+            compressed_flag = False
+
         while True:
             record = self.serializer.read_write_record(
                 mode="read", records=self.records
             )
+
             # Remove any temporary records (placeholders)
             self.records = [r for r in self.records if "__temp_record" not in r]
             self.records.append(record)
@@ -891,26 +858,331 @@ class UDLG:
             if record["RecordTypeEnum"] == "MessageEnd":
                 break
 
-        return {"Header": self.header.hex().upper(), "Records": self.records}
+        return {
+            "Header": self.header.hex().upper(),
+            "Records": self.records,
+            "Compressed": compressed_flag,
+        }
 
     def encode(self, data: Dict[str, Any]) -> None:
         """
         Encode the data back into the UDLG format using the NetSerializer.
-        Write the resulting bytes to the stream.
+        Write the resulting bytes to the stream. If the JSON has 'Compressed': true,
+        the payload (records) will be gzip compressed.
         """
-        self.serializer.write(bytes.fromhex(data["Header"]))
+        header_bytes = bytes.fromhex(data["Header"])
+        self.serializer.write(header_bytes)
+        temp_payload = BytesIO()
+        temp_serializer = NetSerializer(temp_payload)
         for record in data["Records"]:
-            self.serializer.read_write_record(
+            temp_serializer.read_write_record(
                 record, mode="write", records=data["Records"]
             )
+        payload_bytes = temp_payload.getvalue()
+        if data.get("Compressed", False):
+            payload_bytes = gzip.compress(payload_bytes)
+        self.serializer.write(payload_bytes)
 
 
-"""
-The following CLI code uses Typer to handle:
-- Decoding UDLG files to JSON (+ optional CSV extraction).
-- Encoding JSON back to UDLG (+ optional CSV replacement).
-- Merging existing translations into a new CSV (to avoid re-translation).
-"""
+def extract_texts_to_csv(
+    data: Dict[str, Any],
+    file_path: Path,
+    csv_data: List[List[str]],
+    include_file_path: bool = False,
+    language_mode: str = "english",
+    base_path: Optional[Path] = None,
+) -> Dict[str, Any]:
+    """
+    Traverse records and extract texts for CSV.
+    In English mode, texts are extracted when preceded by an "English" marker.
+    In variables mode, it is assumed that the 'Values' array contains pairs:
+    an integer count followed by alternating variable and text.
+    In both cases, the produced CSV row is unified as:
+    • For variables mode: [Variable, Original, Translation] (or with file path prepended if specified).
+    • For English mode: the "Variable" column is omitted.
+      If include_file_path is True the row is: [File, Original, Translation]; otherwise, [Original, Translation].
+    Newlines are replaced with literal "\\n".
+    """
+    # Compute a relative file path (if possible)
+    if base_path:
+        try:
+            relative = file_path.relative_to(base_path)
+        except ValueError:
+            relative = file_path
+    else:
+        relative = file_path
+
+    if language_mode == "variables":
+        # Variables mode: iterate through each record looking for pairs in "Values"
+        for record in data.get("Records", []):
+            if "Values" in record and isinstance(record["Values"], list):
+                vals = record["Values"]
+                # If first element is an integer, assume a count is present and then pair entries
+                if len(vals) >= 3 and isinstance(vals[0], int):
+                    for i in range(1, len(vals) - 1, 2):
+                        var_entry = vals[i]
+                        text_entry = vals[i + 1]
+                        if (
+                            isinstance(var_entry, dict)
+                            and var_entry.get("RecordTypeEnum") == "BinaryObjectString"
+                            and isinstance(text_entry, dict)
+                            and text_entry.get("RecordTypeEnum") == "BinaryObjectString"
+                        ):
+                            variable_text = var_entry.get("Value", "")
+                            actual_text = text_entry.get("Value", "")
+                            processed_text = actual_text.replace("\r\n", "\\n").replace(
+                                "\n", "\\n"
+                            )
+                            if include_file_path:
+                                # CSV row with 4 columns: [File, Variable, Original, Translation]
+                                row = [str(relative), variable_text, processed_text, ""]
+                            else:
+                                # CSV row with 3 columns: [Variable, Original, Translation]
+                                row = [variable_text, processed_text, ""]
+                            if row not in csv_data:
+                                csv_data.append(row)
+    else:
+        # English mode
+        # Find object IDs that hold the "English" string
+        english_object_ids = set()
+        for record in data.get("Records", []):
+            if "Values" in record:
+                for val in record["Values"]:
+                    if (
+                        isinstance(val, dict)
+                        and val.get("RecordTypeEnum") == "BinaryObjectString"
+                        and val.get("Value") == "English"
+                        and "ObjectId" in val
+                    ):
+                        english_object_ids.add(val["ObjectId"])
+
+        for record in data.get("Records", []):
+            if "Values" in record:
+                previous_was_english = False
+                previous_id_ref = None
+
+                for val in record["Values"]:
+                    if not isinstance(val, dict):
+                        previous_was_english = False
+                        previous_id_ref = None
+                        continue
+
+                    if val.get("RecordTypeEnum") == "MemberReference":
+                        previous_id_ref = val.get("IdRef")
+                        continue
+
+                    if val.get("RecordTypeEnum") == "BinaryObjectString":
+                        current_text = val.get("Value")
+                        if current_text == "English":
+                            previous_was_english = True
+                            continue
+
+                        if previous_was_english or (
+                            previous_id_ref and previous_id_ref in english_object_ids
+                        ):
+                            processed_text = current_text.replace(
+                                "\r\n", "\\n"
+                            ).replace("\n", "\\n")
+                            if include_file_path:
+                                # In English mode with file included: [File, Original, Translation]
+                                row = [str(relative), processed_text, ""]
+                            else:
+                                # In English mode without file: [Original, Translation]
+                                row = [processed_text, ""]
+                            if row not in csv_data:
+                                csv_data.append(row)
+                            previous_was_english = False
+                            previous_id_ref = None
+                        else:
+                            previous_was_english = False
+    return data
+
+
+def replace_texts_from_csv(
+    data: Dict[str, Any],
+    file_path: Path,
+    csv_data: List[List[str]],
+    include_file_path: bool = False,
+    language_mode: str = "english",
+    base_path: Optional[Path] = None,
+) -> Dict[str, Any]:
+    """
+    Replace texts in the JSON data using CSV translations.
+    In variables mode, pairs (variable, text) are processed.
+    In English mode, texts following an "English" marker are processed.
+    Literal "\\n" sequences are returned to actual newlines.
+
+    When include_file_path is True the CSV is expected to have a separate file column.
+    Otherwise the first column contains a composite key (for variables mode) or the original text (for English mode).
+    During replacement, if a plain key exists, it will be preferred.
+    In all modes, if the translated text is empty then the original text is used.
+    """
+    # Compute a relative file path (if possible)
+    if base_path:
+        try:
+            relative = file_path.relative_to(base_path)
+        except ValueError:
+            relative = file_path
+    else:
+        relative = file_path
+    relative = relative.with_suffix(".udlg")
+
+    if language_mode == "variables":
+        if include_file_path:
+            translations = {
+                row[1]: row[3].replace("\\n", "\r\n")
+                for row in csv_data
+                if len(row) >= 4 and row[0] == str(relative) and row[1] and row[2]
+            }
+        else:
+            translations = {}
+            for row in csv_data:
+                if len(row) >= 3:
+                    if "|" in row[0]:
+                        parts = row[0].split("|", 1)
+                        var_key, file_part = parts
+                        if file_part == relative.name and row[1]:
+                            translations[var_key] = row[2].replace("\\n", "\r\n")
+                    else:
+                        plain_key = row[0]
+                        if row[1]:
+                            translations[plain_key] = row[2].replace("\\n", "\r\n")
+        for record in data.get("Records", []):
+            if "Values" in record and isinstance(record["Values"], list):
+                vals = record["Values"]
+                if len(vals) >= 3 and isinstance(vals[0], int):
+                    for i in range(1, len(vals) - 1, 2):
+                        var_entry = vals[i]
+                        text_entry = vals[i + 1]
+                        if (
+                            isinstance(var_entry, dict)
+                            and var_entry.get("RecordTypeEnum") == "BinaryObjectString"
+                            and isinstance(text_entry, dict)
+                            and text_entry.get("RecordTypeEnum") == "BinaryObjectString"
+                        ):
+                            variable_text = var_entry.get("Value", "")
+                            key = variable_text
+                            if key in translations:
+                                translation_text = translations[key]
+                                if translation_text == "":
+                                    translation_text = text_entry.get("Value", "")
+                                text_entry["Value"] = translation_text
+        return data
+    else:
+        # English mode
+        if include_file_path:
+            # Rows: [File, Original, Translation]
+            translations = {
+                row[1].replace("\\n", "\r\n"): row[2].replace("\\n", "\r\n")
+                for row in csv_data
+                if len(row) >= 3 and row[0] == str(relative) and row[1]
+            }
+        else:
+            # Rows: [Original, Translation]
+            translations = {
+                row[0].replace("\\n", "\r\n"): row[1].replace("\\n", "\r\n")
+                for row in csv_data
+                if len(row) >= 2 and row[0]
+            }
+        english_object_ids = set()
+        for record in data.get("Records", []):
+            if "Values" in record:
+                for val in record["Values"]:
+                    if (
+                        isinstance(val, dict)
+                        and val.get("RecordTypeEnum") == "BinaryObjectString"
+                        and val.get("Value") == "English"
+                        and "ObjectId" in val
+                    ):
+                        english_object_ids.add(val["ObjectId"])
+        for record in data.get("Records", []):
+            if "Values" in record:
+                previous_was_english = False
+                previous_id_ref = None
+                for val in record["Values"]:
+                    if not isinstance(val, dict):
+                        previous_was_english = False
+                        previous_id_ref = None
+                        continue
+                    if val.get("RecordTypeEnum") == "MemberReference":
+                        previous_id_ref = val.get("IdRef")
+                        continue
+                    if val.get("RecordTypeEnum") == "BinaryObjectString":
+                        current_text = val.get("Value")
+                        if current_text == "English":
+                            previous_was_english = True
+                            continue
+                        if previous_was_english or (
+                            previous_id_ref and previous_id_ref in english_object_ids
+                        ):
+                            # In English mode simply use the current_text as key.
+                            key = current_text
+                            if key in translations:
+                                replacement_text = translations[key]
+                                if replacement_text == "":
+                                    replacement_text = current_text
+                                val["Value"] = replacement_text
+                            previous_was_english = False
+                            previous_id_ref = None
+                        else:
+                            previous_was_english = False
+        return data
+
+
+def deduplicate_csv_data(
+    csv_data: List[List[str]], include_file: bool, language_mode: str
+) -> List[List[str]]:
+    """
+    Process the CSV data generated in non-include file mode and remove duplicates:
+    In variables mode, rows are expected to be [Variable, Original, Translation].
+    In English mode, rows are expected to be [Original, Translation] (when file path is not included).
+    When include_file is True, no deduplication is done.
+    """
+    if include_file:
+        unique_rows = []
+        for row in csv_data:
+            if row not in unique_rows:
+                unique_rows.append(row)
+        return unique_rows
+
+    if language_mode == "english":
+        # For English mode (without file) rows are [Original, Translation]
+        unique = {}
+        for row in csv_data:
+            original = row[0]
+            translation = row[1]
+            if original not in unique:
+                unique[original] = translation
+        deduped = [[orig, trans] for orig, trans in unique.items()]
+        return deduped
+
+    # Variables mode deduplication (rows: [Variable, Original, Translation])
+    grouped = {}
+    for row in csv_data:
+        # Assume row[0] is the variable (or composite key)
+        plain = row[0]
+        grouped.setdefault(plain, []).append(row)
+
+    deduped = []
+    for plain, rows in grouped.items():
+        unique_group = []
+        for r in rows:
+            if r not in unique_group:
+                unique_group.append(r)
+        if len(unique_group) == 1:
+            r = unique_group[0].copy()
+            r[0] = plain
+            deduped.append(r)
+        else:
+            translations = {r[1] for r in unique_group}
+            if len(translations) == 1:
+                r = unique_group[0].copy()
+                r[0] = plain
+                deduped.append(r)
+            else:
+                deduped.extend(unique_group)
+    return deduped
+
 
 app = typer.Typer(pretty_exceptions_enable=False)
 
@@ -922,10 +1194,13 @@ def process_file(
     use_csv: bool = False,
     csv_data: List[List[str]] = None,
     include_file_path: bool = False,
+    language_mode: str = "english",
+    base_path: Optional[Path] = None,
 ):
     """
-    Decode or encode a single file depending on 'is_decode'.
-    Optionally extract or replace text using CSV data.
+    Process a single file (decode or encode).
+    The language_mode flag is either "english" (default) or "variables".
+    CSV extraction/replacement is performed accordingly.
     """
     print(f'Processing "{file_path}"')
 
@@ -937,7 +1212,9 @@ def process_file(
 
         # Extract CSV lines if requested
         if use_csv and csv_data is not None:
-            data = extract_texts_to_csv(data, file_path, csv_data, include_file_path)
+            data = extract_texts_to_csv(
+                data, file_path, csv_data, include_file_path, language_mode, base_path
+            )
 
         with open(output_path, "w", encoding="utf-8") as out_json:
             json.dump(data, out_json, indent=2, ensure_ascii=False)
@@ -949,7 +1226,9 @@ def process_file(
 
         # Replace CSV lines if requested
         if use_csv and csv_data is not None:
-            data = replace_texts_from_csv(data, file_path, csv_data, include_file_path)
+            data = replace_texts_from_csv(
+                data, file_path, csv_data, include_file_path, language_mode, base_path
+            )
 
         output = BytesIO()
         udlg = UDLG(output)
@@ -957,163 +1236,6 @@ def process_file(
 
         with open(output_path, "wb") as out_file:
             out_file.write(output.getvalue())
-
-
-def extract_texts_to_csv(
-    data: Dict[str, Any],
-    file_path: Path,
-    csv_data: List[List[str]],
-    include_file_path: bool = False,
-) -> Dict[str, Any]:
-    """
-    Traverse the records looking for text that follows an "English" marker.
-    Store these texts into csv_data if they don't already exist.
-    Replaces newline characters with literal '\n' for CSV storage.
-    """
-
-    # Find object IDs that hold the "English" string
-    english_object_ids = set()
-    for record in data["Records"]:
-        if "Values" in record:
-            for val in record["Values"]:
-                if (
-                    isinstance(val, dict)
-                    and val.get("RecordTypeEnum") == "BinaryObjectString"
-                    and val.get("Value") == "English"
-                    and "ObjectId" in val
-                ):
-                    english_object_ids.add(val["ObjectId"])
-
-    for record in data["Records"]:
-        if "Values" in record:
-            previous_was_english = False
-            previous_id_ref = None
-
-            for val in record["Values"]:
-                if not isinstance(val, dict):
-                    previous_was_english = False
-                    previous_id_ref = None
-                    continue
-
-                # If we see a reference, store it
-                if val.get("RecordTypeEnum") == "MemberReference":
-                    previous_id_ref = val.get("IdRef")
-                    continue
-
-                if val.get("RecordTypeEnum") == "BinaryObjectString":
-                    current_text = val.get("Value")
-
-                    # If the text is "English", set a flag
-                    if current_text == "English":
-                        previous_was_english = True
-                        continue
-
-                    # If the previous text was English or an English reference
-                    # then we consider this text as translatable
-                    if previous_was_english or (
-                        previous_id_ref and previous_id_ref in english_object_ids
-                    ):
-                        processed_text = current_text.replace("\r\n", "\\n").replace(
-                            "\n", "\\n"
-                        )
-
-                        # Build CSV row
-                        row = [
-                            processed_text,
-                            # processed_text,
-                            "",
-                        ]  # [Original, Translation]
-                        if include_file_path:
-                            row.insert(0, str(file_path))
-
-                        # Append only if it doesn't already exist in csv_data
-                        if not any(processed_text == r[-2] for r in csv_data):
-                            csv_data.append(row)
-
-                        previous_was_english = False
-                        previous_id_ref = None
-                    else:
-                        previous_was_english = False
-
-    return data
-
-
-def replace_texts_from_csv(
-    data: Dict[str, Any],
-    file_path: Path,
-    csv_data: List[List[str]],
-    include_file_path: bool = False,
-) -> Dict[str, Any]:
-    """
-    Replace lines found in CSV (that follow an English marker in the data).
-    Restores '\n' from the literal backslash representation in CSV into
-    actual newlines.
-    """
-
-    # Build a dictionary of translations from the CSV
-    # in the form translations[original_text] = new_text
-    # If include_file_path is True, the CSV includes the file path in the first column.
-    if include_file_path:
-        translations = {
-            row[-2].replace("\\n", "\r\n"): row[-1].replace("\\n", "\r\n")
-            for row in csv_data
-            if row[0] == str(file_path) and row[-2] != row[-1]
-        }
-    else:
-        translations = {
-            row[0].replace("\\n", "\r\n"): row[1].replace("\\n", "\r\n")
-            for row in csv_data
-            if row[0] != row[1]
-        }
-
-    # Find "English" object IDs
-    english_object_ids = set()
-    for record in data["Records"]:
-        if "Values" in record:
-            for val in record["Values"]:
-                if (
-                    isinstance(val, dict)
-                    and val.get("RecordTypeEnum") == "BinaryObjectString"
-                    and val.get("Value") == "English"
-                ):
-                    english_object_ids.add(val["ObjectId"])
-
-    # Now replace text if the previous marker was English or a reference to English
-    for record in data["Records"]:
-        if "Values" in record:
-            previous_was_english = False
-            previous_id_ref = None
-
-            for val in record["Values"]:
-                if not isinstance(val, dict):
-                    previous_was_english = False
-                    previous_id_ref = None
-                    continue
-
-                if val.get("RecordTypeEnum") == "MemberReference":
-                    previous_id_ref = val.get("IdRef")
-                    continue
-
-                if val.get("RecordTypeEnum") == "BinaryObjectString":
-                    current_text = val.get("Value")
-
-                    if current_text == "English":
-                        previous_was_english = True
-                        continue
-
-                    if previous_was_english or (
-                        previous_id_ref and previous_id_ref in english_object_ids
-                    ):
-                        # If there is a matching translation in the CSV, replace it
-                        if current_text in translations:
-                            val["Value"] = translations[current_text]
-
-                        previous_was_english = False
-                        previous_id_ref = None
-                    else:
-                        previous_was_english = False
-
-    return data
 
 
 @app.command()
@@ -1126,9 +1248,12 @@ def decode(
     include_file_path: bool = typer.Option(
         False, "-f", "--include-file", help="Include file path in CSV"
     ),
+    mode: str = typer.Option(
+        "english", "-m", "--mode", help="Mode: 'english' (default) or 'variables'"
+    ),
 ):
     """
-    Decode .udlg file(s) into JSON. Optionally extract text into CSV.
+    Decode .udlg file(s) into JSON and optionally extract text into CSV.
     """
     csv_data: List[List[str]] = []
 
@@ -1136,29 +1261,51 @@ def decode(
         output_path = output or input_path.with_suffix(".json")
         output_path.parent.mkdir(parents=True, exist_ok=True)
         process_file(
-            input_path, output_path, True, extract_csv, csv_data, include_file_path
+            input_path,
+            output_path,
+            True,
+            extract_csv,
+            csv_data,
+            include_file_path,
+            language_mode=mode,
+            base_path=input_path.parent,
         )
     elif input_path.is_dir():
-        # If directory, decode all .udlg files inside
         output_dir = output or input_path.with_name(f"{input_path.name}_json")
         for file in input_path.glob("**/*.udlg"):
             out_file = output_dir / file.with_suffix(".json").relative_to(input_path)
             out_file.parent.mkdir(parents=True, exist_ok=True)
-            process_file(file, out_file, True, extract_csv, csv_data, include_file_path)
+            process_file(
+                file,
+                out_file,
+                True,
+                extract_csv,
+                csv_data,
+                include_file_path,
+                language_mode=mode,
+                base_path=input_path,
+            )
     else:
         typer.echo(f"Error: {input_path} is not a valid file or directory")
         raise typer.Exit(code=1)
 
     if extract_csv:
-        # Write CSV file
+        if not include_file_path:
+            csv_data = deduplicate_csv_data(csv_data, include_file_path, mode)
         csv_file = (output if output else input_path).with_suffix(".csv")
         csv_file.parent.mkdir(parents=True, exist_ok=True)
         with csv_file.open("w", newline="", encoding="utf-8") as csvfile:
             csv_writer = csv_module.writer(csvfile)
-            # Write headers
-            headers = ["Original", "Translation"]
-            if include_file_path:
-                headers.insert(0, "File")
+            if mode == "english":
+                if include_file_path:
+                    headers = ["File", "Original", "Translation"]
+                else:
+                    headers = ["Original", "Translation"]
+            else:
+                if include_file_path:
+                    headers = ["File", "Variable", "Original", "Translation"]
+                else:
+                    headers = ["Variable", "Original", "Translation"]
             csv_writer.writerow(headers)
             csv_writer.writerows(csv_data)
 
@@ -1175,13 +1322,15 @@ def encode(
     include_file_path: bool = typer.Option(
         False, "-f", "--include-file", help="CSV includes file path"
     ),
+    mode: str = typer.Option(
+        "english", "-m", "--mode", help="Mode: 'english' (default) or 'variables'"
+    ),
 ):
     """
     Encode JSON back into .udlg format, optionally applying CSV translations.
     """
     csv_data: List[List[str]] = []
 
-    # If a CSV is provided, load it
     if csv_file:
         if not csv_file.exists():
             typer.echo(f"CSV file {csv_file} does not exist.")
@@ -1196,7 +1345,14 @@ def encode(
         output_path = output or input_path.with_suffix(".udlg")
         output_path.parent.mkdir(parents=True, exist_ok=True)
         process_file(
-            input_path, output_path, False, bool(csv_file), csv_data, include_file_path
+            input_path,
+            output_path,
+            False,
+            bool(csv_file),
+            csv_data,
+            include_file_path,
+            language_mode=mode,
+            base_path=input_path.parent,
         )
     elif input_path.is_dir():
         output_dir = output or input_path.with_name(f"{input_path.name}_udlg")
@@ -1205,7 +1361,14 @@ def encode(
             out_file = output_dir / file.with_suffix(".udlg").relative_to(input_path)
             out_file.parent.mkdir(parents=True, exist_ok=True)
             process_file(
-                file, out_file, False, bool(csv_file), csv_data, include_file_path
+                file,
+                out_file,
+                False,
+                bool(csv_file),
+                csv_data,
+                include_file_path,
+                language_mode=mode,
+                base_path=input_path,
             )
     else:
         typer.echo(f"Error: {input_path} is not a valid file or directory")
@@ -1221,88 +1384,47 @@ def merge_csv(
     merged_csv: Path = typer.Argument(..., help="Output CSV with merged translations"),
 ):
     """
-    Merge existing translations from the base CSV into the new CSV.
-    - If the original text has not changed, carry over the translation.
-    - If it has changed, keep the new text as original and leave translation identical to original.
+    Merge translations from the base CSV into the new CSV.
+    Unifies the CSV columns using: Variable, Original, Translation.
+    In file mode the header is: File, Variable, Original, Translation.
     """
-
     if not base_csv.exists():
         typer.echo(f"Error: Base CSV {base_csv} does not exist.")
         raise typer.Exit(code=1)
     if not new_csv.exists():
         typer.echo(f"Error: New CSV {new_csv} does not exist.")
         raise typer.Exit(code=1)
-
     with base_csv.open("r", encoding="utf-8", newline="") as f_base:
         base_reader = csv_module.reader(f_base)
         base_header = next(base_reader, [])
         base_rows = list(base_reader)
-
     with new_csv.open("r", encoding="utf-8", newline="") as f_new:
         new_reader = csv_module.reader(f_new)
-        new_header = next(new_reader, [])
+        _new_header = next(new_reader, [])
         new_rows = list(new_reader)
-
-    # In many workflows, the structure of the CSV is:
-    #   Possibly: [FilePath], Original, Translation
-    # or simply: [Original, Translation]
-    # We'll detect which approach is in use by checking header length.
-
-    # Create dict for base CSV with key=original_text, value=translation
-    # If it includes a file column, the original text is at -2 index, the translation at -1 index.
-    # If not, the original and translation are at indices 0 and 1 respectively.
-
-    file_included = "File" in base_header or "File" in new_header
-
-    def get_original(row: List[str]) -> str:
-        if file_included:
-            return row[-2]
-        return row[0]
-
-    def get_translation(row: List[str]) -> str:
-        if file_included:
-            return row[-1]
-        return row[1]
-
-    # Build dictionary from base_csv
+    file_included = "File" in base_header
+    if file_included:
+        orig_idx, trans_idx = 2, 3
+    else:
+        orig_idx, trans_idx = 1, 2
     base_dict = {}
     for row in base_rows:
-        if len(row) < 2:
+        if len(row) < (trans_idx + 1):
             continue
-        base_dict[get_original(row)] = get_translation(row)
-
+        base_dict[row[orig_idx]] = row[trans_idx]
     merged_data = []
-    # Build the merged CSV data
     for row in new_rows:
-        if len(row) < 2:
+        if len(row) < (trans_idx + 1):
             merged_data.append(row)
             continue
-
-        original_text = get_original(row)
-        # If the original_text is found in the base_dict, we check if the new row's original text
-        # is exactly the same as it was in the base file. If so, we carry over the translation.
+        original_text = row[orig_idx]
         if original_text in base_dict:
-            # Only replace translation if it is the same original text
-            # (meaning it hasn't changed from the old content).
-            # If the new file changed the original text, we do NOT re-use.
-            # Here we assume "unchanged" means the text is an exact match (case-sensitive).
-            old_translation = base_dict[original_text]
-
-            # Replace in the merged row
-            if file_included:
-                row[-1] = old_translation
-            else:
-                row[1] = old_translation
-
+            row[trans_idx] = base_dict[original_text]
         merged_data.append(row)
-
-    # Write out merged result
     merged_csv.parent.mkdir(parents=True, exist_ok=True)
     with merged_csv.open("w", encoding="utf-8", newline="") as f_merged:
         writer = csv_module.writer(f_merged)
-        # Write the header if present
-        if base_header:
-            writer.writerow(base_header)
+        writer.writerow(base_header)
         for row in merged_data:
             writer.writerow(row)
 
