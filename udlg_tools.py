@@ -1,7 +1,7 @@
 import csv as csv_module
-import gzip
 import json
 import struct
+import zlib
 from enum import Enum
 from io import BytesIO
 from pathlib import Path
@@ -9,6 +9,9 @@ from typing import Any, Dict, List, Optional
 
 import typer
 from rich import print
+
+# The UDLG signature is the first 16 bytes that must match.
+UDLG_SIGNATURE = bytes.fromhex("F9538B831F363243BAAE0D17865D0854")
 
 
 class PrimitiveType(Enum):
@@ -468,7 +471,7 @@ class NetSerializer:
             self.read_write_class_values(record_data)
             return record_data
         else:
-            self.read_write_class_values(record, mode="write")
+            self.read_write_class_values(record, record, mode="write")
 
     def handle_system_class_with_members(self, record=None, mode="read"):
         """Handle a system class record with members, but no type info for members."""
@@ -526,7 +529,7 @@ class NetSerializer:
                 self.read_write_primitive(
                     PrimitiveType.Int32, record["LibraryId"], mode="write"
                 )
-            self.read_write_class_values(record, mode="write")
+            self.read_write_class_values(record, record, mode="write")
 
     def handle_binary_array(self, record=None, mode="read"):
         """Handle a multi-element array record."""
@@ -835,7 +838,7 @@ class UDLG:
             self.serializer.stream.seek(current_pos)
             compressed_data = self.serializer.stream.read()
             try:
-                decompressed_payload = gzip.decompress(compressed_data)
+                decompressed_payload = decompress_gzip_zlib(compressed_data)
             except Exception as e:
                 raise IOError("Error decompressing gzip payload: " + str(e))
             # Replace the stream with the decompressed payload
@@ -880,7 +883,7 @@ class UDLG:
             )
         payload_bytes = temp_payload.getvalue()
         if data.get("Compressed", False):
-            payload_bytes = gzip.compress(payload_bytes)
+            payload_bytes = compress_gzip_zlib(payload_bytes)
         self.serializer.write(payload_bytes)
 
 
@@ -917,30 +920,34 @@ def extract_texts_to_csv(
         for record in data.get("Records", []):
             if "Values" in record and isinstance(record["Values"], list):
                 vals = record["Values"]
-                # If first element is an integer, assume a count is present and then pair entries
-                if len(vals) >= 3 and isinstance(vals[0], int):
-                    for i in range(1, len(vals) - 1, 2):
-                        var_entry = vals[i]
-                        text_entry = vals[i + 1]
-                        if (
-                            isinstance(var_entry, dict)
-                            and var_entry.get("RecordTypeEnum") == "BinaryObjectString"
-                            and isinstance(text_entry, dict)
-                            and text_entry.get("RecordTypeEnum") == "BinaryObjectString"
-                        ):
-                            variable_text = var_entry.get("Value", "")
-                            actual_text = text_entry.get("Value", "")
-                            processed_text = actual_text.replace("\r\n", "\\n").replace(
-                                "\n", "\\n"
-                            )
-                            if include_file_path:
-                                # CSV row with 4 columns: [File, Variable, Original, Translation]
-                                row = [str(relative), variable_text, processed_text, ""]
-                            else:
-                                # CSV row with 3 columns: [Variable, Original, Translation]
-                                row = [variable_text, processed_text, ""]
-                            if row not in csv_data:
-                                csv_data.append(row)
+                start_index = 1 if isinstance(vals[0], int) else 0
+                for i in range(start_index, len(vals) - 1, 2):
+                    var_entry = vals[i]
+                    text_entry = vals[i + 1]
+                    if (
+                        isinstance(var_entry, dict)
+                        and var_entry.get("RecordTypeEnum") == "BinaryObjectString"
+                        and isinstance(text_entry, dict)
+                        and text_entry.get("RecordTypeEnum") == "BinaryObjectString"
+                    ):
+                        variable_text = var_entry.get("Value", "")
+                        actual_text = text_entry.get("Value", "")
+                        processed_text = actual_text.replace("\r\n", "\\n").replace(
+                            "\n", "\\n"
+                        )
+                        if include_file_path:
+                            # CSV row with 4 columns: [File, Variable, Original, Translation]
+                            row = [str(relative), variable_text, processed_text, ""]
+                        else:
+                            # CSV row with 3 columns: [Variable, Original, Translation]
+                            # Use composite key initially
+                            row = [
+                                f"{variable_text}|{relative.name}",
+                                processed_text,
+                                "",
+                            ]
+                        if row not in csv_data:
+                            csv_data.append(row)
     else:
         # English mode
         # Find object IDs that hold the "English" string
@@ -1025,7 +1032,7 @@ def replace_texts_from_csv(
             relative = file_path
     else:
         relative = file_path
-    relative = relative.with_suffix(".udlg")
+    relative = relative.with_suffix("")
 
     if language_mode == "variables":
         if include_file_path:
@@ -1050,23 +1057,33 @@ def replace_texts_from_csv(
         for record in data.get("Records", []):
             if "Values" in record and isinstance(record["Values"], list):
                 vals = record["Values"]
-                if len(vals) >= 3 and isinstance(vals[0], int):
-                    for i in range(1, len(vals) - 1, 2):
-                        var_entry = vals[i]
-                        text_entry = vals[i + 1]
-                        if (
-                            isinstance(var_entry, dict)
-                            and var_entry.get("RecordTypeEnum") == "BinaryObjectString"
-                            and isinstance(text_entry, dict)
-                            and text_entry.get("RecordTypeEnum") == "BinaryObjectString"
-                        ):
-                            variable_text = var_entry.get("Value", "")
+                start_index = 1 if isinstance(vals[0], int) else 0
+                for i in range(start_index, len(vals) - 1, 2):
+                    var_entry = vals[i]
+                    text_entry = vals[i + 1]
+                    if (
+                        isinstance(var_entry, dict)
+                        and var_entry.get("RecordTypeEnum") == "BinaryObjectString"
+                        and isinstance(text_entry, dict)
+                        and text_entry.get("RecordTypeEnum") == "BinaryObjectString"
+                    ):
+                        variable_text = var_entry.get("Value", "")
+                        if include_file_path:
                             key = variable_text
-                            if key in translations:
-                                translation_text = translations[key]
-                                if translation_text == "":
-                                    translation_text = text_entry.get("Value", "")
-                                text_entry["Value"] = translation_text
+                        else:
+                            plain_key = variable_text
+                            composite_key = f"{variable_text}|{relative.name}"
+                            if plain_key in translations:
+                                key = plain_key
+                            elif composite_key in translations:
+                                key = composite_key
+                            else:
+                                key = None
+                        if key is not None and key in translations:
+                            translation_text = translations[key]
+                            if translation_text == "":
+                                translation_text = text_entry.get("Value", "")
+                            text_entry["Value"] = translation_text
         return data
     else:
         # English mode
@@ -1129,6 +1146,23 @@ def replace_texts_from_csv(
         return data
 
 
+def compress_gzip_zlib(data: bytes) -> bytes:
+    """Compress data using zlib to generate a gzip stream."""
+    compressor = zlib.compressobj(
+        level=zlib.Z_DEFAULT_COMPRESSION,
+        wbits=zlib.MAX_WBITS | 16,  # 31: maximum window and gzip header/trailer
+    )
+    compressed_data = compressor.compress(data) + compressor.flush()
+    # To achieve a specific header ('byte 8: XFL (extra flags) and byte 9: OS (operating system)' instead of the default), a manual replacement is needed:
+    fixed_data = compressed_data[:8] + b"\x04\x00" + compressed_data[10:]
+    return fixed_data
+
+
+def decompress_gzip_zlib(data: bytes) -> bytes:
+    """Decompress gzip data using zlib."""
+    return zlib.decompress(data, wbits=zlib.MAX_WBITS | 16)
+
+
 def deduplicate_csv_data(
     csv_data: List[List[str]], include_file: bool, language_mode: str
 ) -> List[List[str]]:
@@ -1159,12 +1193,16 @@ def deduplicate_csv_data(
     # Variables mode deduplication (rows: [Variable, Original, Translation])
     grouped = {}
     for row in csv_data:
-        # Assume row[0] is the variable (or composite key)
-        plain = row[0]
+        # Assume row[0] has format "plain|filename" or just "plain"
+        if "|" in row[0]:
+            plain = row[0].split("|", 1)[0]
+        else:
+            plain = row[0]
         grouped.setdefault(plain, []).append(row)
 
     deduped = []
     for plain, rows in grouped.items():
+        # Remove exact duplicates within the group
         unique_group = []
         for r in rows:
             if r not in unique_group:
@@ -1253,12 +1291,25 @@ def decode(
     ),
 ):
     """
-    Decode .udlg file(s) into JSON and optionally extract text into CSV.
+    Decode UDLG file(s) into JSON and optionally extract text into CSV.
+    All files are checked for the UDLG signature.
     """
     csv_data: List[List[str]] = []
 
     if input_path.is_file():
-        output_path = output or input_path.with_suffix(".json")
+        try:
+            with open(input_path, "rb") as f:
+                header_bytes = f.read(16)
+            if header_bytes != UDLG_SIGNATURE:
+                typer.echo(
+                    f"Skipping {input_path}: not a valid UDLG file (signature mismatch)."
+                )
+                raise typer.Exit(code=1)
+        except Exception as e:
+            typer.echo(f"Error reading file {input_path}: {e}")
+            raise typer.Exit(code=1)
+        # Output file will be the original file name with ".json" appended.
+        output_path = output or input_path.parent / (input_path.name + ".json")
         output_path.parent.mkdir(parents=True, exist_ok=True)
         process_file(
             input_path,
@@ -1272,19 +1323,29 @@ def decode(
         )
     elif input_path.is_dir():
         output_dir = output or input_path.with_name(f"{input_path.name}_json")
-        for file in input_path.glob("**/*.udlg"):
-            out_file = output_dir / file.with_suffix(".json").relative_to(input_path)
-            out_file.parent.mkdir(parents=True, exist_ok=True)
-            process_file(
-                file,
-                out_file,
-                True,
-                extract_csv,
-                csv_data,
-                include_file_path,
-                language_mode=mode,
-                base_path=input_path,
-            )
+        for file in input_path.glob("**/*"):
+            if file.is_file():
+                try:
+                    with open(file, "rb") as f:
+                        header_bytes = f.read(16)
+                    if header_bytes != UDLG_SIGNATURE:
+                        continue
+                except Exception as e:
+                    typer.echo(f"Error reading file {file}: {e}")
+                    continue
+                out_file = output_dir / file.relative_to(input_path)
+                out_file = out_file.with_name(out_file.name + ".json")
+                out_file.parent.mkdir(parents=True, exist_ok=True)
+                process_file(
+                    file,
+                    out_file,
+                    True,
+                    extract_csv,
+                    csv_data,
+                    include_file_path,
+                    language_mode=mode,
+                    base_path=input_path,
+                )
     else:
         typer.echo(f"Error: {input_path} is not a valid file or directory")
         raise typer.Exit(code=1)
@@ -1327,7 +1388,8 @@ def encode(
     ),
 ):
     """
-    Encode JSON back into .udlg format, optionally applying CSV translations.
+    Encode JSON back into UDLG format, optionally applying CSV translations.
+    The output file name is computed by removing the trailing '.json' from the input.
     """
     csv_data: List[List[str]] = []
 
@@ -1342,7 +1404,15 @@ def encode(
             csv_data = list(csv_reader)
 
     if input_path.is_file():
-        output_path = output or input_path.with_suffix(".udlg")
+        # Input file is assumed to be a JSON file with an extra extension.
+        if input_path.suffix == ".json":
+            base_name = input_path.stem
+            if Path(base_name).suffix == "":
+                output_path = output or input_path.parent / (base_name + ".udlg")
+            else:
+                output_path = output or input_path.parent / base_name
+        else:
+            output_path = output or input_path.with_suffix(".udlg")
         output_path.parent.mkdir(parents=True, exist_ok=True)
         process_file(
             input_path,
@@ -1356,9 +1426,15 @@ def encode(
         )
     elif input_path.is_dir():
         output_dir = output or input_path.with_name(f"{input_path.name}_udlg")
-        output_dir.mkdir(parents=True, exist_ok=True)
         for file in input_path.glob("**/*.json"):
-            out_file = output_dir / file.with_suffix(".udlg").relative_to(input_path)
+            out_file = output_dir / file.relative_to(input_path)
+            base_name = (
+                out_file.stem
+            )  # Remove trailing ".json" – should be the original file name.
+            if Path(base_name).suffix == "":
+                out_file = out_file.with_name(base_name + ".udlg")
+            else:
+                out_file = out_file.with_name(base_name)
             out_file.parent.mkdir(parents=True, exist_ok=True)
             process_file(
                 file,
