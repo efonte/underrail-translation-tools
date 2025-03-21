@@ -920,34 +920,35 @@ def extract_texts_to_csv(
         for record in data.get("Records", []):
             if "Values" in record and isinstance(record["Values"], list):
                 vals = record["Values"]
-                start_index = 1 if isinstance(vals[0], int) else 0
-                for i in range(start_index, len(vals) - 1, 2):
-                    var_entry = vals[i]
-                    text_entry = vals[i + 1]
-                    if (
-                        isinstance(var_entry, dict)
-                        and var_entry.get("RecordTypeEnum") == "BinaryObjectString"
-                        and isinstance(text_entry, dict)
-                        and text_entry.get("RecordTypeEnum") == "BinaryObjectString"
-                    ):
-                        variable_text = var_entry.get("Value", "")
-                        actual_text = text_entry.get("Value", "")
-                        processed_text = actual_text.replace("\r\n", "\\n").replace(
-                            "\n", "\\n"
-                        )
-                        if include_file_path:
-                            # CSV row with 4 columns: [File, Variable, Original, Translation]
-                            row = [str(relative), variable_text, processed_text, ""]
-                        else:
-                            # CSV row with 3 columns: [Variable, Original, Translation]
-                            # Use composite key initially
-                            row = [
-                                f"{variable_text}|{relative.name}",
-                                processed_text,
-                                "",
-                            ]
-                        if row not in csv_data:
-                            csv_data.append(row)
+                # If first element is an integer, assume a count is present and then pair entries
+                if len(vals) >= 3 and isinstance(vals[0], int):
+                    for i in range(1, len(vals) - 1, 2):
+                        var_entry = vals[i]
+                        text_entry = vals[i + 1]
+                        if (
+                            isinstance(var_entry, dict)
+                            and var_entry.get("RecordTypeEnum") == "BinaryObjectString"
+                            and isinstance(text_entry, dict)
+                            and text_entry.get("RecordTypeEnum") == "BinaryObjectString"
+                        ):
+                            variable_text = var_entry.get("Value", "")
+                            actual_text = text_entry.get("Value", "")
+                            processed_text = actual_text.replace("\r\n", "\\n").replace(
+                                "\n", "\\n"
+                            )
+                            if include_file_path:
+                                # CSV row with 4 columns: [File, Variable, Original, Translation]
+                                row = [str(relative), variable_text, processed_text, ""]
+                            else:
+                                # CSV row with 3 columns: [Variable, Original, Translation]
+                                # Use composite key initially
+                                row = [
+                                    f"{variable_text}|{relative.name}",
+                                    processed_text,
+                                    "",
+                                ]
+                            if row not in csv_data:
+                                csv_data.append(row)
     else:
         # English mode
         # Find object IDs that hold the "English" string
@@ -1057,33 +1058,33 @@ def replace_texts_from_csv(
         for record in data.get("Records", []):
             if "Values" in record and isinstance(record["Values"], list):
                 vals = record["Values"]
-                start_index = 1 if isinstance(vals[0], int) else 0
-                for i in range(start_index, len(vals) - 1, 2):
-                    var_entry = vals[i]
-                    text_entry = vals[i + 1]
-                    if (
-                        isinstance(var_entry, dict)
-                        and var_entry.get("RecordTypeEnum") == "BinaryObjectString"
-                        and isinstance(text_entry, dict)
-                        and text_entry.get("RecordTypeEnum") == "BinaryObjectString"
-                    ):
-                        variable_text = var_entry.get("Value", "")
-                        if include_file_path:
-                            key = variable_text
-                        else:
-                            plain_key = variable_text
-                            composite_key = f"{variable_text}|{relative.name}"
-                            if plain_key in translations:
-                                key = plain_key
-                            elif composite_key in translations:
-                                key = composite_key
+                if len(vals) >= 3 and isinstance(vals[0], int):
+                    for i in range(1, len(vals) - 1, 2):
+                        var_entry = vals[i]
+                        text_entry = vals[i + 1]
+                        if (
+                            isinstance(var_entry, dict)
+                            and var_entry.get("RecordTypeEnum") == "BinaryObjectString"
+                            and isinstance(text_entry, dict)
+                            and text_entry.get("RecordTypeEnum") == "BinaryObjectString"
+                        ):
+                            variable_text = var_entry.get("Value", "")
+                            if include_file_path:
+                                key = variable_text
                             else:
-                                key = None
-                        if key is not None and key in translations:
-                            translation_text = translations[key]
-                            if translation_text == "":
-                                translation_text = text_entry.get("Value", "")
-                            text_entry["Value"] = translation_text
+                                plain_key = variable_text
+                                composite_key = f"{variable_text}|{relative.name}"
+                                if plain_key in translations:
+                                    key = plain_key
+                                elif composite_key in translations:
+                                    key = composite_key
+                                else:
+                                    key = None
+                            if key is not None and key in translations:
+                                translation_text = translations[key]
+                                if translation_text == "":
+                                    translation_text = text_entry.get("Value", "")
+                                text_entry["Value"] = translation_text
         return data
     else:
         # English mode
