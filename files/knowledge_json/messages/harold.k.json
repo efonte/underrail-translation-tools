@@ -1,0 +1,76 @@
+{
+  "Header": "F9538B831F363243BAAE0D17865D08544FA2DB215D000000",
+  "Records": [
+    {
+      "RootId": 1,
+      "HeaderId": -1,
+      "MajorVersion": 1,
+      "MinorVersion": 0,
+      "RecordTypeEnum": "SerializedStreamHeader"
+    },
+    {
+      "LibraryId": 2,
+      "LibraryName": "X",
+      "RecordTypeEnum": "BinaryLibrary"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 1,
+        "Name": "KI",
+        "MemberCount": 5,
+        "MemberNames": [
+          "KI:S:Count",
+          "KI:S:0:Key",
+          "KI:S:0:Value",
+          "KI:S:1:Key",
+          "KI:S:1:Value"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive",
+          "String",
+          "String",
+          "String",
+          "String"
+        ],
+        "AdditionalInfos": [
+          "Int32",
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        2,
+        {
+          "ObjectId": 3,
+          "Value": "batteries",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 4,
+          "Value": "\r\nGreetings,\r\n\r\nPlease come down here and see me when you have the time. There's something I need help with.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 5,
+          "Value": "minibot",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 6,
+          "Value": "\r\nGreetings,\r\n\r\nThe explorer is ready and sent to Harland. Reminder: Don't forget to get it fully charged before dispatching it.",
+          "RecordTypeEnum": "BinaryObjectString"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "RecordTypeEnum": "MessageEnd"
+    }
+  ],
+  "Compressed": true
+}

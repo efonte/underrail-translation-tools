@@ -1,0 +1,60 @@
+{
+  "Header": "F9538B831F363243BAAE0D17865D08544CA2DB215D000000",
+  "Records": [
+    {
+      "RootId": 1,
+      "HeaderId": -1,
+      "MajorVersion": 1,
+      "MinorVersion": 0,
+      "RecordTypeEnum": "SerializedStreamHeader"
+    },
+    {
+      "LibraryId": 2,
+      "LibraryName": "X",
+      "RecordTypeEnum": "BinaryLibrary"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 1,
+        "Name": "KI",
+        "MemberCount": 3,
+        "MemberNames": [
+          "KI:S:Count",
+          "KI:S:0:Key",
+          "KI:S:0:Value"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive",
+          "String",
+          "String"
+        ],
+        "AdditionalInfos": [
+          "Int32",
+          null,
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        1,
+        {
+          "ObjectId": 3,
+          "Value": "camphathor",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 4,
+          "Value": "I've got something to discuss with you about Camp Hathor, so please come and see me when you have the time. If you haven't heard of it, I'll explain everything when you get here.",
+          "RecordTypeEnum": "BinaryObjectString"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "RecordTypeEnum": "MessageEnd"
+    }
+  ],
+  "Compressed": true
+}

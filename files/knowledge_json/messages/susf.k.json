@@ -1,0 +1,60 @@
+{
+  "Header": "F9538B831F363243BAAE0D17865D085479A2DB215D000000",
+  "Records": [
+    {
+      "RootId": 1,
+      "HeaderId": -1,
+      "MajorVersion": 1,
+      "MinorVersion": 0,
+      "RecordTypeEnum": "SerializedStreamHeader"
+    },
+    {
+      "LibraryId": 2,
+      "LibraryName": "X",
+      "RecordTypeEnum": "BinaryLibrary"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 1,
+        "Name": "KI",
+        "MemberCount": 3,
+        "MemberNames": [
+          "KI:S:Count",
+          "KI:S:0:Key",
+          "KI:S:0:Value"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive",
+          "String",
+          "String"
+        ],
+        "AdditionalInfos": [
+          "Int32",
+          null,
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        1,
+        {
+          "ObjectId": 3,
+          "Value": "faceless",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 4,
+          "Value": "To all stations,\r\n\r\nThe Faceless have been spotted in multiple locations throughout South Underrail. They are using large tunneling machines to transport troops, and all reports suggest that they are heavily armed and large in numbers. They have already shown hostility toward Core City and Rail Crossing. \r\n\r\nAll stations are urged to mount their defenses and report any Faceless sightings as soon as possible.",
+          "RecordTypeEnum": "BinaryObjectString"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "RecordTypeEnum": "MessageEnd"
+    }
+  ],
+  "Compressed": true
+}

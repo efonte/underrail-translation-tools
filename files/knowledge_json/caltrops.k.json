@@ -1,0 +1,124 @@
+{
+  "Header": "F9538B831F363243BAAE0D17865D0854BA817C814A000000",
+  "Records": [
+    {
+      "RootId": 1,
+      "HeaderId": -1,
+      "MajorVersion": 1,
+      "MinorVersion": 0,
+      "RecordTypeEnum": "SerializedStreamHeader"
+    },
+    {
+      "LibraryId": 2,
+      "LibraryName": "X",
+      "RecordTypeEnum": "BinaryLibrary"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 1,
+        "Name": "KI",
+        "MemberCount": 11,
+        "MemberNames": [
+          "KI:S:Count",
+          "KI:S:0:Key",
+          "KI:S:0:Value",
+          "KI:S:1:Key",
+          "KI:S:1:Value",
+          "KI:S:2:Key",
+          "KI:S:2:Value",
+          "KI:S:3:Key",
+          "KI:S:3:Value",
+          "KI:S:4:Key",
+          "KI:S:4:Value"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String"
+        ],
+        "AdditionalInfos": [
+          "Int32",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        5,
+        {
+          "ObjectId": 3,
+          "Value": "regular",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 4,
+          "Value": "Deploy regular caltrops to the targeted area. Anyone who steps on a caltrop suffers {0} damage and loses {1} movement points (if target has no movement points, it loses action points instead). Stepping on a caltrop cannot deal a fatal blow.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 5,
+          "Value": "burrowerpoison",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 6,
+          "Value": "Deploy poison-tipped caltrops to the targeted area. Anyone who steps on a caltrop immediately suffers {0} damage and loses {1} movement points (if target has no movement points, it loses action points instead) and is infected by burrower poison that deals {2} damage each turn for {3}. Stacks {4} times.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 7,
+          "Value": "caveearpoison",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 8,
+          "Value": "Deploy poison-tipped caltrops to the targeted area. Anyone who steps on a caltrop immediately suffers {0} damage and loses {1} movement points (if target has no movement points, it loses action points instead) and is infected by cave ear poison that increases all biological damage taken by {2}% and reduces perception by {3}. Lasts up to {4}.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 9,
+          "Value": "crawlerpoison",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 10,
+          "Value": "Deploy poison-tipped caltrops to the targeted area. Anyone who steps on a caltrop immediately suffers {0} damage and loses {1} movement points (if target has no movement points, it loses action points instead) and is infected by crawler poison that deals {2} damage each turn for {3}. If the poison is not removed before it expires it will stun the victim for {4}.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 11,
+          "Value": "blindingpoison",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 12,
+          "Value": "Deploy poison-tipped caltrops to the targeted area. Anyone who steps on a caltrop immediately suffers {0} damage and loses {1} movement points (if target has no movement points, it loses action points instead) and is infected by blinding poison that deals {2} damage each turn for {3} and reduces perception by {4}. Stacks {5} times.",
+          "RecordTypeEnum": "BinaryObjectString"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "RecordTypeEnum": "MessageEnd"
+    }
+  ],
+  "Compressed": true
+}

@@ -1,0 +1,92 @@
+{
+  "Header": "F9538B831F363243BAAE0D17865D08547FA2DB215D000000",
+  "Records": [
+    {
+      "RootId": 1,
+      "HeaderId": -1,
+      "MajorVersion": 1,
+      "MinorVersion": 0,
+      "RecordTypeEnum": "SerializedStreamHeader"
+    },
+    {
+      "LibraryId": 2,
+      "LibraryName": "X",
+      "RecordTypeEnum": "BinaryLibrary"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 1,
+        "Name": "KI",
+        "MemberCount": 7,
+        "MemberNames": [
+          "KI:S:Count",
+          "KI:S:0:Key",
+          "KI:S:0:Value",
+          "KI:S:1:Key",
+          "KI:S:1:Value",
+          "KI:S:2:Key",
+          "KI:S:2:Value"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String"
+        ],
+        "AdditionalInfos": [
+          "Int32",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        3,
+        {
+          "ObjectId": 3,
+          "Value": "movementpoints",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 4,
+          "Value": "These points can only be used for movement.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 5,
+          "Value": "actionpoints",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 6,
+          "Value": "These points can be used for performing actions or for movement if there are no movement points left. You can carry over up to {0} unspent action points to the next turn.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 7,
+          "Value": "innervate",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 8,
+          "Value": "Applies the changes made to the psi ability selection. This will instantly drain all of your psi points and reserves.\r\n\r\nThis can only be done out of combat.",
+          "RecordTypeEnum": "BinaryObjectString"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "RecordTypeEnum": "MessageEnd"
+    }
+  ],
+  "Compressed": true
+}

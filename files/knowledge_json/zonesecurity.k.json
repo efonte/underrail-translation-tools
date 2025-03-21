@@ -1,0 +1,140 @@
+{
+  "Header": "F9538B831F363243BAAE0D17865D0854EF6588D54C000000",
+  "Records": [
+    {
+      "RootId": 1,
+      "HeaderId": -1,
+      "MajorVersion": 1,
+      "MinorVersion": 0,
+      "RecordTypeEnum": "SerializedStreamHeader"
+    },
+    {
+      "LibraryId": 2,
+      "LibraryName": "X",
+      "RecordTypeEnum": "BinaryLibrary"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 1,
+        "Name": "KI",
+        "MemberCount": 13,
+        "MemberNames": [
+          "KI:S:Count",
+          "KI:S:0:Key",
+          "KI:S:0:Value",
+          "KI:S:1:Key",
+          "KI:S:1:Value",
+          "KI:S:2:Key",
+          "KI:S:2:Value",
+          "KI:S:3:Key",
+          "KI:S:3:Value",
+          "KI:S:4:Key",
+          "KI:S:4:Value",
+          "KI:S:5:Key",
+          "KI:S:5:Value"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String"
+        ],
+        "AdditionalInfos": [
+          "Int32",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        6,
+        {
+          "ObjectId": 3,
+          "Value": "uncontrolled",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 4,
+          "Value": "- Setting traps or planting explosives near other characters might provoke them\r\n- Setting traps or planting explosives out of sight cannot be traced to you",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 5,
+          "Value": "partiallycontrolled",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 6,
+          "Value": "- Setting traps or planting explosives near other characters might provoke them\r\n- If members of certain factions take damage from your traps or explosives they will automatically track it back to you and will turn hostile",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 7,
+          "Value": "controlled",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 8,
+          "Value": "- Setting traps or planting explosives near other characters might provoke them\r\n- If members of certain factions take damage from your traps or explosives they will automatically track it back to you and will turn hostile\r\n- If members of certain factions discover traps or explosives planted by you they will automatically track it back to you and will turn hostile",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 9,
+          "Value": "camerafootage",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 10,
+          "Value": "If you are spotted by the cameras in this zone, you might later trigger hostilities from certain factions if the footage is not promptly erased.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 11,
+          "Value": "leavenowitnesses",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 12,
+          "Value": "If you trigger hostilities with characters in this zone and leave the zone before disposing of the witnesses, the hostilities may propagate to the entire faction and even allied factions.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 13,
+          "Value": "savingdisabled",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 14,
+          "Value": "You cannot save the game while in this zone.",
+          "RecordTypeEnum": "BinaryObjectString"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "RecordTypeEnum": "MessageEnd"
+    }
+  ],
+  "Compressed": true
+}

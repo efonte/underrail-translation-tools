@@ -1,0 +1,92 @@
+{
+  "Header": "F9538B831F363243BAAE0D17865D08544CA2DB215D000000",
+  "Records": [
+    {
+      "RootId": 1,
+      "HeaderId": -1,
+      "MajorVersion": 1,
+      "MinorVersion": 0,
+      "RecordTypeEnum": "SerializedStreamHeader"
+    },
+    {
+      "LibraryId": 2,
+      "LibraryName": "X",
+      "RecordTypeEnum": "BinaryLibrary"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 1,
+        "Name": "KI",
+        "MemberCount": 7,
+        "MemberNames": [
+          "KI:S:Count",
+          "KI:S:0:Key",
+          "KI:S:0:Value",
+          "KI:S:1:Key",
+          "KI:S:1:Value",
+          "KI:S:2:Key",
+          "KI:S:2:Value"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String"
+        ],
+        "AdditionalInfos": [
+          "Int32",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        3,
+        {
+          "ObjectId": 3,
+          "Value": "electroboltchain",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 4,
+          "Value": "There's a {0}% chance that original target is stunned for 1 turn, after which the electrical bolt jumps up to {1} times, each time dealing damage equal to {2}% of damage dealt to the previous target. It can hit the same target multiple times, but needs at least two targets to jump between.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 5,
+          "Value": "electroboltchainchance",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 6,
+          "Value": "{0} chance to trigger the chain effect. When this happens there's a {1}% chance that the original target is stunned for 1 turn, after which the electrical bolt jumps up to {2} times, each time dealing damage equal to {3}% of damage dealt to the previous target. It can hit the same target multiple, but needs at least two targets to jump between.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 7,
+          "Value": "rustingacidsplash",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 8,
+          "Value": "Applies Rusting debuff which reduces durability of all mechanical items in target's posession by {0} per stack each turn for {1}. Stacks {2} times.",
+          "RecordTypeEnum": "BinaryObjectString"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "RecordTypeEnum": "MessageEnd"
+    }
+  ],
+  "Compressed": true
+}

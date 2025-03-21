@@ -1,0 +1,204 @@
+{
+  "Header": "F9538B831F363243BAAE0D17865D085469A2DB215D000000",
+  "Records": [
+    {
+      "RootId": 1,
+      "HeaderId": -1,
+      "MajorVersion": 1,
+      "MinorVersion": 0,
+      "RecordTypeEnum": "SerializedStreamHeader"
+    },
+    {
+      "LibraryId": 2,
+      "LibraryName": "X",
+      "RecordTypeEnum": "BinaryLibrary"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 1,
+        "Name": "KI",
+        "MemberCount": 21,
+        "MemberNames": [
+          "KI:S:Count",
+          "KI:S:0:Key",
+          "KI:S:0:Value",
+          "KI:S:1:Key",
+          "KI:S:1:Value",
+          "KI:S:2:Key",
+          "KI:S:2:Value",
+          "KI:S:3:Key",
+          "KI:S:3:Value",
+          "KI:S:4:Key",
+          "KI:S:4:Value",
+          "KI:S:5:Key",
+          "KI:S:5:Value",
+          "KI:S:6:Key",
+          "KI:S:6:Value",
+          "KI:S:7:Key",
+          "KI:S:7:Value",
+          "KI:S:8:Key",
+          "KI:S:8:Value",
+          "KI:S:9:Key",
+          "KI:S:9:Value"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String"
+        ],
+        "AdditionalInfos": [
+          "Int32",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        10,
+        {
+          "ObjectId": 3,
+          "Value": "regular",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 4,
+          "Value": "Throw the knife dealing {0} damage if it hits the target. This damage incurs {2}% of target's mechanical resistance and threshold, but the damage that passes armor is increased by {3}% against living targets. Damage and precision scale with the throwing skill. When throwing a knife while in melee range of an enemy, you suffer {1}% hit chance penalty.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 5,
+          "Value": "burrowerpoison",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 6,
+          "Value": "If target takes damage it is also afflicted with burrower poison that deals {0} damage each turn for up to {1}. Stacks {2} times.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 7,
+          "Value": "caveearpoison",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 8,
+          "Value": "If target takes damage it is also afflicted with cave ear poison that increases all biological damage taken by {0}% and reduces perception by {1}. Lasts up to {2}.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 9,
+          "Value": "crawlerpoison",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 10,
+          "Value": "If target takes damage it is also afflicted with crawler poison that deals {0} damage each turn for {1}. If the poison is not removed before it expires it will stun the victim for {2}.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 11,
+          "Value": "blackdragonpoison",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 12,
+          "Value": "If target takes damage it is also afflicted with black dragon poison which causes psionic inhibition, preventing the victim from invoking psi abilities or regenerating psi points. Lasts {0}.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 13,
+          "Value": "spiritpoison",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 14,
+          "Value": "If target takes damage it is also afflicted with spirit poison that deals {0} damage per turn each turn for {1} and reduces resolve by {2}%. If the poison is not removed before it expires it will summon a psionic doppelganger of the victim if it's humanoid.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 15,
+          "Value": "blindingpoison",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 16,
+          "Value": "If target takes damage it is also afflicted with blinding poison that deals {0} damage each turn for up to {1} and reduces perception by {2}. Stacks {3} times.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 17,
+          "Value": "leperpoison",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 18,
+          "Value": "If target takes damage it is also afflicted with leper poison that deals {0} damage each turn for up to {1} and increases all mechanical damage taken by {2}%. Stacks {3} times.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 19,
+          "Value": "heartbreakpoison",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 20,
+          "Value": "If target takes damage it is also afflicted with heartbreak poison that deals {0} damage each turn for up to {1}. Stacks {2} times. If this poison is allowed the expire naturally it will then deal a great amount of damage which increases ever more rapidly with each stack.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 21,
+          "Value": "shockshuriken",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 22,
+          "Value": "Throw the shuriken dealing {0} damage (incurring {3}% of target's mechanical resistance and threshold) and {1} damage if it hits the target. If any electrical damage is dealt, there's a {4}% chance to stun or short-circuit the target for one turn. When throwing while in melee range of an enemy, you suffer {2}% hit chance penalty.",
+          "RecordTypeEnum": "BinaryObjectString"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "RecordTypeEnum": "MessageEnd"
+    }
+  ],
+  "Compressed": true
+}

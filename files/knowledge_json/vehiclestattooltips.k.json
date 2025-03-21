@@ -1,0 +1,380 @@
+{
+  "Header": "F9538B831F363243BAAE0D17865D08549AA2DB215D000000",
+  "Records": [
+    {
+      "RootId": 1,
+      "HeaderId": -1,
+      "MajorVersion": 1,
+      "MinorVersion": 0,
+      "RecordTypeEnum": "SerializedStreamHeader"
+    },
+    {
+      "LibraryId": 2,
+      "LibraryName": "X",
+      "RecordTypeEnum": "BinaryLibrary"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 1,
+        "Name": "KI",
+        "MemberCount": 43,
+        "MemberNames": [
+          "KI:S:Count",
+          "KI:S:0:Key",
+          "KI:S:0:Value",
+          "KI:S:1:Key",
+          "KI:S:1:Value",
+          "KI:S:2:Key",
+          "KI:S:2:Value",
+          "KI:S:3:Key",
+          "KI:S:3:Value",
+          "KI:S:4:Key",
+          "KI:S:4:Value",
+          "KI:S:5:Key",
+          "KI:S:5:Value",
+          "KI:S:6:Key",
+          "KI:S:6:Value",
+          "KI:S:7:Key",
+          "KI:S:7:Value",
+          "KI:S:8:Key",
+          "KI:S:8:Value",
+          "KI:S:9:Key",
+          "KI:S:9:Value",
+          "KI:S:10:Key",
+          "KI:S:10:Value",
+          "KI:S:11:Key",
+          "KI:S:11:Value",
+          "KI:S:12:Key",
+          "KI:S:12:Value",
+          "KI:S:13:Key",
+          "KI:S:13:Value",
+          "KI:S:14:Key",
+          "KI:S:14:Value",
+          "KI:S:15:Key",
+          "KI:S:15:Value",
+          "KI:S:16:Key",
+          "KI:S:16:Value",
+          "KI:S:17:Key",
+          "KI:S:17:Value",
+          "KI:S:18:Key",
+          "KI:S:18:Value",
+          "KI:S:19:Key",
+          "KI:S:19:Value",
+          "KI:S:20:Key",
+          "KI:S:20:Value"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String",
+          "String"
+        ],
+        "AdditionalInfos": [
+          "Int32",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        21,
+        {
+          "ObjectId": 3,
+          "Value": "durability",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 4,
+          "Value": "Shows current and maximum durability points of the vehicle. When the current durability points reach zero, the vehicle is destroyed and the driver dies. Many vehicle parts, items in the trunk and the driver itself are likely to be completely destroyed when this happens.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 5,
+          "Value": "energy",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 6,
+          "Value": "Shows current stored energy and the maximum battery capacity. When the vehicle runs out of energy it will engage the auxiliary power and move extremely slowly.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 7,
+          "Value": "enginepower",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 8,
+          "Value": "Engine power determines how fast the vehicle will move under certain weight. The number represents the maximum total weight (including the vehicle parts, items in the trunk and the driver) the vehicle can take on and move at the nominal speed for the vehicle type.\r\n\r\nHaving excess or deficit of power will modify the vehicle speed accordingly.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 9,
+          "Value": "consumption",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 10,
+          "Value": "Some engines are more efficient than others. The number represents the effective engine power when it comes to determining the energy consumption.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 11,
+          "Value": "energypertile",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 12,
+          "Value": "The amount of energy the vehicle consumes when it moves the distance of one kilometer. Some engines are more efficient than others.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 13,
+          "Value": "weight",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 14,
+          "Value": "Vehicle weight is the total weight of the vehicle chasis plus the vehicle parts installed. Total weight is vehicle weight plus the weight of items stored in the trunk, plus the weight of the driver if they are currently mounting the vehicle.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 15,
+          "Value": "basespeed",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 16,
+          "Value": "This is the base speed for the vehicle type (e.g. standing jetski). This speed is further modified by engine power, loaded weight and the chassis aero/hydo-dynamicity.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 17,
+          "Value": "speedmodifier",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 18,
+          "Value": "This is the speed modifier of the current vehicle chassis. Some models are more aero/hydro-dynamic than others.\r\n\r\nPositive speed modifiers are only applied if the vehicle is not out of energy and is not carrying more weight than it can normaly support with its engine.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 19,
+          "Value": "unmannedspeed",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 20,
+          "Value": "This is the current theoretical unmanned vehicle speed and evasion modifier (which is dependent of the vehicle's speed and maneuverability).",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 21,
+          "Value": "mannedspeed",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 22,
+          "Value": "This is the current actual vehicle speed and evasion modifier (which is dependent of the vehicle's speed and maneuverability).",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 23,
+          "Value": "stability",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 24,
+          "Value": "Stability indicates how stable and easy to do combat from the vehicle is, influencing both ranged and melee (though to a lesser degree), as well as throwing, precision. Precision of melee attacks is further modified by the vehicle's maneuverability, and precision of short range melee weapons (knives and fist weapons), as well as unarmed attacks, is further reduced by additional 10%.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 25,
+          "Value": "meleedamagebonus",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 26,
+          "Value": "Bonus to melee damage when attacking from this vehicle due to vehicle speed.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 27,
+          "Value": "cover",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 28,
+          "Value": "The chance that the incoming attack will hit the vehicle instead of the driver.\r\n\r\nIn case of an area of effect attack it represents the amount of damage that the vehicle will bear in driver's stead.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 29,
+          "Value": "resistancedescription",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 30,
+          "Value": "The armor either absorbs the amount indicated by the percentage OR the flat number, whichever will result in more damage being absorbed. The unabsorbed amount reduces the vehicles durability.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 31,
+          "Value": "resistancemechanical",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 32,
+          "Value": "The amount of mechanical damage the vehicle's armor can absorb.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 33,
+          "Value": "resistanceheat",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 34,
+          "Value": "The amount of heat damage the vehicle's armor can absorb.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 35,
+          "Value": "resistancecold",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 36,
+          "Value": "The amount of cold damage the vehicle's armor can absorb.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 37,
+          "Value": "resistanceelectricity",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 38,
+          "Value": "The amount of electrical damage the vehicle's armor can absorb.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 39,
+          "Value": "resistanceacid",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 40,
+          "Value": "The amount of acid damage the vehicle's armor can absorb.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 41,
+          "Value": "resistanceenergy",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 42,
+          "Value": "The amount of energy damage the vehicle's armor can absorb.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 43,
+          "Value": "resistancebio",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 44,
+          "Value": "The amount of bio damage the vehicle's armor can absorb.",
+          "RecordTypeEnum": "BinaryObjectString"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "RecordTypeEnum": "MessageEnd"
+    }
+  ],
+  "Compressed": true
+}
