@@ -1,5 +1,6 @@
 import csv as csv_module
 import json
+import re
 import struct
 import zlib
 from enum import Enum
@@ -12,6 +13,62 @@ from rich import print
 
 # The UDLG signature is the first 16 bytes that must match.
 UDLG_SIGNATURE = bytes.fromhex("F9538B831F363243BAAE0D17865D0854")
+
+
+def guess_variable_and_dialogue(s1: str, s2: str):
+    """
+    Given two strings, return a tuple (variable, dialogue)
+    using several heuristics:
+      - If both strings have no spaces, ignore both and return (None, None).
+      - Otherwise, compare word counts, absence of spaces, and punctuation.
+      - In a fallback, the longer string is taken as the variable.
+      - Additionally, if the guessed variable is a UUID, ignore both.
+    """
+
+    def is_uuid(s: str) -> bool:
+        """Return True if the string matches a UUID pattern."""
+        uuid_regex = re.compile(
+            r"^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+        )
+        return bool(uuid_regex.match(s))
+
+    # If both strings have no spaces, ignore them.
+    if " " not in s1 and " " not in s2:
+        return None, None
+
+    # Determine which string is the variable and which is dialogue.
+    words1 = s1.split()
+    words2 = s2.split()
+    candidate = None
+
+    if len(words1) == 1 and len(words2) > 1:
+        candidate = (s1, s2)
+    elif len(words2) == 1 and len(words1) > 1:
+        candidate = (s2, s1)
+    elif " " not in s1 and " " in s2:
+        candidate = (s1, s2)
+    elif " " not in s2 and " " in s1:
+        candidate = (s2, s1)
+    elif len(words1) > len(words2) + 1:
+        candidate = (s2, s1)
+    elif len(words2) > len(words1) + 1:
+        candidate = (s1, s2)
+    else:
+        punct1 = "." in s1 or "," in s1
+        punct2 = "." in s2 or "," in s2
+        if punct1 and not punct2:
+            candidate = (s1, s2)
+        elif punct2 and not punct1:
+            candidate = (s2, s1)
+        else:
+            if len(s1) >= len(s2):
+                candidate = (s1, s2)
+            else:
+                candidate = (s2, s1)
+    variable, dialogue = candidate
+    if is_uuid(variable):
+        return None, None
+    return variable, dialogue
 
 
 class PrimitiveType(Enum):
@@ -894,6 +951,7 @@ def extract_texts_to_csv(
     include_file_path: bool = False,
     language_mode: str = "english",
     base_path: Optional[Path] = None,
+    heuristic: bool = False,
 ) -> Dict[str, Any]:
     """
     Traverse records and extract texts for CSV.
@@ -920,35 +978,42 @@ def extract_texts_to_csv(
         for record in data.get("Records", []):
             if "Values" in record and isinstance(record["Values"], list):
                 vals = record["Values"]
-                # If first element is an integer, assume a count is present and then pair entries
-                if len(vals) >= 3 and isinstance(vals[0], int):
-                    for i in range(1, len(vals) - 1, 2):
-                        var_entry = vals[i]
-                        text_entry = vals[i + 1]
-                        if (
-                            isinstance(var_entry, dict)
-                            and var_entry.get("RecordTypeEnum") == "BinaryObjectString"
-                            and isinstance(text_entry, dict)
-                            and text_entry.get("RecordTypeEnum") == "BinaryObjectString"
-                        ):
-                            variable_text = var_entry.get("Value", "")
-                            actual_text = text_entry.get("Value", "")
-                            processed_text = actual_text.replace("\r\n", "\\n").replace(
-                                "\n", "\\n"
+                start_index = 1 if len(vals) >= 1 and isinstance(vals[0], int) else 0
+                for i in range(start_index, len(vals) - 1, 2):
+                    var_entry = vals[i]
+                    text_entry = vals[i + 1]
+                    if (
+                        isinstance(var_entry, dict)
+                        and var_entry.get("RecordTypeEnum") == "BinaryObjectString"
+                        and isinstance(text_entry, dict)
+                        and text_entry.get("RecordTypeEnum") == "BinaryObjectString"
+                    ):
+                        s1 = var_entry.get("Value", "")
+                        s2 = text_entry.get("Value", "")
+                        if heuristic:
+                            variable_text, dialogue_text = guess_variable_and_dialogue(
+                                s1, s2
                             )
-                            if include_file_path:
-                                # CSV row with 4 columns: [File, Variable, Original, Translation]
-                                row = [str(relative), variable_text, processed_text, ""]
-                            else:
-                                # CSV row with 3 columns: [Variable, Original, Translation]
-                                # Use composite key initially
-                                row = [
-                                    f"{variable_text}|{relative.name}",
-                                    processed_text,
-                                    "",
-                                ]
-                            if row not in csv_data:
-                                csv_data.append(row)
+                        else:
+                            variable_text, dialogue_text = s1, s2
+                        if variable_text is None or dialogue_text is None:
+                            continue
+                        processed_text = dialogue_text.replace("\r\n", "\\n").replace(
+                            "\n", "\\n"
+                        )
+                        if include_file_path:
+                            # CSV row with 4 columns: [File, Variable, Original, Translation]
+                            row = [str(relative), variable_text, processed_text, ""]
+                        else:
+                            # CSV row with 3 columns: [Variable, Original, Translation]
+                            # Use composite key initially
+                            row = [
+                                f"{variable_text}|{relative.name}",
+                                processed_text,
+                                "",
+                            ]
+                        if row not in csv_data:
+                            csv_data.append(row)
     else:
         # English mode
         # Find object IDs that hold the "English" string
@@ -1013,6 +1078,7 @@ def replace_texts_from_csv(
     include_file_path: bool = False,
     language_mode: str = "english",
     base_path: Optional[Path] = None,
+    heuristic: bool = False,
 ) -> Dict[str, Any]:
     """
     Replace texts in the JSON data using CSV translations.
@@ -1058,33 +1124,48 @@ def replace_texts_from_csv(
         for record in data.get("Records", []):
             if "Values" in record and isinstance(record["Values"], list):
                 vals = record["Values"]
-                if len(vals) >= 3 and isinstance(vals[0], int):
-                    for i in range(1, len(vals) - 1, 2):
-                        var_entry = vals[i]
-                        text_entry = vals[i + 1]
-                        if (
-                            isinstance(var_entry, dict)
-                            and var_entry.get("RecordTypeEnum") == "BinaryObjectString"
-                            and isinstance(text_entry, dict)
-                            and text_entry.get("RecordTypeEnum") == "BinaryObjectString"
-                        ):
-                            variable_text = var_entry.get("Value", "")
-                            if include_file_path:
-                                key = variable_text
+                start_index = 1 if len(vals) >= 1 and isinstance(vals[0], int) else 0
+                for i in range(start_index, len(vals) - 1, 2):
+                    var_entry = vals[i]
+                    text_entry = vals[i + 1]
+                    if (
+                        isinstance(var_entry, dict)
+                        and var_entry.get("RecordTypeEnum") == "BinaryObjectString"
+                        and isinstance(text_entry, dict)
+                        and text_entry.get("RecordTypeEnum") == "BinaryObjectString"
+                    ):
+                        s1 = var_entry.get("Value", "")
+                        s2 = text_entry.get("Value", "")
+                        if heuristic:
+                            (
+                                variable_text_guess,
+                                dialogue_text_guess,
+                            ) = guess_variable_and_dialogue(s1, s2)
+                        else:
+                            variable_text_guess, dialogue_text_guess = s1, s2
+                        if variable_text_guess is None or dialogue_text_guess is None:
+                            continue
+                        # Decide which dict holds the dialogue text so that its value can be updated
+                        if variable_text_guess == s1:
+                            dialogue_record = text_entry
+                        else:
+                            dialogue_record = var_entry
+                        if include_file_path:
+                            key = variable_text_guess
+                        else:
+                            plain_key = variable_text_guess
+                            composite_key = f"{variable_text_guess}|{relative.name}"
+                            if plain_key in translations:
+                                key = plain_key
+                            elif composite_key in translations:
+                                key = composite_key
                             else:
-                                plain_key = variable_text
-                                composite_key = f"{variable_text}|{relative.name}"
-                                if plain_key in translations:
-                                    key = plain_key
-                                elif composite_key in translations:
-                                    key = composite_key
-                                else:
-                                    key = None
-                            if key is not None and key in translations:
-                                translation_text = translations[key]
-                                if translation_text == "":
-                                    translation_text = text_entry.get("Value", "")
-                                text_entry["Value"] = translation_text
+                                key = None
+                        if key is not None and key in translations:
+                            replacement_text = translations[key]
+                            if replacement_text == "":
+                                replacement_text = dialogue_record.get("Value", "")
+                            dialogue_record["Value"] = replacement_text
         return data
     else:
         # English mode
@@ -1235,11 +1316,14 @@ def process_file(
     include_file_path: bool = False,
     language_mode: str = "english",
     base_path: Optional[Path] = None,
+    heuristic: bool = False,
 ):
     """
     Process a single file (decode or encode).
     The language_mode flag is either "english" (default) or "variables".
     CSV extraction/replacement is performed accordingly.
+    The additional boolean 'heuristic' flag applies only when mode is 'variables'
+    and if True the variable/dialogue pair is determined heuristically.
     """
     print(f'Processing "{file_path}"')
 
@@ -1252,7 +1336,13 @@ def process_file(
         # Extract CSV lines if requested
         if use_csv and csv_data is not None:
             data = extract_texts_to_csv(
-                data, file_path, csv_data, include_file_path, language_mode, base_path
+                data,
+                file_path,
+                csv_data,
+                include_file_path,
+                language_mode,
+                base_path,
+                heuristic,
             )
 
         with open(output_path, "w", encoding="utf-8") as out_json:
@@ -1266,7 +1356,13 @@ def process_file(
         # Replace CSV lines if requested
         if use_csv and csv_data is not None:
             data = replace_texts_from_csv(
-                data, file_path, csv_data, include_file_path, language_mode, base_path
+                data,
+                file_path,
+                csv_data,
+                include_file_path,
+                language_mode,
+                base_path,
+                heuristic,
             )
 
         output = BytesIO()
@@ -1289,6 +1385,12 @@ def decode(
     ),
     mode: str = typer.Option(
         "english", "-m", "--mode", help="Mode: 'english' (default) or 'variables'"
+    ),
+    heuristic: bool = typer.Option(
+        False,
+        "-H",
+        "--heuristic",
+        help="Apply heuristic to determine variable/dialogue (only for 'variables' mode)",
     ),
 ):
     """
@@ -1321,6 +1423,7 @@ def decode(
             include_file_path,
             language_mode=mode,
             base_path=input_path.parent,
+            heuristic=heuristic,
         )
     elif input_path.is_dir():
         output_dir = output or input_path.with_name(f"{input_path.name}_json")
@@ -1346,6 +1449,7 @@ def decode(
                     include_file_path,
                     language_mode=mode,
                     base_path=input_path,
+                    heuristic=heuristic,
                 )
     else:
         typer.echo(f"Error: {input_path} is not a valid file or directory")
@@ -1387,6 +1491,12 @@ def encode(
     mode: str = typer.Option(
         "english", "-m", "--mode", help="Mode: 'english' (default) or 'variables'"
     ),
+    heuristic: bool = typer.Option(
+        False,
+        "-H",
+        "--heuristic",
+        help="Apply heuristic to determine variable/dialogue (only for 'variables' mode)",
+    ),
 ):
     """
     Encode JSON back into UDLG format, optionally applying CSV translations.
@@ -1424,6 +1534,7 @@ def encode(
             include_file_path,
             language_mode=mode,
             base_path=input_path.parent,
+            heuristic=heuristic,
         )
     elif input_path.is_dir():
         output_dir = output or input_path.with_name(f"{input_path.name}_udlg")
@@ -1446,6 +1557,7 @@ def encode(
                 include_file_path,
                 language_mode=mode,
                 base_path=input_path,
+                heuristic=heuristic,
             )
     else:
         typer.echo(f"Error: {input_path} is not a valid file or directory")

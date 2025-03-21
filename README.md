@@ -7,7 +7,7 @@ UnderRail Translation Tools is a Python-based suite for extracting and injecting
 It decodes UDLG files by first validating the UDLG signature and then processing records that include support for gzip-compressed payloads. It can extract translatable texts in two modes:
 
 - `english` mode where strings following an English marker are processed.
-- `variables` mode where variable-text pairs are handled.
+- `variables` mode where variable-text pairs are handled. In this mode, an additional flag `--heuristic` (default: false) can be used to automatically determine which string represents the variable and which the dialogue using smart heuristics (e.g. as used in the `rules` folder).
 
 The encoding functionality injects translations from a CSV into the decoded JSON and rebuilds the UDLG files. In addition, the tool includes a merge command that unifies existing translations from a base CSV with new extractions from updated game files. Batch processing is available for both decoding and encoding, ensuring that the game’s folder structure is maintained.
 
@@ -50,6 +50,12 @@ To use variable mode instead of English mode:
 python udlg_tools.py decode "UnderRail/data/dialogs" -o "output/dialogs_json" --csv -m "variables"
 ```
 
+To use variable mode with heuristic guessing enabled (i.e. automatically determining which text is the variable and which is dialogue):
+
+```bash
+python udlg_tools.py decode "UnderRail/data/dialogs" -o "output/dialogs_json" --csv -m "variables" --heuristic
+```
+
 **Encode JSON Back to UDLG Files**
 
 This command encodes a JSON file (or a directory of JSON files) back into the UDLG format. It can also inject translations from a CSV file.
@@ -66,10 +72,10 @@ To apply updated translations from a CSV:
 python udlg_tools.py encode "output/dialogs_json" -o "output/dialogs_generated" --csv "translations.csv"
 ```
 
-Additional options such as including the file path and mode selection (english/variables) can be specified:
+Additional options such as including the file path and mode selection (english/variables) can be specified. For instance, to use variable mode with heuristic guessing enabled:
 
 ```bash
-python udlg_tools.py encode "output/dialogs_json" -o "output/dialogs_generated" --csv "translations.csv" --include-file -m "variables"
+python udlg_tools.py encode "output/dialogs_json" -o "output/dialogs_generated" --csv "translations.csv" --include-file -m "variables" --heuristic
 ```
 
 **Merge Existing Translations**
@@ -125,3 +131,4 @@ The original file hierarchy is preserved during both the decode and encode proce
 - Untranslated texts will remain in their original form.
 - The tool automatically handles compressed payloads by decompressing gzip zlib data on read and recompressing on write.
 - The merge functionality is especially useful when game content is updated and you want to keep older translations.
+- In `variables` mode, the optional `--heuristic` flag (default: false) allows the tool to smartly determine which text is a variable and which is dialogue.
