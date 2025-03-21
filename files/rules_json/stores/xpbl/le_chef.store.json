@@ -1,0 +1,5900 @@
+{
+  "Header": "F9538B831F363243BAAE0D17865D0854AF6AF3C961000000",
+  "Records": [
+    {
+      "RootId": 1,
+      "HeaderId": -1,
+      "MajorVersion": 1,
+      "MinorVersion": 0,
+      "RecordTypeEnum": "SerializedStreamHeader"
+    },
+    {
+      "LibraryId": 2,
+      "LibraryName": "X",
+      "RecordTypeEnum": "BinaryLibrary"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 1,
+        "Name": "S1",
+        "MemberCount": 16,
+        "MemberNames": [
+          "S1:S:Count",
+          "S1:S:0",
+          "S1:S:1",
+          "S1:S:2",
+          "S1:S:3",
+          "S1:S:4",
+          "S1:S:5",
+          "S1:FS:Count",
+          "S1:MRF",
+          "S1:FM",
+          "S1:C:Count",
+          "S1:C:0",
+          "S1:RP",
+          "S1:TD:Count",
+          "S1:TD:0",
+          "S1:D"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive",
+          "Class",
+          "Class",
+          "Class",
+          "Class",
+          "Class",
+          "Class",
+          "Primitive",
+          "Class",
+          "Class",
+          "Primitive",
+          "String",
+          "Primitive",
+          "Primitive",
+          "Class",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          "Int32",
+          {
+            "TypeName": "MS1",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "MS1",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "MS1",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "MS1",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "MS1",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "MS1",
+            "LibraryId": 2
+          },
+          "Int32",
+          {
+            "TypeName": "XPBLLEChefRF",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "eSTFILM",
+            "LibraryId": 2
+          },
+          "Int32",
+          null,
+          "Int32",
+          "Int32",
+          {
+            "TypeName": "TDY",
+            "LibraryId": 2
+          },
+          "Int32"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        6,
+        {
+          "IdRef": 3,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 4,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 5,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 6,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 7,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 8,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        {
+          "IdRef": 9,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ClassInfo": {
+            "ObjectId": -10,
+            "Name": "eSTFILM",
+            "MemberCount": 1,
+            "MemberNames": [
+              "value__"
+            ]
+          },
+          "MemberTypeInfo": {
+            "BinaryTypeEnums": [
+              "Primitive"
+            ],
+            "AdditionalInfos": [
+              "Int32"
+            ]
+          },
+          "LibraryId": 2,
+          "Values": [
+            0
+          ],
+          "RecordTypeEnum": "ClassWithMembersAndTypes"
+        },
+        1,
+        {
+          "ObjectId": 11,
+          "Value": "currency.sc",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        90,
+        1,
+        {
+          "IdRef": 12,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 3,
+        "Name": "MS1",
+        "MemberCount": 8,
+        "MemberNames": [
+          "MS1:N",
+          "MS1:SI",
+          "MS1:DI",
+          "MS1:C",
+          "MS1:ROM",
+          "MS1:S",
+          "MS1:D",
+          "MS1:U"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "String",
+          "Class",
+          "Class",
+          "Object",
+          "Primitive",
+          "Primitive",
+          "String",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          null,
+          {
+            "TypeName": "IC",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "IOS",
+            "LibraryId": 2
+          },
+          null,
+          "Boolean",
+          "Boolean",
+          null,
+          "Boolean"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": 13,
+          "Value": "Basic",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "IdRef": 14,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 15,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        false,
+        {
+          "ObjectId": 16,
+          "Value": "",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        false
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 4,
+        "Name": "MS1",
+        "MemberCount": 8,
+        "MemberNames": [
+          "MS1:N",
+          "MS1:SI",
+          "MS1:DI",
+          "MS1:C",
+          "MS1:ROM",
+          "MS1:S",
+          "MS1:D",
+          "MS1:U"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "String",
+          "Class",
+          "Class",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "String",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          null,
+          {
+            "TypeName": "IC",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "IOS",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "SADC",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Boolean",
+          null,
+          "Boolean"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": 17,
+          "Value": "Arrival",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "IdRef": 18,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 19,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 20,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        false,
+        {
+          "IdRef": 16,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 5,
+        "Name": "MS1",
+        "MemberCount": 8,
+        "MemberNames": [
+          "MS1:N",
+          "MS1:SI",
+          "MS1:DI",
+          "MS1:C",
+          "MS1:ROM",
+          "MS1:S",
+          "MS1:D",
+          "MS1:U"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "String",
+          "Class",
+          "Class",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "String",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          null,
+          {
+            "TypeName": "IC",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "IOS",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "SADC",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Boolean",
+          null,
+          "Boolean"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": 22,
+          "Value": "Keep",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "IdRef": 23,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 24,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 25,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        false,
+        {
+          "IdRef": 16,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 6,
+        "Name": "MS1",
+        "MemberCount": 8,
+        "MemberNames": [
+          "MS1:N",
+          "MS1:SI",
+          "MS1:DI",
+          "MS1:C",
+          "MS1:ROM",
+          "MS1:S",
+          "MS1:D",
+          "MS1:U"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "String",
+          "Class",
+          "Class",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "String",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          null,
+          {
+            "TypeName": "IC",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "IOS",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "SADC",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Boolean",
+          null,
+          "Boolean"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": 27,
+          "Value": "Nexus",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "IdRef": 28,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 29,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 30,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        false,
+        {
+          "IdRef": 16,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 7,
+        "Name": "MS1",
+        "MemberCount": 8,
+        "MemberNames": [
+          "MS1:N",
+          "MS1:SI",
+          "MS1:DI",
+          "MS1:C",
+          "MS1:ROM",
+          "MS1:S",
+          "MS1:D",
+          "MS1:U"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "String",
+          "Class",
+          "Class",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "String",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          null,
+          {
+            "TypeName": "IC",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "IOS",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "SADC",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Boolean",
+          null,
+          "Boolean"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": 32,
+          "Value": "Security",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "IdRef": 33,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 34,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 35,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        false,
+        {
+          "IdRef": 16,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 8,
+        "Name": "MS1",
+        "MemberCount": 8,
+        "MemberNames": [
+          "MS1:N",
+          "MS1:SI",
+          "MS1:DI",
+          "MS1:C",
+          "MS1:ROM",
+          "MS1:S",
+          "MS1:D",
+          "MS1:U"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "String",
+          "Class",
+          "Class",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "String",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          null,
+          {
+            "TypeName": "IC",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "IOS",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "SADC",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Boolean",
+          null,
+          "Boolean"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": 37,
+          "Value": "End",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "IdRef": 38,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 39,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 40,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        false,
+        {
+          "IdRef": 16,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 9,
+        "Name": "XPBLLEChefRF",
+        "MemberCount": 0,
+        "MemberNames": []
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [],
+        "AdditionalInfos": []
+      },
+      "LibraryId": 2,
+      "Values": [],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 12,
+        "Name": "TDY",
+        "MemberCount": 7,
+        "MemberNames": [
+          "TDY:C",
+          "TDY:A",
+          "TDY:U",
+          "TDY:R",
+          "TDY:N",
+          "TDY:X",
+          "TDY:O"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "Object"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "eTC",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Boolean",
+          "Int32",
+          "Int32",
+          "Int32",
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ClassInfo": {
+            "ObjectId": -42,
+            "Name": "eTC",
+            "MemberCount": 1,
+            "MemberNames": [
+              "value__"
+            ]
+          },
+          "MemberTypeInfo": {
+            "BinaryTypeEnums": [
+              "Primitive"
+            ],
+            "AdditionalInfos": [
+              "Int32"
+            ]
+          },
+          "LibraryId": 2,
+          "Values": [
+            160
+          ],
+          "RecordTypeEnum": "ClassWithMembersAndTypes"
+        },
+        true,
+        false,
+        1,
+        1,
+        4,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 14,
+        "Name": "IC",
+        "MemberCount": 8,
+        "MemberNames": [
+          "IC:I:Count",
+          "IC:I:0",
+          "IC:I:1",
+          "IC:IA",
+          "IC:IR",
+          "IC:IX",
+          "IC:IBC",
+          "IC:IBI"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive",
+          "Class",
+          "Class",
+          "Class",
+          "Class",
+          "Primitive",
+          "Object",
+          "Object"
+        ],
+        "AdditionalInfos": [
+          "Int32",
+          {
+            "TypeName": "NEII",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "NEII",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "ESI",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "ESI",
+            "LibraryId": 2
+          },
+          "Boolean",
+          null,
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        2,
+        {
+          "IdRef": 43,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 44,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 15,
+        "Name": "IOS",
+        "MemberCount": 6,
+        "MemberNames": [
+          "IOS:O:Count",
+          "IOS:O:0",
+          "IOS:BL",
+          "IOS:MD",
+          "IOS:MO",
+          "IOS:I"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive",
+          "Class",
+          "Object",
+          "Object",
+          "Object",
+          "Object"
+        ],
+        "AdditionalInfos": [
+          "Int32",
+          {
+            "TypeName": "IO",
+            "LibraryId": 2
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        1,
+        {
+          "IdRef": 45,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 18,
+        "Name": "IC",
+        "MemberCount": 9,
+        "MemberNames": [
+          "IC:I:Count",
+          "IC:I:0",
+          "IC:I:1",
+          "IC:I:2",
+          "IC:IA",
+          "IC:IR",
+          "IC:IX",
+          "IC:IBC",
+          "IC:IBI"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive",
+          "Class",
+          "Class",
+          "Class",
+          "Class",
+          "Class",
+          "Primitive",
+          "Object",
+          "Object"
+        ],
+        "AdditionalInfos": [
+          "Int32",
+          {
+            "TypeName": "NEII",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "NEII",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "NEII",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "ESI",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "ESI",
+            "LibraryId": 2
+          },
+          "Boolean",
+          null,
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        3,
+        {
+          "IdRef": 46,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 47,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 48,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 19,
+        "Name": "IOS",
+        "MemberCount": 10,
+        "MemberNames": [
+          "IOS:O:Count",
+          "IOS:O:0",
+          "IOS:O:1",
+          "IOS:O:2",
+          "IOS:O:3",
+          "IOS:O:4",
+          "IOS:BL",
+          "IOS:MD",
+          "IOS:MO",
+          "IOS:I"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive",
+          "Class",
+          "Class",
+          "Class",
+          "Class",
+          "Class",
+          "Object",
+          "Object",
+          "Object",
+          "Object"
+        ],
+        "AdditionalInfos": [
+          "Int32",
+          {
+            "TypeName": "IO",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "IO",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "IO",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "IO",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "IO",
+            "LibraryId": 2
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        5,
+        {
+          "IdRef": 49,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 50,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 51,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 52,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 53,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 20,
+        "Name": "SADC",
+        "MemberCount": 1,
+        "MemberNames": [
+          "SADC:C"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "ICC",
+            "LibraryId": 2
+          }
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "IdRef": 54,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 23,
+        "Name": "IC",
+        "MemberCount": 9,
+        "MemberNames": [
+          "IC:I:Count",
+          "IC:I:0",
+          "IC:I:1",
+          "IC:I:2",
+          "IC:IA",
+          "IC:IR",
+          "IC:IX",
+          "IC:IBC",
+          "IC:IBI"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive",
+          "Class",
+          "Class",
+          "Class",
+          "Class",
+          "Class",
+          "Primitive",
+          "Object",
+          "Object"
+        ],
+        "AdditionalInfos": [
+          "Int32",
+          {
+            "TypeName": "NEII",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "NEII",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "NEII",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "ESI",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "ESI",
+            "LibraryId": 2
+          },
+          "Boolean",
+          null,
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        3,
+        {
+          "IdRef": 55,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 56,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 57,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 24,
+        "Name": "IOS",
+        "MemberCount": 10,
+        "MemberNames": [
+          "IOS:O:Count",
+          "IOS:O:0",
+          "IOS:O:1",
+          "IOS:O:2",
+          "IOS:O:3",
+          "IOS:O:4",
+          "IOS:BL",
+          "IOS:MD",
+          "IOS:MO",
+          "IOS:I"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive",
+          "Class",
+          "Class",
+          "Class",
+          "Class",
+          "Class",
+          "Object",
+          "Object",
+          "Object",
+          "Object"
+        ],
+        "AdditionalInfos": [
+          "Int32",
+          {
+            "TypeName": "IO",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "IO",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "IO",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "IO",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "IO",
+            "LibraryId": 2
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        5,
+        {
+          "IdRef": 58,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 59,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 60,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 61,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 62,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ObjectId": 25,
+      "MetadataId": 20,
+      "Values": [
+        {
+          "IdRef": 63,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 28,
+        "Name": "IC",
+        "MemberCount": 9,
+        "MemberNames": [
+          "IC:I:Count",
+          "IC:I:0",
+          "IC:I:1",
+          "IC:I:2",
+          "IC:IA",
+          "IC:IR",
+          "IC:IX",
+          "IC:IBC",
+          "IC:IBI"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive",
+          "Class",
+          "Class",
+          "Class",
+          "Class",
+          "Class",
+          "Primitive",
+          "Object",
+          "Object"
+        ],
+        "AdditionalInfos": [
+          "Int32",
+          {
+            "TypeName": "NEII",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "NEII",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "NEII",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "ESI",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "ESI",
+            "LibraryId": 2
+          },
+          "Boolean",
+          null,
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        3,
+        {
+          "IdRef": 64,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 65,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 66,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 29,
+        "Name": "IOS",
+        "MemberCount": 10,
+        "MemberNames": [
+          "IOS:O:Count",
+          "IOS:O:0",
+          "IOS:O:1",
+          "IOS:O:2",
+          "IOS:O:3",
+          "IOS:O:4",
+          "IOS:BL",
+          "IOS:MD",
+          "IOS:MO",
+          "IOS:I"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive",
+          "Class",
+          "Class",
+          "Class",
+          "Class",
+          "Class",
+          "Object",
+          "Object",
+          "Object",
+          "Object"
+        ],
+        "AdditionalInfos": [
+          "Int32",
+          {
+            "TypeName": "IO",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "IO",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "IO",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "IO",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "IO",
+            "LibraryId": 2
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        5,
+        {
+          "IdRef": 67,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 68,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 69,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 70,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 71,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ObjectId": 30,
+      "MetadataId": 20,
+      "Values": [
+        {
+          "IdRef": 72,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 33,
+        "Name": "IC",
+        "MemberCount": 7,
+        "MemberNames": [
+          "IC:I:Count",
+          "IC:I:0",
+          "IC:IA",
+          "IC:IR",
+          "IC:IX",
+          "IC:IBC",
+          "IC:IBI"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive",
+          "Class",
+          "Class",
+          "Class",
+          "Primitive",
+          "Object",
+          "Object"
+        ],
+        "AdditionalInfos": [
+          "Int32",
+          {
+            "TypeName": "NEII",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "ESI",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "ESI",
+            "LibraryId": 2
+          },
+          "Boolean",
+          null,
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        1,
+        {
+          "IdRef": 73,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ObjectId": 34,
+      "MetadataId": 15,
+      "Values": [
+        1,
+        {
+          "IdRef": 74,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 35,
+      "MetadataId": 20,
+      "Values": [
+        {
+          "IdRef": 75,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 38,
+        "Name": "IC",
+        "MemberCount": 6,
+        "MemberNames": [
+          "IC:I:Count",
+          "IC:IA",
+          "IC:IR",
+          "IC:IX",
+          "IC:IBC",
+          "IC:IBI"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive",
+          "Class",
+          "Class",
+          "Primitive",
+          "Object",
+          "Object"
+        ],
+        "AdditionalInfos": [
+          "Int32",
+          {
+            "TypeName": "ESI",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "ESI",
+            "LibraryId": 2
+          },
+          "Boolean",
+          null,
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        0,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 39,
+        "Name": "IOS",
+        "MemberCount": 7,
+        "MemberNames": [
+          "IOS:O:Count",
+          "IOS:O:0",
+          "IOS:O:1",
+          "IOS:BL",
+          "IOS:MD",
+          "IOS:MO",
+          "IOS:I"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive",
+          "Class",
+          "Class",
+          "Object",
+          "Object",
+          "Object",
+          "Object"
+        ],
+        "AdditionalInfos": [
+          "Int32",
+          {
+            "TypeName": "IO",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "IO",
+            "LibraryId": 2
+          },
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        2,
+        {
+          "IdRef": 76,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 77,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ObjectId": 40,
+      "MetadataId": 20,
+      "Values": [
+        {
+          "IdRef": 78,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "LibraryId": 79,
+      "LibraryName": "G",
+      "RecordTypeEnum": "BinaryLibrary"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 43,
+        "Name": "NEII",
+        "MemberCount": 12,
+        "MemberNames": [
+          "II:I",
+          "II:S",
+          "II:DP",
+          "II:L",
+          "II:CP",
+          "II:S1",
+          "II:B",
+          "II:MB",
+          "II:D",
+          "II:V",
+          "II:F:Count",
+          "II:DR"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "SystemClass",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "%G%",
+            "LibraryId": 2
+          },
+          "Int32",
+          {
+            "TypeName": "LIDP#G1>C00#-",
+            "LibraryId": 79
+          },
+          "Boolean",
+          {
+            "TypeName": "PC",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Double",
+          "Int32",
+          "Double",
+          "System.Version",
+          "Int32",
+          "Double"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ClassInfo": {
+            "ObjectId": -80,
+            "Name": "%G%",
+            "MemberCount": 11,
+            "MemberNames": [
+              "_a",
+              "_b",
+              "_c",
+              "_d",
+              "_e",
+              "_f",
+              "_g",
+              "_h",
+              "_i",
+              "_j",
+              "_k"
+            ]
+          },
+          "MemberTypeInfo": {
+            "BinaryTypeEnums": [
+              "Primitive",
+              "Primitive",
+              "Primitive",
+              "Primitive",
+              "Primitive",
+              "Primitive",
+              "Primitive",
+              "Primitive",
+              "Primitive",
+              "Primitive",
+              "Primitive"
+            ],
+            "AdditionalInfos": [
+              "Int32",
+              "Int16",
+              "Int16",
+              "Byte",
+              "Byte",
+              "Byte",
+              "Byte",
+              "Byte",
+              "Byte",
+              "Byte",
+              "Byte"
+            ]
+          },
+          "LibraryId": 2,
+          "Values": [
+            625701563,
+            -1603,
+            19205,
+            145,
+            10,
+            71,
+            81,
+            26,
+            38,
+            128,
+            120
+          ],
+          "RecordTypeEnum": "ClassWithMembersAndTypes"
+        },
+        100,
+        {
+          "IdRef": 81,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        {
+          "IdRef": 82,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        0.0,
+        0,
+        0.0,
+        {
+          "IdRef": 83,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0.0
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 44,
+        "Name": "NEII",
+        "MemberCount": 12,
+        "MemberNames": [
+          "II:I",
+          "II:S",
+          "II:DP",
+          "II:L",
+          "II:CP",
+          "II:S1",
+          "II:B",
+          "II:MB",
+          "II:D",
+          "II:V",
+          "II:F:Count",
+          "II:DR"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "SystemClass",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "%G%",
+            "LibraryId": 2
+          },
+          "Int32",
+          {
+            "TypeName": "LIDP#G1>FI#-",
+            "LibraryId": 79
+          },
+          "Boolean",
+          {
+            "TypeName": "PC",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Double",
+          "Int32",
+          "Double",
+          "System.Version",
+          "Int32",
+          "Double"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": -84,
+          "MetadataId": -80,
+          "Values": [
+            -442997360,
+            11884,
+            17086,
+            179,
+            75,
+            192,
+            84,
+            128,
+            162,
+            13,
+            187
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        5,
+        {
+          "IdRef": 85,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        {
+          "IdRef": 86,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        0.0,
+        0,
+        0.0,
+        {
+          "IdRef": 87,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0.0
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 45,
+        "Name": "IO",
+        "MemberCount": 7,
+        "MemberNames": [
+          "IO:G",
+          "IO:C",
+          "IO:SG",
+          "IO:AEM",
+          "IO:L",
+          "IO:S",
+          "IO:A"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "IRG",
+            "LibraryId": 2
+          },
+          "Single",
+          "Int32",
+          {
+            "TypeName": "eATEQ",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Boolean",
+          "Int32"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "IdRef": 88,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0.699999988079071,
+        0,
+        {
+          "ClassInfo": {
+            "ObjectId": -89,
+            "Name": "eATEQ",
+            "MemberCount": 1,
+            "MemberNames": [
+              "value__"
+            ]
+          },
+          "MemberTypeInfo": {
+            "BinaryTypeEnums": [
+              "Primitive"
+            ],
+            "AdditionalInfos": [
+              "Int32"
+            ]
+          },
+          "LibraryId": 2,
+          "Values": [
+            0
+          ],
+          "RecordTypeEnum": "ClassWithMembersAndTypes"
+        },
+        true,
+        true,
+        10
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 46,
+        "Name": "NEII",
+        "MemberCount": 12,
+        "MemberNames": [
+          "II:I",
+          "II:S",
+          "II:DP",
+          "II:L",
+          "II:CP",
+          "II:S1",
+          "II:B",
+          "II:MB",
+          "II:D",
+          "II:V",
+          "II:F:Count",
+          "II:DR"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "SystemClass",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "%G%",
+            "LibraryId": 2
+          },
+          "Int32",
+          {
+            "TypeName": "LIDP#G1>FI#-",
+            "LibraryId": 79
+          },
+          "Boolean",
+          {
+            "TypeName": "PC",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Double",
+          "Int32",
+          "Double",
+          "System.Version",
+          "Int32",
+          "Double"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": -90,
+          "MetadataId": -80,
+          "Values": [
+            -960746959,
+            -32317,
+            18332,
+            160,
+            165,
+            211,
+            28,
+            18,
+            149,
+            133,
+            123
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        10,
+        {
+          "IdRef": 91,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        {
+          "IdRef": 92,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        0.0,
+        0,
+        0.0,
+        {
+          "IdRef": 93,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0.0
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 47,
+        "Name": "NEII",
+        "MemberCount": 12,
+        "MemberNames": [
+          "II:I",
+          "II:S",
+          "II:DP",
+          "II:L",
+          "II:CP",
+          "II:S1",
+          "II:B",
+          "II:MB",
+          "II:D",
+          "II:V",
+          "II:F:Count",
+          "II:DR"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "SystemClass",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "%G%",
+            "LibraryId": 2
+          },
+          "Int32",
+          {
+            "TypeName": "LIDP#G1>FI#-",
+            "LibraryId": 79
+          },
+          "Boolean",
+          {
+            "TypeName": "PC",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Double",
+          "Int32",
+          "Double",
+          "System.Version",
+          "Int32",
+          "Double"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": -94,
+          "MetadataId": -80,
+          "Values": [
+            258584090,
+            -12406,
+            18605,
+            155,
+            102,
+            137,
+            239,
+            196,
+            229,
+            218,
+            129
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        10,
+        {
+          "IdRef": 95,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        {
+          "IdRef": 96,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        0.0,
+        0,
+        0.0,
+        {
+          "IdRef": 97,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0.0
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 48,
+        "Name": "NEII",
+        "MemberCount": 12,
+        "MemberNames": [
+          "II:I",
+          "II:S",
+          "II:DP",
+          "II:L",
+          "II:CP",
+          "II:S1",
+          "II:B",
+          "II:MB",
+          "II:D",
+          "II:V",
+          "II:F:Count",
+          "II:DR"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "SystemClass",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "%G%",
+            "LibraryId": 2
+          },
+          "Int32",
+          {
+            "TypeName": "LIDP#G1>FI#-",
+            "LibraryId": 79
+          },
+          "Boolean",
+          {
+            "TypeName": "PC",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Double",
+          "Int32",
+          "Double",
+          "System.Version",
+          "Int32",
+          "Double"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": -98,
+          "MetadataId": -80,
+          "Values": [
+            1323436008,
+            3684,
+            16447,
+            162,
+            177,
+            255,
+            198,
+            210,
+            235,
+            144,
+            18
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        5,
+        {
+          "IdRef": 99,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        {
+          "IdRef": 100,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        0.0,
+        0,
+        0.0,
+        {
+          "IdRef": 101,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0.0
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ObjectId": 49,
+      "MetadataId": 45,
+      "Values": [
+        {
+          "IdRef": 102,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0.699999988079071,
+        0,
+        {
+          "ObjectId": -103,
+          "MetadataId": -89,
+          "Values": [
+            0
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        true,
+        true,
+        15
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 50,
+      "MetadataId": 45,
+      "Values": [
+        {
+          "IdRef": 104,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0.699999988079071,
+        0,
+        {
+          "ObjectId": -105,
+          "MetadataId": -89,
+          "Values": [
+            0
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        true,
+        true,
+        5
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 51,
+      "MetadataId": 45,
+      "Values": [
+        {
+          "IdRef": 106,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0.8999999761581421,
+        0,
+        {
+          "ObjectId": -107,
+          "MetadataId": -89,
+          "Values": [
+            0
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        true,
+        true,
+        5
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 52,
+      "MetadataId": 45,
+      "Values": [
+        {
+          "IdRef": 108,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0.6000000238418579,
+        0,
+        {
+          "ObjectId": -109,
+          "MetadataId": -89,
+          "Values": [
+            0
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        true,
+        true,
+        10
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 53,
+        "Name": "IO",
+        "MemberCount": 7,
+        "MemberNames": [
+          "IO:G",
+          "IO:C",
+          "IO:SG",
+          "IO:AEM",
+          "IO:L",
+          "IO:S",
+          "IO:A"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "IR",
+            "LibraryId": 2
+          },
+          "Single",
+          "Int32",
+          {
+            "TypeName": "eATEQ",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Boolean",
+          "Int32"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "IdRef": 110,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0.699999988079071,
+        0,
+        {
+          "ObjectId": -111,
+          "MetadataId": -89,
+          "Values": [
+            0
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        true,
+        true,
+        5
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 54,
+        "Name": "ICC",
+        "MemberCount": 5,
+        "MemberNames": [
+          "C:N",
+          "CIC:P",
+          "CIC:AD",
+          "ICC:V",
+          "ICC:CT"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "String",
+          "Primitive",
+          "Primitive",
+          "Class"
+        ],
+        "AdditionalInfos": [
+          null,
+          null,
+          "Boolean",
+          "Int32",
+          {
+            "TypeName": "eCT2",
+            "LibraryId": 2
+          }
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 112,
+          "Value": "context.npc_xpbl_le_chef_foodOfferLevel",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        true,
+        0,
+        {
+          "ClassInfo": {
+            "ObjectId": -113,
+            "Name": "eCT2",
+            "MemberCount": 1,
+            "MemberNames": [
+              "value__"
+            ]
+          },
+          "MemberTypeInfo": {
+            "BinaryTypeEnums": [
+              "Primitive"
+            ],
+            "AdditionalInfos": [
+              "Int32"
+            ]
+          },
+          "LibraryId": 2,
+          "Values": [
+            1
+          ],
+          "RecordTypeEnum": "ClassWithMembersAndTypes"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 55,
+        "Name": "NEII",
+        "MemberCount": 12,
+        "MemberNames": [
+          "II:I",
+          "II:S",
+          "II:DP",
+          "II:L",
+          "II:CP",
+          "II:S1",
+          "II:B",
+          "II:MB",
+          "II:D",
+          "II:V",
+          "II:F:Count",
+          "II:DR"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "SystemClass",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "%G%",
+            "LibraryId": 2
+          },
+          "Int32",
+          {
+            "TypeName": "LIDP#G1>FI#-",
+            "LibraryId": 79
+          },
+          "Boolean",
+          {
+            "TypeName": "PC",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Double",
+          "Int32",
+          "Double",
+          "System.Version",
+          "Int32",
+          "Double"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": -114,
+          "MetadataId": -80,
+          "Values": [
+            178823851,
+            5212,
+            17239,
+            181,
+            34,
+            206,
+            199,
+            202,
+            222,
+            184,
+            131
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        4,
+        {
+          "IdRef": 115,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        {
+          "IdRef": 116,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        0.0,
+        0,
+        0.0,
+        {
+          "IdRef": 117,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0.0
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 56,
+        "Name": "NEII",
+        "MemberCount": 12,
+        "MemberNames": [
+          "II:I",
+          "II:S",
+          "II:DP",
+          "II:L",
+          "II:CP",
+          "II:S1",
+          "II:B",
+          "II:MB",
+          "II:D",
+          "II:V",
+          "II:F:Count",
+          "II:DR"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "SystemClass",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "%G%",
+            "LibraryId": 2
+          },
+          "Int32",
+          {
+            "TypeName": "LIDP#G1>FI#-",
+            "LibraryId": 79
+          },
+          "Boolean",
+          {
+            "TypeName": "PC",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Double",
+          "Int32",
+          "Double",
+          "System.Version",
+          "Int32",
+          "Double"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": -118,
+          "MetadataId": -80,
+          "Values": [
+            -522382800,
+            -17080,
+            16930,
+            161,
+            38,
+            27,
+            127,
+            43,
+            201,
+            81,
+            64
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        5,
+        {
+          "IdRef": 119,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        {
+          "IdRef": 120,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        0.0,
+        0,
+        0.0,
+        {
+          "IdRef": 121,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0.0
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 57,
+        "Name": "NEII",
+        "MemberCount": 12,
+        "MemberNames": [
+          "II:I",
+          "II:S",
+          "II:DP",
+          "II:L",
+          "II:CP",
+          "II:S1",
+          "II:B",
+          "II:MB",
+          "II:D",
+          "II:V",
+          "II:F:Count",
+          "II:DR"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "SystemClass",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "%G%",
+            "LibraryId": 2
+          },
+          "Int32",
+          {
+            "TypeName": "LIDP#G1>FI#-",
+            "LibraryId": 79
+          },
+          "Boolean",
+          {
+            "TypeName": "PC",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Double",
+          "Int32",
+          "Double",
+          "System.Version",
+          "Int32",
+          "Double"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": -122,
+          "MetadataId": -80,
+          "Values": [
+            -2139125818,
+            2015,
+            17320,
+            177,
+            211,
+            125,
+            116,
+            234,
+            193,
+            172,
+            104
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        15,
+        {
+          "IdRef": 123,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        {
+          "IdRef": 124,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        0.0,
+        0,
+        0.0,
+        {
+          "IdRef": 125,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0.0
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ObjectId": 58,
+      "MetadataId": 45,
+      "Values": [
+        {
+          "IdRef": 126,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0.699999988079071,
+        0,
+        {
+          "ObjectId": -127,
+          "MetadataId": -89,
+          "Values": [
+            0
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        true,
+        true,
+        10
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 59,
+      "MetadataId": 45,
+      "Values": [
+        {
+          "IdRef": 128,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0.699999988079071,
+        0,
+        {
+          "ObjectId": -129,
+          "MetadataId": -89,
+          "Values": [
+            0
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        true,
+        true,
+        4
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 60,
+      "MetadataId": 45,
+      "Values": [
+        {
+          "IdRef": 130,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0.800000011920929,
+        0,
+        {
+          "ObjectId": -131,
+          "MetadataId": -89,
+          "Values": [
+            0
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        true,
+        true,
+        4
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 61,
+      "MetadataId": 45,
+      "Values": [
+        {
+          "IdRef": 132,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0.699999988079071,
+        0,
+        {
+          "ObjectId": -133,
+          "MetadataId": -89,
+          "Values": [
+            0
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        true,
+        true,
+        5
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 62,
+        "Name": "IO",
+        "MemberCount": 7,
+        "MemberNames": [
+          "IO:G",
+          "IO:C",
+          "IO:SG",
+          "IO:AEM",
+          "IO:L",
+          "IO:S",
+          "IO:A"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "IR",
+            "LibraryId": 2
+          },
+          "Single",
+          "Int32",
+          {
+            "TypeName": "eATEQ",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Boolean",
+          "Int32"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "IdRef": 134,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0.699999988079071,
+        0,
+        {
+          "ObjectId": -135,
+          "MetadataId": -89,
+          "Values": [
+            0
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        true,
+        true,
+        4
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ObjectId": 63,
+      "MetadataId": 54,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 136,
+          "Value": "context.npc_xpbl_le_chef_foodOfferLevel",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        true,
+        1,
+        {
+          "ObjectId": -137,
+          "MetadataId": -113,
+          "Values": [
+            1
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 64,
+        "Name": "NEII",
+        "MemberCount": 12,
+        "MemberNames": [
+          "II:I",
+          "II:S",
+          "II:DP",
+          "II:L",
+          "II:CP",
+          "II:S1",
+          "II:B",
+          "II:MB",
+          "II:D",
+          "II:V",
+          "II:F:Count",
+          "II:DR"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "SystemClass",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "%G%",
+            "LibraryId": 2
+          },
+          "Int32",
+          {
+            "TypeName": "LIDP#G1>FI#-",
+            "LibraryId": 79
+          },
+          "Boolean",
+          {
+            "TypeName": "PC",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Double",
+          "Int32",
+          "Double",
+          "System.Version",
+          "Int32",
+          "Double"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": -138,
+          "MetadataId": -80,
+          "Values": [
+            -1162045947,
+            -25266,
+            19997,
+            177,
+            224,
+            2,
+            60,
+            15,
+            228,
+            167,
+            196
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        3,
+        {
+          "IdRef": 139,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        {
+          "IdRef": 140,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        0.0,
+        0,
+        0.0,
+        {
+          "IdRef": 141,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0.0
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 65,
+        "Name": "NEII",
+        "MemberCount": 12,
+        "MemberNames": [
+          "II:I",
+          "II:S",
+          "II:DP",
+          "II:L",
+          "II:CP",
+          "II:S1",
+          "II:B",
+          "II:MB",
+          "II:D",
+          "II:V",
+          "II:F:Count",
+          "II:DR"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "SystemClass",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "%G%",
+            "LibraryId": 2
+          },
+          "Int32",
+          {
+            "TypeName": "LIDP#G1>FI#-",
+            "LibraryId": 79
+          },
+          "Boolean",
+          {
+            "TypeName": "PC",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Double",
+          "Int32",
+          "Double",
+          "System.Version",
+          "Int32",
+          "Double"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": -142,
+          "MetadataId": -80,
+          "Values": [
+            477639901,
+            -15722,
+            16468,
+            135,
+            32,
+            20,
+            244,
+            135,
+            24,
+            48,
+            26
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        5,
+        {
+          "IdRef": 143,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        {
+          "IdRef": 144,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        0.0,
+        0,
+        0.0,
+        {
+          "IdRef": 145,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0.0
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 66,
+        "Name": "NEII",
+        "MemberCount": 12,
+        "MemberNames": [
+          "II:I",
+          "II:S",
+          "II:DP",
+          "II:L",
+          "II:CP",
+          "II:S1",
+          "II:B",
+          "II:MB",
+          "II:D",
+          "II:V",
+          "II:F:Count",
+          "II:DR"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "SystemClass",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "%G%",
+            "LibraryId": 2
+          },
+          "Int32",
+          {
+            "TypeName": "LIDP#G1>FI#-",
+            "LibraryId": 79
+          },
+          "Boolean",
+          {
+            "TypeName": "PC",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Double",
+          "Int32",
+          "Double",
+          "System.Version",
+          "Int32",
+          "Double"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": -146,
+          "MetadataId": -80,
+          "Values": [
+            -922316346,
+            30344,
+            18380,
+            135,
+            50,
+            116,
+            66,
+            7,
+            9,
+            44,
+            237
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        4,
+        {
+          "IdRef": 147,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        {
+          "IdRef": 148,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        0.0,
+        0,
+        0.0,
+        {
+          "IdRef": 149,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0.0
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ObjectId": 67,
+      "MetadataId": 45,
+      "Values": [
+        {
+          "IdRef": 150,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0.699999988079071,
+        0,
+        {
+          "ObjectId": -151,
+          "MetadataId": -89,
+          "Values": [
+            0
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        true,
+        true,
+        5
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 68,
+      "MetadataId": 45,
+      "Values": [
+        {
+          "IdRef": 152,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0.699999988079071,
+        0,
+        {
+          "ObjectId": -153,
+          "MetadataId": -89,
+          "Values": [
+            0
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        true,
+        true,
+        4
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 69,
+      "MetadataId": 45,
+      "Values": [
+        {
+          "IdRef": 154,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0.30000001192092896,
+        0,
+        {
+          "ObjectId": -155,
+          "MetadataId": -89,
+          "Values": [
+            0
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        true,
+        true,
+        4
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 70,
+      "MetadataId": 45,
+      "Values": [
+        {
+          "IdRef": 156,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0.6000000238418579,
+        0,
+        {
+          "ObjectId": -157,
+          "MetadataId": -89,
+          "Values": [
+            0
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        true,
+        true,
+        2
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 71,
+        "Name": "IO",
+        "MemberCount": 7,
+        "MemberNames": [
+          "IO:G",
+          "IO:C",
+          "IO:SG",
+          "IO:AEM",
+          "IO:L",
+          "IO:S",
+          "IO:A"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "IR",
+            "LibraryId": 2
+          },
+          "Single",
+          "Int32",
+          {
+            "TypeName": "eATEQ",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Boolean",
+          "Int32"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "IdRef": 158,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0.699999988079071,
+        0,
+        {
+          "ObjectId": -159,
+          "MetadataId": -89,
+          "Values": [
+            0
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        true,
+        true,
+        3
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ObjectId": 72,
+      "MetadataId": 54,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 160,
+          "Value": "context.npc_xpbl_le_chef_foodOfferLevel",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        true,
+        2,
+        {
+          "ObjectId": -161,
+          "MetadataId": -113,
+          "Values": [
+            1
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 73,
+        "Name": "NEII",
+        "MemberCount": 12,
+        "MemberNames": [
+          "II:I",
+          "II:S",
+          "II:DP",
+          "II:L",
+          "II:CP",
+          "II:S1",
+          "II:B",
+          "II:MB",
+          "II:D",
+          "II:V",
+          "II:F:Count",
+          "II:DR"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "SystemClass",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "%G%",
+            "LibraryId": 2
+          },
+          "Int32",
+          {
+            "TypeName": "LIDP#G1>FI#-",
+            "LibraryId": 79
+          },
+          "Boolean",
+          {
+            "TypeName": "PC",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Double",
+          "Int32",
+          "Double",
+          "System.Version",
+          "Int32",
+          "Double"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": -162,
+          "MetadataId": -80,
+          "Values": [
+            -1952626611,
+            -8826,
+            16812,
+            186,
+            249,
+            253,
+            25,
+            238,
+            115,
+            181,
+            175
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        2,
+        {
+          "IdRef": 163,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        {
+          "IdRef": 164,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        0.0,
+        0,
+        0.0,
+        {
+          "IdRef": 165,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0.0
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ObjectId": 74,
+      "MetadataId": 45,
+      "Values": [
+        {
+          "IdRef": 166,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0.699999988079071,
+        0,
+        {
+          "ObjectId": -167,
+          "MetadataId": -89,
+          "Values": [
+            0
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        true,
+        true,
+        4
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 75,
+      "MetadataId": 54,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 168,
+          "Value": "context.npc_xpbl_le_chef_foodOfferLevel",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        true,
+        3,
+        {
+          "ObjectId": -169,
+          "MetadataId": -113,
+          "Values": [
+            1
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 76,
+      "MetadataId": 45,
+      "Values": [
+        {
+          "IdRef": 170,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0.30000001192092896,
+        0,
+        {
+          "ObjectId": -171,
+          "MetadataId": -89,
+          "Values": [
+            0
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        true,
+        true,
+        4
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 77,
+      "MetadataId": 45,
+      "Values": [
+        {
+          "IdRef": 172,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0.5,
+        0,
+        {
+          "ObjectId": -173,
+          "MetadataId": -89,
+          "Values": [
+            0
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        true,
+        true,
+        7
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 78,
+      "MetadataId": 54,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 174,
+          "Value": "context.npc_xpbl_le_chef_foodOfferLevel",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        true,
+        4,
+        {
+          "ObjectId": -175,
+          "MetadataId": -113,
+          "Values": [
+            1
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 81,
+        "Name": "LIDP#G1>C00#-",
+        "MemberCount": 3,
+        "MemberNames": [
+          "TOR:OI",
+          "TOR:N",
+          "LIDP:P"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "Object",
+          "String"
+        ],
+        "AdditionalInfos": [
+          null,
+          null,
+          null
+        ]
+      },
+      "LibraryId": 79,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 176,
+          "Value": "currency\\stygiancoin",
+          "RecordTypeEnum": "BinaryObjectString"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 82,
+        "Name": "PC",
+        "MemberCount": 1,
+        "MemberNames": [
+          "PC:P:Count"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          "Int32"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        0
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 83,
+        "Name": "System.Version",
+        "MemberCount": 4,
+        "MemberNames": [
+          "_Major",
+          "_Minor",
+          "_Build",
+          "_Revision"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          "Int32",
+          "Int32",
+          "Int32",
+          "Int32"
+        ]
+      },
+      "Values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "RecordTypeEnum": "SystemClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 85,
+        "Name": "LIDP#G1>FI#-",
+        "MemberCount": 3,
+        "MemberNames": [
+          "TOR:OI",
+          "TOR:N",
+          "LIDP:P"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "Object",
+          "String"
+        ],
+        "AdditionalInfos": [
+          null,
+          null,
+          null
+        ]
+      },
+      "LibraryId": 79,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 177,
+          "Value": "consumables\\food\\rootsoda",
+          "RecordTypeEnum": "BinaryObjectString"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ObjectId": 86,
+      "MetadataId": 82,
+      "Values": [
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 87,
+      "MetadataId": 83,
+      "Values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 88,
+        "Name": "IRG",
+        "MemberCount": 12,
+        "MemberNames": [
+          "IGB:ML",
+          "IGB:ML1",
+          "IGB:B",
+          "IGB:D",
+          "IGB:O",
+          "IGB:I",
+          "IGB:C",
+          "IGB:DL",
+          "IGB:CH",
+          "IGB:IE",
+          "IGB:DLI",
+          "IRG:IR"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive",
+          "Primitive",
+          "Object",
+          "Object",
+          "Object",
+          "Object",
+          "Object",
+          "Object",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Class"
+        ],
+        "AdditionalInfos": [
+          "Int32",
+          "Int32",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Boolean",
+          {
+            "TypeName": "%LI%#G1>IFX#-",
+            "LibraryId": 79
+          },
+          "Boolean",
+          {
+            "TypeName": "eIR",
+            "LibraryId": 2
+          }
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        1,
+        15,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        {
+          "IdRef": 178,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        {
+          "ClassInfo": {
+            "ObjectId": -179,
+            "Name": "eIR",
+            "MemberCount": 1,
+            "MemberNames": [
+              "value__"
+            ]
+          },
+          "MemberTypeInfo": {
+            "BinaryTypeEnums": [
+              "Primitive"
+            ],
+            "AdditionalInfos": [
+              "Int32"
+            ]
+          },
+          "LibraryId": 2,
+          "Values": [
+            104
+          ],
+          "RecordTypeEnum": "ClassWithMembersAndTypes"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ObjectId": 91,
+      "MetadataId": 85,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 180,
+          "Value": "consumables\\food\\xpbl\\crabsandwich",
+          "RecordTypeEnum": "BinaryObjectString"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 92,
+      "MetadataId": 82,
+      "Values": [
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 93,
+      "MetadataId": 83,
+      "Values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 95,
+      "MetadataId": 85,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 181,
+          "Value": "consumables\\food\\mushroomsalad",
+          "RecordTypeEnum": "BinaryObjectString"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 96,
+      "MetadataId": 82,
+      "Values": [
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 97,
+      "MetadataId": 83,
+      "Values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 99,
+      "MetadataId": 85,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 182,
+          "Value": "consumables\\food\\rootsoda",
+          "RecordTypeEnum": "BinaryObjectString"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 100,
+      "MetadataId": 82,
+      "Values": [
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 101,
+      "MetadataId": 83,
+      "Values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 102,
+      "MetadataId": 88,
+      "Values": [
+        1,
+        15,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        {
+          "IdRef": 183,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        {
+          "ObjectId": -184,
+          "MetadataId": -179,
+          "Values": [
+            103
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 104,
+      "MetadataId": 88,
+      "Values": [
+        1,
+        15,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        {
+          "IdRef": 185,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        {
+          "ObjectId": -186,
+          "MetadataId": -179,
+          "Values": [
+            104
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 106,
+      "MetadataId": 88,
+      "Values": [
+        1,
+        15,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        {
+          "IdRef": 187,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        {
+          "ObjectId": -188,
+          "MetadataId": -179,
+          "Values": [
+            17
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 108,
+      "MetadataId": 88,
+      "Values": [
+        1,
+        15,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        {
+          "IdRef": 189,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        {
+          "ObjectId": -190,
+          "MetadataId": -179,
+          "Values": [
+            102
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 110,
+        "Name": "IR",
+        "MemberCount": 14,
+        "MemberNames": [
+          "IGB:ML",
+          "IGB:ML1",
+          "IGB:B",
+          "IGB:D",
+          "IGB:O",
+          "IGB:I",
+          "IGB:C",
+          "IGB:DL",
+          "IGB:CH",
+          "IGB:IE",
+          "IGB:DLI",
+          "IR:I",
+          "IR:AMID",
+          "IR:TRQ"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive",
+          "Primitive",
+          "Object",
+          "Object",
+          "Object",
+          "Object",
+          "Object",
+          "Object",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          "Int32",
+          "Int32",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Boolean",
+          {
+            "TypeName": "%LI%#G1>IFX#-",
+            "LibraryId": 79
+          },
+          "Boolean",
+          {
+            "TypeName": "NEII",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Boolean"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        1,
+        1,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        {
+          "IdRef": 191,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        {
+          "IdRef": 192,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        false
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ObjectId": 115,
+      "MetadataId": 85,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "IdRef": 182,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 116,
+      "MetadataId": 82,
+      "Values": [
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 117,
+      "MetadataId": 83,
+      "Values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 119,
+      "MetadataId": 85,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 194,
+          "Value": "consumables\\food\\pentapusbarbecue",
+          "RecordTypeEnum": "BinaryObjectString"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 120,
+      "MetadataId": 82,
+      "Values": [
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 121,
+      "MetadataId": 83,
+      "Values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 123,
+      "MetadataId": 85,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 195,
+          "Value": "consumables\\food\\eelsandwich",
+          "RecordTypeEnum": "BinaryObjectString"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 124,
+      "MetadataId": 82,
+      "Values": [
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 125,
+      "MetadataId": 83,
+      "Values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 126,
+      "MetadataId": 88,
+      "Values": [
+        1,
+        15,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        {
+          "IdRef": 196,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        {
+          "ObjectId": -197,
+          "MetadataId": -179,
+          "Values": [
+            103
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 128,
+      "MetadataId": 88,
+      "Values": [
+        1,
+        15,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        {
+          "IdRef": 198,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        {
+          "ObjectId": -199,
+          "MetadataId": -179,
+          "Values": [
+            104
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 130,
+      "MetadataId": 88,
+      "Values": [
+        1,
+        15,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        {
+          "IdRef": 200,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        {
+          "ObjectId": -201,
+          "MetadataId": -179,
+          "Values": [
+            17
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 132,
+      "MetadataId": 88,
+      "Values": [
+        1,
+        15,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        {
+          "IdRef": 202,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        {
+          "ObjectId": -203,
+          "MetadataId": -179,
+          "Values": [
+            102
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 134,
+      "MetadataId": 110,
+      "Values": [
+        1,
+        1,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        {
+          "IdRef": 204,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        {
+          "IdRef": 205,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        false
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 139,
+      "MetadataId": 85,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "IdRef": 182,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 140,
+      "MetadataId": 82,
+      "Values": [
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 141,
+      "MetadataId": 83,
+      "Values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 143,
+      "MetadataId": 85,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 207,
+          "Value": "consumables\\food\\friedsiphonertongue",
+          "RecordTypeEnum": "BinaryObjectString"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 144,
+      "MetadataId": 82,
+      "Values": [
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 145,
+      "MetadataId": 83,
+      "Values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 147,
+      "MetadataId": 85,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 208,
+          "Value": "consumables\\food\\xpbl\\seaserpentfillet",
+          "RecordTypeEnum": "BinaryObjectString"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 148,
+      "MetadataId": 82,
+      "Values": [
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 149,
+      "MetadataId": 83,
+      "Values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 150,
+      "MetadataId": 88,
+      "Values": [
+        1,
+        15,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        {
+          "IdRef": 209,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        {
+          "ObjectId": -210,
+          "MetadataId": -179,
+          "Values": [
+            103
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 152,
+      "MetadataId": 88,
+      "Values": [
+        1,
+        15,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        {
+          "IdRef": 211,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        {
+          "ObjectId": -212,
+          "MetadataId": -179,
+          "Values": [
+            104
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 154,
+      "MetadataId": 88,
+      "Values": [
+        1,
+        15,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        {
+          "IdRef": 213,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        {
+          "ObjectId": -214,
+          "MetadataId": -179,
+          "Values": [
+            17
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 156,
+      "MetadataId": 88,
+      "Values": [
+        1,
+        15,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        {
+          "IdRef": 215,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        {
+          "ObjectId": -216,
+          "MetadataId": -179,
+          "Values": [
+            102
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 158,
+      "MetadataId": 110,
+      "Values": [
+        1,
+        1,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        {
+          "IdRef": 217,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        {
+          "IdRef": 218,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        false
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 163,
+      "MetadataId": 85,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "IdRef": 182,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 164,
+      "MetadataId": 82,
+      "Values": [
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 165,
+      "MetadataId": 83,
+      "Values": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 166,
+      "MetadataId": 88,
+      "Values": [
+        1,
+        15,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        {
+          "IdRef": 220,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        {
+          "ObjectId": -221,
+          "MetadataId": -179,
+          "Values": [
+            104
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 170,
+      "MetadataId": 88,
+      "Values": [
+        1,
+        15,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        {
+          "IdRef": 222,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        {
+          "ObjectId": -223,
+          "MetadataId": -179,
+          "Values": [
+            104
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 172,
+      "MetadataId": 88,
+      "Values": [
+        1,
+        15,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        {
+          "IdRef": 224,
+          "RecordTypeEnum": "MemberReference"
+        },
+        false,
+        {
+          "ObjectId": -225,
+          "MetadataId": -179,
+          "Values": [
+            17
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "LibraryId": 226,
+      "LibraryName": "TimelapseVertigo.Rules, Version=0.1.0.0, Culture=neutral, PublicKeyToken=d50a4fd765c46dbb",
+      "RecordTypeEnum": "BinaryLibrary"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 178,
+        "Name": "%LI%#G1>IFX#-",
+        "MemberCount": 3,
+        "MemberNames": [
+          "_items",
+          "_size",
+          "_version"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "TimelapseVertigo.Rules.Effects.ItemEffect[]",
+            "LibraryId": 226
+          },
+          "Int32",
+          "Int32"
+        ]
+      },
+      "LibraryId": 79,
+      "Values": [
+        {
+          "IdRef": 227,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ObjectId": 183,
+      "MetadataId": 178,
+      "Values": [
+        {
+          "IdRef": 227,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 185,
+      "MetadataId": 178,
+      "Values": [
+        {
+          "IdRef": 227,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 187,
+      "MetadataId": 178,
+      "Values": [
+        {
+          "IdRef": 227,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 189,
+      "MetadataId": 178,
+      "Values": [
+        {
+          "IdRef": 227,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 191,
+      "MetadataId": 178,
+      "Values": [
+        {
+          "IdRef": 227,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 192,
+        "Name": "NEII",
+        "MemberCount": 12,
+        "MemberNames": [
+          "II:I",
+          "II:S",
+          "II:DP",
+          "II:L",
+          "II:CP",
+          "II:S1",
+          "II:B",
+          "II:MB",
+          "II:D",
+          "II:V",
+          "II:F:Count",
+          "II:DR"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "SystemClass",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "%G%",
+            "LibraryId": 2
+          },
+          "Int32",
+          {
+            "TypeName": "LIDP#G1>FI#-",
+            "LibraryId": 79
+          },
+          "Boolean",
+          {
+            "TypeName": "PC",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Double",
+          "Int32",
+          "Double",
+          "System.Version",
+          "Int32",
+          "Double"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": -228,
+          "MetadataId": -80,
+          "Values": [
+            777769620,
+            10812,
+            16739,
+            179,
+            255,
+            7,
+            105,
+            65,
+            155,
+            107,
+            215
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        1,
+        {
+          "IdRef": 229,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        {
+          "IdRef": 230,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        0.0,
+        0,
+        0.0,
+        {
+          "IdRef": 231,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0.0
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ObjectId": 196,
+      "MetadataId": 178,
+      "Values": [
+        {
+          "IdRef": 227,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 198,
+      "MetadataId": 178,
+      "Values": [
+        {
+          "IdRef": 227,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 200,
+      "MetadataId": 178,
+      "Values": [
+        {
+          "IdRef": 227,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 202,
+      "MetadataId": 178,
+      "Values": [
+        {
+          "IdRef": 227,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 204,
+      "MetadataId": 178,
+      "Values": [
+        {
+          "IdRef": 227,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 205,
+        "Name": "NEII",
+        "MemberCount": 12,
+        "MemberNames": [
+          "II:I",
+          "II:S",
+          "II:DP",
+          "II:L",
+          "II:CP",
+          "II:S1",
+          "II:B",
+          "II:MB",
+          "II:D",
+          "II:V",
+          "II:F:Count",
+          "II:DR"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "SystemClass",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "%G%",
+            "LibraryId": 2
+          },
+          "Int32",
+          {
+            "TypeName": "LIDP#G1>FI#-",
+            "LibraryId": 79
+          },
+          "Boolean",
+          {
+            "TypeName": "PC",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Double",
+          "Int32",
+          "Double",
+          "System.Version",
+          "Int32",
+          "Double"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": -233,
+          "MetadataId": -80,
+          "Values": [
+            777769620,
+            10812,
+            16739,
+            179,
+            255,
+            7,
+            105,
+            65,
+            155,
+            107,
+            215
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        1,
+        {
+          "IdRef": 234,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        {
+          "IdRef": 235,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        0.0,
+        0,
+        0.0,
+        {
+          "IdRef": 236,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0.0
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ObjectId": 209,
+      "MetadataId": 178,
+      "Values": [
+        {
+          "IdRef": 227,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 211,
+      "MetadataId": 178,
+      "Values": [
+        {
+          "IdRef": 227,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 213,
+      "MetadataId": 178,
+      "Values": [
+        {
+          "IdRef": 227,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 215,
+      "MetadataId": 178,
+      "Values": [
+        {
+          "IdRef": 227,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 217,
+      "MetadataId": 178,
+      "Values": [
+        {
+          "IdRef": 227,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 218,
+        "Name": "NEII",
+        "MemberCount": 12,
+        "MemberNames": [
+          "II:I",
+          "II:S",
+          "II:DP",
+          "II:L",
+          "II:CP",
+          "II:S1",
+          "II:B",
+          "II:MB",
+          "II:D",
+          "II:V",
+          "II:F:Count",
+          "II:DR"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "SystemClass",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "%G%",
+            "LibraryId": 2
+          },
+          "Int32",
+          {
+            "TypeName": "LIDP#G1>FI#-",
+            "LibraryId": 79
+          },
+          "Boolean",
+          {
+            "TypeName": "PC",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Double",
+          "Int32",
+          "Double",
+          "System.Version",
+          "Int32",
+          "Double"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": -238,
+          "MetadataId": -80,
+          "Values": [
+            777769620,
+            10812,
+            16739,
+            179,
+            255,
+            7,
+            105,
+            65,
+            155,
+            107,
+            215
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        1,
+        {
+          "IdRef": 239,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        {
+          "IdRef": 240,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        0.0,
+        0,
+        0.0,
+        {
+          "IdRef": 241,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0.0
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ObjectId": 220,
+      "MetadataId": 178,
+      "Values": [
+        {
+          "IdRef": 227,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 222,
+      "MetadataId": 178,
+      "Values": [
+        {
+          "IdRef": 227,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 224,
+      "MetadataId": 178,
+      "Values": [
+        {
+          "IdRef": 227,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 227,
+      "BinaryArrayTypeEnum": "Single",
+      "rank": 1,
+      "Lengths": [
+        0
+      ],
+      "LowerBounds": [],
+      "TypeEnum": "Class",
+      "AdditionalTypeInfo": {
+        "TypeName": "IFX",
+        "LibraryId": 2
+      },
+      "Values": [],
+      "RecordTypeEnum": "BinaryArray"
+    },
+    {
+      "ObjectId": 229,
+      "MetadataId": 85,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 243,
+          "Value": "consumables\\food\\xpbl\\butterysteamedclams",
+          "RecordTypeEnum": "BinaryObjectString"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 230,
+      "MetadataId": 82,
+      "Values": [
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 231,
+      "MetadataId": 83,
+      "Values": [
+        1,
+        0,
+        4,
+        6
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 234,
+      "MetadataId": 85,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 244,
+          "Value": "consumables\\food\\xpbl\\butterysteamedclams",
+          "RecordTypeEnum": "BinaryObjectString"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 235,
+      "MetadataId": 82,
+      "Values": [
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 236,
+      "MetadataId": 83,
+      "Values": [
+        1,
+        0,
+        4,
+        6
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 239,
+      "MetadataId": 85,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 245,
+          "Value": "consumables\\food\\xpbl\\butterysteamedclams",
+          "RecordTypeEnum": "BinaryObjectString"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 240,
+      "MetadataId": 82,
+      "Values": [
+        0
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 241,
+      "MetadataId": 83,
+      "Values": [
+        1,
+        0,
+        4,
+        6
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "RecordTypeEnum": "MessageEnd"
+    }
+  ],
+  "Compressed": true
+}

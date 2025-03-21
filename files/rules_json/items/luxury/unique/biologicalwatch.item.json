@@ -1,0 +1,277 @@
+{
+  "Header": "F9538B831F363243BAAE0D17865D08547DA2DB215D000000",
+  "Records": [
+    {
+      "RootId": 1,
+      "HeaderId": -1,
+      "MajorVersion": 1,
+      "MinorVersion": 0,
+      "RecordTypeEnum": "SerializedStreamHeader"
+    },
+    {
+      "LibraryId": 2,
+      "LibraryName": "X",
+      "RecordTypeEnum": "BinaryLibrary"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 1,
+        "Name": "NEI",
+        "MemberCount": 22,
+        "MemberNames": [
+          "I:C",
+          "I:N",
+          "I:Q",
+          "I:L",
+          "I:D",
+          "I:VM",
+          "I:MS",
+          "I:C2",
+          "I:CV",
+          "I:CP",
+          "I:IVF",
+          "I:CS:Count",
+          "I:I",
+          "I:R",
+          "I:S",
+          "I:T",
+          "I:W",
+          "I:CR",
+          "I:MB",
+          "I:UR",
+          "I:QQ",
+          "NEI:CR"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "String",
+          "String",
+          "Class",
+          "Primitive",
+          "String",
+          "String",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "Class",
+          "Object",
+          "Primitive",
+          "Primitive",
+          "Class",
+          "Class",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Object",
+          "Primitive",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          null,
+          null,
+          {
+            "TypeName": "eIQ",
+            "LibraryId": 2
+          },
+          "Int32",
+          null,
+          null,
+          "Int32",
+          "Boolean",
+          "Double",
+          {
+            "TypeName": "PC",
+            "LibraryId": 2
+          },
+          null,
+          "Int32",
+          "Boolean",
+          {
+            "TypeName": "eRC",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "eSC",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "eTC",
+            "LibraryId": 2
+          },
+          "Double",
+          "Boolean",
+          null,
+          "Boolean",
+          "Boolean",
+          "Boolean"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": 3,
+          "Value": "biologicalWatch",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 4,
+          "Value": "Biological Watch",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ClassInfo": {
+            "ObjectId": -5,
+            "Name": "eIQ",
+            "MemberCount": 1,
+            "MemberNames": [
+              "value__"
+            ]
+          },
+          "MemberTypeInfo": {
+            "BinaryTypeEnums": [
+              "Primitive"
+            ],
+            "AdditionalInfos": [
+              "Int32"
+            ]
+          },
+          "LibraryId": 2,
+          "Values": [
+            4
+          ],
+          "RecordTypeEnum": "ClassWithMembersAndTypes"
+        },
+        0,
+        {
+          "ObjectId": 6,
+          "Value": "A peculiar \"living\" watch made of - or perhaps grown into - hard mineralized tissue protecting a soft organ with a transparent membrane. There are loose particles suspended in the fluid within, and with each of the organ's heart-like contractions they unite and take shape of the hour and minute hands, before drifting away from each other again.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 7,
+          "Value": "Plot.229",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        1,
+        false,
+        10000.0,
+        {
+          "IdRef": 8,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        0,
+        true,
+        {
+          "ClassInfo": {
+            "ObjectId": -9,
+            "Name": "eRC",
+            "MemberCount": 1,
+            "MemberNames": [
+              "value__"
+            ]
+          },
+          "MemberTypeInfo": {
+            "BinaryTypeEnums": [
+              "Primitive"
+            ],
+            "AdditionalInfos": [
+              "Int32"
+            ]
+          },
+          "LibraryId": 2,
+          "Values": [
+            0
+          ],
+          "RecordTypeEnum": "ClassWithMembersAndTypes"
+        },
+        {
+          "ClassInfo": {
+            "ObjectId": -10,
+            "Name": "eSC",
+            "MemberCount": 1,
+            "MemberNames": [
+              "value__"
+            ]
+          },
+          "MemberTypeInfo": {
+            "BinaryTypeEnums": [
+              "Primitive"
+            ],
+            "AdditionalInfos": [
+              "Int32"
+            ]
+          },
+          "LibraryId": 2,
+          "Values": [
+            11
+          ],
+          "RecordTypeEnum": "ClassWithMembersAndTypes"
+        },
+        {
+          "ClassInfo": {
+            "ObjectId": -11,
+            "Name": "eTC",
+            "MemberCount": 1,
+            "MemberNames": [
+              "value__"
+            ]
+          },
+          "MemberTypeInfo": {
+            "BinaryTypeEnums": [
+              "Primitive"
+            ],
+            "AdditionalInfos": [
+              "Int32"
+            ]
+          },
+          "LibraryId": 2,
+          "Values": [
+            480
+          ],
+          "RecordTypeEnum": "ClassWithMembersAndTypes"
+        },
+        0.03,
+        true,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        false,
+        false,
+        false
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 8,
+        "Name": "PC",
+        "MemberCount": 1,
+        "MemberNames": [
+          "PC:P:Count"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          "Int32"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        0
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "RecordTypeEnum": "MessageEnd"
+    }
+  ],
+  "Compressed": true
+}

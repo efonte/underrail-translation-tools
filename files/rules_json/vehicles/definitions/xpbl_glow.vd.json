@@ -1,0 +1,582 @@
+{
+  "Header": "F9538B831F363243BAAE0D17865D0854A3817C814A000000",
+  "Records": [
+    {
+      "RootId": 1,
+      "HeaderId": -1,
+      "MajorVersion": 1,
+      "MinorVersion": 0,
+      "RecordTypeEnum": "SerializedStreamHeader"
+    },
+    {
+      "LibraryId": 2,
+      "LibraryName": "X",
+      "RecordTypeEnum": "BinaryLibrary"
+    },
+    {
+      "LibraryId": 3,
+      "LibraryName": "G",
+      "RecordTypeEnum": "BinaryLibrary"
+    },
+    {
+      "LibraryId": 4,
+      "LibraryName": "Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553",
+      "RecordTypeEnum": "BinaryLibrary"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 1,
+        "Name": "VHCD",
+        "MemberCount": 7,
+        "MemberNames": [
+          "_Frame",
+          "_Parts",
+          "_Name",
+          "_EmitsLight",
+          "_LightColor",
+          "_VisualSideExtensionBonus",
+          "_VisualDiagonalExtensionBonus"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Class",
+          "String",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "VPII",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "%LI%#G1>VHCP#-",
+            "LibraryId": 3
+          },
+          null,
+          "Boolean",
+          {
+            "TypeName": "Microsoft.Xna.Framework.Color",
+            "LibraryId": 4
+          },
+          "Single",
+          "Single"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "IdRef": 5,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 6,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "ObjectId": 7,
+          "Value": "Glow",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        true,
+        {
+          "ClassInfo": {
+            "ObjectId": -8,
+            "Name": "Microsoft.Xna.Framework.Color",
+            "MemberCount": 1,
+            "MemberNames": [
+              "packedValue"
+            ]
+          },
+          "MemberTypeInfo": {
+            "BinaryTypeEnums": [
+              "Primitive"
+            ],
+            "AdditionalInfos": [
+              "UInt32"
+            ]
+          },
+          "LibraryId": 4,
+          "Values": [
+            4281479935
+          ],
+          "RecordTypeEnum": "ClassWithMembersAndTypes"
+        },
+        0.15000000596046448,
+        0.30000001192092896
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 5,
+        "Name": "VPII",
+        "MemberCount": 9,
+        "MemberNames": [
+          "II:I",
+          "II:S",
+          "II:DP",
+          "II:L",
+          "II:CP",
+          "II:S1",
+          "II:B",
+          "II:MB",
+          "II:D"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "%G%",
+            "LibraryId": 2
+          },
+          "Int32",
+          {
+            "TypeName": "LIDP#G1>VFI#-",
+            "LibraryId": 3
+          },
+          "Boolean",
+          {
+            "TypeName": "PC",
+            "LibraryId": 2
+          },
+          "Boolean",
+          "Double",
+          "Int32",
+          "Double"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ClassInfo": {
+            "ObjectId": -9,
+            "Name": "%G%",
+            "MemberCount": 11,
+            "MemberNames": [
+              "_a",
+              "_b",
+              "_c",
+              "_d",
+              "_e",
+              "_f",
+              "_g",
+              "_h",
+              "_i",
+              "_j",
+              "_k"
+            ]
+          },
+          "MemberTypeInfo": {
+            "BinaryTypeEnums": [
+              "Primitive",
+              "Primitive",
+              "Primitive",
+              "Primitive",
+              "Primitive",
+              "Primitive",
+              "Primitive",
+              "Primitive",
+              "Primitive",
+              "Primitive",
+              "Primitive"
+            ],
+            "AdditionalInfos": [
+              "Int32",
+              "Int16",
+              "Int16",
+              "Byte",
+              "Byte",
+              "Byte",
+              "Byte",
+              "Byte",
+              "Byte",
+              "Byte",
+              "Byte"
+            ]
+          },
+          "LibraryId": 2,
+          "Values": [
+            868271601,
+            -16587,
+            18334,
+            157,
+            252,
+            26,
+            34,
+            69,
+            214,
+            34,
+            169
+          ],
+          "RecordTypeEnum": "ClassWithMembersAndTypes"
+        },
+        1,
+        {
+          "IdRef": 10,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        {
+          "IdRef": 11,
+          "RecordTypeEnum": "MemberReference"
+        },
+        true,
+        0.0,
+        0,
+        0.0
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "LibraryId": 12,
+      "LibraryName": "TimelapseVertigo.Rules, Version=0.1.0.0, Culture=neutral, PublicKeyToken=d50a4fd765c46dbb",
+      "RecordTypeEnum": "BinaryLibrary"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 6,
+        "Name": "%LI%#G1>VHCP#-",
+        "MemberCount": 3,
+        "MemberNames": [
+          "_items",
+          "_size",
+          "_version"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Class",
+          "Primitive",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          {
+            "TypeName": "TimelapseVertigo.Rules.Vehicles.VehiclePart[]",
+            "LibraryId": 12
+          },
+          "Int32",
+          "Int32"
+        ]
+      },
+      "LibraryId": 3,
+      "Values": [
+        {
+          "IdRef": 13,
+          "RecordTypeEnum": "MemberReference"
+        },
+        3,
+        47
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 10,
+        "Name": "LIDP#G1>VFI#-",
+        "MemberCount": 3,
+        "MemberNames": [
+          "TOR:OI",
+          "TOR:N",
+          "LIDP:P"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "Object",
+          "String"
+        ],
+        "AdditionalInfos": [
+          null,
+          null,
+          null
+        ]
+      },
+      "LibraryId": 3,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 14,
+          "Value": "vehicleparts\\frames\\xpbl_glowframe",
+          "RecordTypeEnum": "BinaryObjectString"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 11,
+        "Name": "PC",
+        "MemberCount": 1,
+        "MemberNames": [
+          "PC:P:Count"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          "Int32"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        0
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ObjectId": 13,
+      "BinaryArrayTypeEnum": "Single",
+      "rank": 1,
+      "Lengths": [
+        4
+      ],
+      "LowerBounds": [],
+      "TypeEnum": "Class",
+      "AdditionalTypeInfo": {
+        "TypeName": "VHCP",
+        "LibraryId": 2
+      },
+      "Values": [
+        {
+          "IdRef": 15,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 16,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 17,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        }
+      ],
+      "RecordTypeEnum": "BinaryArray"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 15,
+        "Name": "VHCP",
+        "MemberCount": 8,
+        "MemberNames": [
+          "_Code",
+          "_Name",
+          "_Description",
+          "_PartType",
+          "_MaxSize",
+          "_Optional",
+          "_SchematicPosition",
+          "_LivePlacement"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "String",
+          "String",
+          "String",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Class",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          null,
+          null,
+          null,
+          {
+            "TypeName": "eVPT",
+            "LibraryId": 2
+          },
+          "Int32",
+          "Boolean",
+          {
+            "TypeName": "Microsoft.Xna.Framework.Point",
+            "LibraryId": 4
+          },
+          "Boolean"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": 18,
+          "Value": "engine",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 19,
+          "Value": "Engine",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ClassInfo": {
+            "ObjectId": -20,
+            "Name": "eVPT",
+            "MemberCount": 1,
+            "MemberNames": [
+              "value__"
+            ]
+          },
+          "MemberTypeInfo": {
+            "BinaryTypeEnums": [
+              "Primitive"
+            ],
+            "AdditionalInfos": [
+              "Int32"
+            ]
+          },
+          "LibraryId": 2,
+          "Values": [
+            1
+          ],
+          "RecordTypeEnum": "ClassWithMembersAndTypes"
+        },
+        2,
+        false,
+        {
+          "ClassInfo": {
+            "ObjectId": -21,
+            "Name": "Microsoft.Xna.Framework.Point",
+            "MemberCount": 2,
+            "MemberNames": [
+              "X",
+              "Y"
+            ]
+          },
+          "MemberTypeInfo": {
+            "BinaryTypeEnums": [
+              "Primitive",
+              "Primitive"
+            ],
+            "AdditionalInfos": [
+              "Int32",
+              "Int32"
+            ]
+          },
+          "LibraryId": 4,
+          "Values": [
+            210,
+            95
+          ],
+          "RecordTypeEnum": "ClassWithMembersAndTypes"
+        },
+        false
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ObjectId": 16,
+      "MetadataId": 15,
+      "Values": [
+        {
+          "ObjectId": 22,
+          "Value": "battery",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 23,
+          "Value": "Battery",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": -24,
+          "MetadataId": -20,
+          "Values": [
+            2
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        3,
+        false,
+        {
+          "ObjectId": -25,
+          "MetadataId": -21,
+          "Values": [
+            105,
+            145
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        false
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "ObjectId": 17,
+      "MetadataId": 15,
+      "Values": [
+        {
+          "ObjectId": 26,
+          "Value": "suspension",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 27,
+          "Value": "Suspension",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": -28,
+          "MetadataId": -20,
+          "Values": [
+            3
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        2,
+        true,
+        {
+          "ObjectId": -29,
+          "MetadataId": -21,
+          "Values": [
+            185,
+            160
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        false
+      ],
+      "RecordTypeEnum": "ClassWithId"
+    },
+    {
+      "RecordTypeEnum": "MessageEnd"
+    }
+  ],
+  "Compressed": true
+}

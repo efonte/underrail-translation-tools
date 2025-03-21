@@ -1,0 +1,634 @@
+{
+  "Header": "F9538B831F363243BAAE0D17865D0854E02835893C000000",
+  "Records": [
+    {
+      "RootId": 1,
+      "HeaderId": -1,
+      "MajorVersion": 1,
+      "MinorVersion": 0,
+      "RecordTypeEnum": "SerializedStreamHeader"
+    },
+    {
+      "LibraryId": 2,
+      "LibraryName": "X",
+      "RecordTypeEnum": "BinaryLibrary"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 1,
+        "Name": "SBCI",
+        "MemberCount": 30,
+        "MemberNames": [
+          "I:C",
+          "I:N",
+          "I:Q",
+          "I:L",
+          "I:D",
+          "I:VM",
+          "I:MS",
+          "I:C2",
+          "I:CV",
+          "I:CP",
+          "I:IVF",
+          "I:CS:Count",
+          "I:I",
+          "I:R",
+          "I:S",
+          "I:T",
+          "I:W",
+          "I:CR",
+          "CI:SR:Count",
+          "CI:SR:0",
+          "CI:SB:Count",
+          "CI:CT",
+          "CI:BV",
+          "CI:AVPQ",
+          "SBCI:S:Count",
+          "SBCI:S:0",
+          "SBCI:S:1",
+          "SBCI:S:2",
+          "SBCI:S:3",
+          "SBCI:S:4"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Object",
+          "String",
+          "Class",
+          "Primitive",
+          "String",
+          "String",
+          "Primitive",
+          "Primitive",
+          "Object",
+          "Class",
+          "Object",
+          "Primitive",
+          "Primitive",
+          "Class",
+          "Class",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Class",
+          "Primitive",
+          "Primitive",
+          "Primitive",
+          "Class",
+          "Class",
+          "Class",
+          "Class",
+          "Class"
+        ],
+        "AdditionalInfos": [
+          null,
+          null,
+          {
+            "TypeName": "eIQ",
+            "LibraryId": 2
+          },
+          "Int32",
+          null,
+          null,
+          "Int32",
+          "Boolean",
+          null,
+          {
+            "TypeName": "PC",
+            "LibraryId": 2
+          },
+          null,
+          "Int32",
+          "Boolean",
+          {
+            "TypeName": "eRC",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "eSC",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "eTC",
+            "LibraryId": 2
+          },
+          "Double",
+          "Boolean",
+          "Int32",
+          {
+            "TypeName": "CSR",
+            "LibraryId": 2
+          },
+          "Int32",
+          {
+            "TypeName": "eCOTY",
+            "LibraryId": 2
+          },
+          "Int32",
+          "Double",
+          "Int32",
+          {
+            "TypeName": "SFY",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "SFY",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "SFY",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "SFY",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "SFY",
+            "LibraryId": 2
+          }
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "ObjectId": 3,
+          "Value": "Medium Frequency Shield Modulator",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ClassInfo": {
+            "ObjectId": -4,
+            "Name": "eIQ",
+            "MemberCount": 1,
+            "MemberNames": [
+              "value__"
+            ]
+          },
+          "MemberTypeInfo": {
+            "BinaryTypeEnums": [
+              "Primitive"
+            ],
+            "AdditionalInfos": [
+              "Int32"
+            ]
+          },
+          "LibraryId": 2,
+          "Values": [
+            1
+          ],
+          "RecordTypeEnum": "ClassWithMembersAndTypes"
+        },
+        0,
+        {
+          "ObjectId": 5,
+          "Value": "This modulator can be used when crafting energy shield emitters that have decent deflecting capabilities across all impact speeds.",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 6,
+          "Value": "Components.232",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        1,
+        false,
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        {
+          "IdRef": 7,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "RecordTypeEnum": "ObjectNull"
+        },
+        0,
+        true,
+        {
+          "ClassInfo": {
+            "ObjectId": -8,
+            "Name": "eRC",
+            "MemberCount": 1,
+            "MemberNames": [
+              "value__"
+            ]
+          },
+          "MemberTypeInfo": {
+            "BinaryTypeEnums": [
+              "Primitive"
+            ],
+            "AdditionalInfos": [
+              "Int32"
+            ]
+          },
+          "LibraryId": 2,
+          "Values": [
+            0
+          ],
+          "RecordTypeEnum": "ClassWithMembersAndTypes"
+        },
+        {
+          "ClassInfo": {
+            "ObjectId": -9,
+            "Name": "eSC",
+            "MemberCount": 1,
+            "MemberNames": [
+              "value__"
+            ]
+          },
+          "MemberTypeInfo": {
+            "BinaryTypeEnums": [
+              "Primitive"
+            ],
+            "AdditionalInfos": [
+              "Int32"
+            ]
+          },
+          "LibraryId": 2,
+          "Values": [
+            0
+          ],
+          "RecordTypeEnum": "ClassWithMembersAndTypes"
+        },
+        {
+          "ClassInfo": {
+            "ObjectId": -10,
+            "Name": "eTC",
+            "MemberCount": 1,
+            "MemberNames": [
+              "value__"
+            ]
+          },
+          "MemberTypeInfo": {
+            "BinaryTypeEnums": [
+              "Primitive"
+            ],
+            "AdditionalInfos": [
+              "Int32"
+            ]
+          },
+          "LibraryId": 2,
+          "Values": [
+            410
+          ],
+          "RecordTypeEnum": "ClassWithMembersAndTypes"
+        },
+        0.2,
+        true,
+        1,
+        {
+          "IdRef": 11,
+          "RecordTypeEnum": "MemberReference"
+        },
+        0,
+        {
+          "ClassInfo": {
+            "ObjectId": -12,
+            "Name": "eCOTY",
+            "MemberCount": 1,
+            "MemberNames": [
+              "value__"
+            ]
+          },
+          "MemberTypeInfo": {
+            "BinaryTypeEnums": [
+              "Primitive"
+            ],
+            "AdditionalInfos": [
+              "Int32"
+            ]
+          },
+          "LibraryId": 2,
+          "Values": [
+            64
+          ],
+          "RecordTypeEnum": "ClassWithMembersAndTypes"
+        },
+        300,
+        15.0,
+        5,
+        {
+          "ClassInfo": {
+            "ObjectId": -13,
+            "Name": "SFY",
+            "MemberCount": 3,
+            "MemberNames": [
+              "SFY:I",
+              "SFY:B",
+              "SFY:N"
+            ]
+          },
+          "MemberTypeInfo": {
+            "BinaryTypeEnums": [
+              "Class",
+              "Primitive",
+              "Primitive"
+            ],
+            "AdditionalInfos": [
+              {
+                "TypeName": "eIMS",
+                "LibraryId": 2
+              },
+              "Int32",
+              "Double"
+            ]
+          },
+          "LibraryId": 2,
+          "Values": [
+            {
+              "ClassInfo": {
+                "ObjectId": -14,
+                "Name": "eIMS",
+                "MemberCount": 1,
+                "MemberNames": [
+                  "value__"
+                ]
+              },
+              "MemberTypeInfo": {
+                "BinaryTypeEnums": [
+                  "Primitive"
+                ],
+                "AdditionalInfos": [
+                  "Int32"
+                ]
+              },
+              "LibraryId": 2,
+              "Values": [
+                0
+              ],
+              "RecordTypeEnum": "ClassWithMembersAndTypes"
+            },
+            3,
+            0.075
+          ],
+          "RecordTypeEnum": "ClassWithMembersAndTypes"
+        },
+        {
+          "ObjectId": -15,
+          "MetadataId": -13,
+          "Values": [
+            {
+              "ObjectId": -16,
+              "MetadataId": -14,
+              "Values": [
+                1
+              ],
+              "RecordTypeEnum": "ClassWithId"
+            },
+            8,
+            0.25
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        {
+          "ObjectId": -17,
+          "MetadataId": -13,
+          "Values": [
+            {
+              "ObjectId": -18,
+              "MetadataId": -14,
+              "Values": [
+                2
+              ],
+              "RecordTypeEnum": "ClassWithId"
+            },
+            12,
+            0.5
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        {
+          "ObjectId": -19,
+          "MetadataId": -13,
+          "Values": [
+            {
+              "ObjectId": -20,
+              "MetadataId": -14,
+              "Values": [
+                3
+              ],
+              "RecordTypeEnum": "ClassWithId"
+            },
+            20,
+            0.7
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        },
+        {
+          "ObjectId": -21,
+          "MetadataId": -13,
+          "Values": [
+            {
+              "ObjectId": -22,
+              "MetadataId": -14,
+              "Values": [
+                4
+              ],
+              "RecordTypeEnum": "ClassWithId"
+            },
+            30,
+            0.9
+          ],
+          "RecordTypeEnum": "ClassWithId"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 7,
+        "Name": "PC",
+        "MemberCount": 4,
+        "MemberNames": [
+          "PC:P:Count",
+          "PC:P:0",
+          "PC:P:1",
+          "PC:P:2"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "Primitive",
+          "Class",
+          "Class",
+          "Class"
+        ],
+        "AdditionalInfos": [
+          "Int32",
+          {
+            "TypeName": "P",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "P",
+            "LibraryId": 2
+          },
+          {
+            "TypeName": "P",
+            "LibraryId": 2
+          }
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        3,
+        {
+          "IdRef": 23,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 24,
+          "RecordTypeEnum": "MemberReference"
+        },
+        {
+          "IdRef": 25,
+          "RecordTypeEnum": "MemberReference"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 11,
+        "Name": "CSR",
+        "MemberCount": 2,
+        "MemberNames": [
+          "CSR:SN",
+          "CSR:F"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "String",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          null,
+          "Single"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": 26,
+          "Value": "Electronics",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        1.0
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 23,
+        "Name": "P",
+        "MemberCount": 2,
+        "MemberNames": [
+          "P:N",
+          "P:V"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "String",
+          "Primitive"
+        ],
+        "AdditionalInfos": [
+          null,
+          "Int32"
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": 27,
+          "Value": "ModulatorIndex",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        1
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 24,
+        "Name": "P",
+        "MemberCount": 2,
+        "MemberNames": [
+          "P:N",
+          "P:V"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "String",
+          "String"
+        ],
+        "AdditionalInfos": [
+          null,
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": 28,
+          "Value": "ShieldVisualModel",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 29,
+          "Value": "MediumShield",
+          "RecordTypeEnum": "BinaryObjectString"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "ClassInfo": {
+        "ObjectId": 25,
+        "Name": "P",
+        "MemberCount": 2,
+        "MemberNames": [
+          "P:N",
+          "P:V"
+        ]
+      },
+      "MemberTypeInfo": {
+        "BinaryTypeEnums": [
+          "String",
+          "String"
+        ],
+        "AdditionalInfos": [
+          null,
+          null
+        ]
+      },
+      "LibraryId": 2,
+      "Values": [
+        {
+          "ObjectId": 30,
+          "Value": "Prefix",
+          "RecordTypeEnum": "BinaryObjectString"
+        },
+        {
+          "ObjectId": 31,
+          "Value": "Medium Frequency",
+          "RecordTypeEnum": "BinaryObjectString"
+        }
+      ],
+      "RecordTypeEnum": "ClassWithMembersAndTypes"
+    },
+    {
+      "RecordTypeEnum": "MessageEnd"
+    }
+  ],
+  "Compressed": true
+}
