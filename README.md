@@ -1,15 +1,15 @@
 # UnderRail Translation Tools
 
-A Python-based tool for extracting and injecting translations for the game UnderRail. This tool allows you to decode the game's UDLG files into JSON format, extract texts for translation into CSV, and then rebuild the game files with your translations.
+UnderRail Translation Tools is a Python-based suite for extracting and injecting translations for the game UnderRail. It decodes the game's UDLG files into JSON, extracts translatable texts into CSV files for translation, and then rebuilds the game files with your updated translations. The tool supports batch processing, preserves the original file structure, and automatically handles compressed payloads.
 
 ## Features
 
-- Decode UDLG files to JSON format
-- Extract translatable texts to CSV
-- Inject translations back into the game files
-- Merge existing translations with new game content
-- Support for batch processing of multiple files
-- Preserve game file structure and formatting
+It decodes UDLG files by first validating the UDLG signature and then processing records that include support for gzip-compressed payloads. It can extract translatable texts in two modes:
+
+- `english` mode where strings following an English marker are processed.
+- `variables` mode where variable-text pairs are handled.
+
+The encoding functionality injects translations from a CSV into the decoded JSON and rebuilds the UDLG files. In addition, the tool includes a merge command that unifies existing translations from a base CSV with new extractions from updated game files. Batch processing is available for both decoding and encoding, ensuring that the game’s folder structure is maintained.
 
 ## Requirements
 
@@ -22,81 +22,106 @@ A Python-based tool for extracting and injecting translations for the game Under
 
 ## Usage
 
-### Basic Commands
+**Decode UDLG Files to JSON**
 
-1. **Decode UDLG files to JSON:**
+This command decodes UDLG files into JSON and optionally extracts texts to CSV. It checks for a valid UDLG signature, handles decompression if needed, and supports both single file and directory processing.
 
-    ```bash
-    python udlg_tools.py decode "UnderRail/data/dialogs" -o "output/dialogs_json"
-    ```
+Basic decoding:
 
-2. **Extract texts to CSV:**
+```bash
+python udlg_tools.py decode "UnderRail/data/dialogs" -o "output/dialogs_json"
+```
 
-    ```bash
-    python udlg_tools.py decode "UnderRail/data/dialogs" -o "output/dialogs_json" --csv
-    ```
+To extract texts into a CSV in default English mode:
 
-3. **Inject translations back:**
+```bash
+python udlg_tools.py decode "UnderRail/data/dialogs" -o "output/dialogs_json" --csv
+```
 
-    ```bash
-    python udlg_tools.py encode "output/dialogs_json" -o "output/dialogs_generated" --csv "translations.csv"
-    ```
+To include the file path in the CSV:
 
-4. **Merge existing translations with new game content:**
+```bash
+python udlg_tools.py decode "UnderRail/data/dialogs" -o "output/dialogs_json" --csv --include-file
+```
 
-    ```bash
-    python udlg_tools.py merge-csv "old_translations.csv" "new_extracted.csv" "merged_output.csv"
-    ```
+To use variable mode instead of English mode:
 
-### Translation Workflow
+```bash
+python udlg_tools.py decode "UnderRail/data/dialogs" -o "output/dialogs_json" --csv -m "variables"
+```
 
-1. Extract original texts:
+**Encode JSON Back to UDLG Files**
+
+This command encodes a JSON file (or a directory of JSON files) back into the UDLG format. It can also inject translations from a CSV file.
+
+Basic encoding:
+
+```bash
+python udlg_tools.py encode "output/dialogs_json" -o "output/dialogs_generated"
+```
+
+To apply updated translations from a CSV:
+
+```bash
+python udlg_tools.py encode "output/dialogs_json" -o "output/dialogs_generated" --csv "translations.csv"
+```
+
+Additional options such as including the file path and mode selection (english/variables) can be specified:
+
+```bash
+python udlg_tools.py encode "output/dialogs_json" -o "output/dialogs_generated" --csv "translations.csv" --include-file -m "variables"
+```
+
+**Merge Existing Translations**
+
+Use the merge command to combine translations from an existing base CSV with new extractions from updated game files. This process unifies the CSV columns into a standard format, ensuring that updated translations are applied where available.
+
+```bash
+python udlg_tools.py merge-csv "old_translations.csv" "new_extracted.csv" "merged_output.csv"
+```
+
+## Translation Workflow
+
+1. **Extract the original texts:**
+   Run the decode command to generate JSON files and a CSV file containing all translatable texts. For example:
 
    ```bash
-   python udlg_tools.py decode "UnderRail/data/dialogs" -o "Extracted" --csv
+   python udlg_tools.py decode "UnderRail/data/dialogs" -o "extracted" --csv
    ```
 
-   This will create JSON files and a CSV file with all translatable texts.
+2. **Translate the texts:**
+   Open the generated CSV file. In English mode, the CSV includes columns for "Original" and "Translation" (or "File", "Original", and "Translation" if file paths are included). In variables mode, the CSV contains variable names, original texts, and translations. Edit the "Translation" column with your translated text and save your changes.
 
-2. Translate the texts:
-   - Open the generated CSV file
-   - The CSV contains two columns: "Original" and "Translation"
-   - Translate the texts in the "Translation" column
-   - Save the CSV file
-
-3. Inject translations:
+3. **Inject the translations:**
+   Use the encode command to rebuild the UDLG files with your translations:
 
    ```bash
-   python udlg_tools.py encode "Extracted" -o "Translated" --csv "translations.csv"
+   python udlg_tools.py encode "extracted" -o "translated" --csv "translations.csv"
    ```
 
-4. Copy the translated files back to the game directory
+4. **Merge translations (if needed):**
+   If you maintain an existing translation base, merge it with the new CSV:
 
-### Advanced Features
+   ```bash
+   python udlg_tools.py merge-csv "old_translations.csv" "new_extracted.csv" "merged_output.csv"
+   ```
 
-- Include file paths in CSV:
-
-  ```bash
-  python udlg_tools.py decode "input/path" --csv --include-file
-  ```
-
-- Process single file:
-
-  ```bash
-  python udlg_tools.py decode "path/to/single.udlg"
-  ```
+5. **Deploy the updated game files:**
+   Copy the generated UDLG files back into the game directory, making sure to back up the originals first.
 
 ## File Structure
 
 The tool works with three main file types:
 
-- `.udlg`: Original game files
-- `.json`: Decoded game files
-- `.csv`: Extracted texts for translation
+- **.udlg:** Original game files in UDLG format (binary files with a specific signature)
+- **.json:** Decoded representations of the UDLG files, allowing easy text manipulation
+- **.csv:** CSV files either extracted for translation or used to inject translations back into the JSON data
+
+The original file hierarchy is preserved during both the decode and encode processes.
 
 ## Notes
 
-- Always backup your game files before replacing them with translated versions
-- The tool preserves the original file structure and formatting
-- Untranslated texts will remain in their original form
-- The merge feature helps maintain existing translations when game content is updated
+- Always back up your game files before replacing them with translated versions.
+- Untranslated texts will remain in their original form.
+- The tool automatically handles compressed payloads by decompressing gzip zlib data on read and recompressing on write.
+- The merge functionality is especially useful when game content is updated and you want to keep older translations.
