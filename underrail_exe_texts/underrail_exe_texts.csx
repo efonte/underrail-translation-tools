@@ -108,7 +108,8 @@ static void RunRepacking(string[] args)
   foreach (var arg in args)
   {
     if (arg.ToLower() == "--include-single")
-      includeSingle = true;
+      // includeSingle = true;
+      Console.WriteLine("Flag --include-single not available for repacking (causes issues with internal variables).");
   }
 
   if (!File.Exists(exePath))
@@ -396,7 +397,7 @@ class ExePatcher
 
     string trimmed = text.Trim();
 
-    if (trimmed == "My Games\\Underrail")
+    if (trimmed == "My Games\\Underrail" || trimmed == "Fonts")
       return false;
 
     if (trimmed.Contains(" "))
@@ -409,7 +410,8 @@ class ExePatcher
     if (trimmed.Length < 3)
       return false;
 
-    if (trimmed.All(char.IsLower) && trimmed.Length == 3)
+    // if (trimmed.All(char.IsLower) && trimmed.Length == 3)
+    if (trimmed.All(char.IsLower))
       return false;
 
     if (trimmed.All(char.IsUpper))
