@@ -1,0 +1,11 @@
+python .\udlg_tools.py decode .\files\dialogs\ -o .\files\dialogs_json\ -c -m english
+python .\udlg_tools.py encode .\files\dialogs_json\ -o .\files\dialogs_spanish --csv .\files\dialogs_spanish.csv -m english
+
+python .\udlg_tools.py decode .\files\knowledge\ -o .\files\knowledge_json\ -c -m variables
+python .\udlg_tools.py encode .\files\knowledge_json\ -o .\files\knowledge_spanish --csv .\files\knowledge_spanish.csv -m variables
+
+python .\udlg_tools.py decode .\files\rules\ -o .\files\rules_json\ -c -m variables -H
+python .\udlg_tools.py encode .\files\rules_json\ -o .\files\rules_spanish --csv .\files\rules_spanish.csv -m variables -H
+
+dotnet script .\underrail_exe_texts.csx -- extract .\underrail.exe .\underrail.exe_texts.csv --include-single
+dotnet script .\underrail_exe_texts.csx -- repack .\underrail.exe .\underrail.exe_texts_spanish.csv
