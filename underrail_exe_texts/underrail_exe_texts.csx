@@ -1,4 +1,5 @@
 #r "nuget: dnlib, 4.4.0"
+#r "nuget: CsvHelper, 33.0.1"
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,8 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Security.Cryptography;
+using System.Globalization;
 using dnlib.DotNet;
 using dnlib.DotNet.Emit;
+using CsvHelper;
+using CsvHelper.Configuration;
 
 // Top-level statements
 var args = Args.ToArray();
@@ -143,6 +147,20 @@ class DialogueEntry
 }
 
 //
+// Maps DialogueEntry properties to CSV columns.
+// The "Key" property is mapped to "Variable", preserving the same header used in the original script.
+//
+sealed class DialogueEntryMap : ClassMap<DialogueEntry>
+{
+  public DialogueEntryMap()
+  {
+    Map(m => m.Key).Name("Variable");
+    Map(m => m.Original).Name("Original");
+    Map(m => m.Translation).Name("Translation");
+  }
+}
+
+//
 // This class extracts texts from an executable (from custom attributes, constant string fields,
 // and Ldstr instructions) and rebuilds the executable with new translations read from a CSV file.
 // Each extracted text is given a stable key generated solely from its original text using MD5 hashing.
@@ -240,23 +258,26 @@ class ExePatcher
       }
     }
     var list = dialogues.Values.ToList();
-    list.Sort((a, b) => string.Compare(a.Original, b.Original, StringComparison.Ordinal));
+    list.Sort((a, b) => string.Compare(a.Key.Split('.').First() + a.Original, a.Key.Split('.').First() + b.Original, StringComparison.Ordinal));
     return list;
   }
 
-  // Writes the extracted dialogues to a CSV file with header "Variable,Original,Translation".
+  // Writes the extracted dialogues to a CSV file using CsvHelper.
   public void ExportCSV(string csvPath)
   {
     var dialogues = ExtractDialogues();
-    using (var sw = new StreamWriter(csvPath, false, Encoding.UTF8))
+    using (var writer = new StreamWriter(csvPath, false, Encoding.UTF8))
+    using (var csv = new CsvWriter(writer, new CsvConfiguration(CultureInfo.InvariantCulture)
     {
-      sw.WriteLine("Variable,Original,Translation");
-      foreach (var entry in dialogues)
-      {
-        string keyEscaped = EscapeCsv(entry.Key);
-        string originalEscaped = EscapeCsv(entry.Original);
-        sw.WriteLine($"{keyEscaped},{originalEscaped},");
-      }
+      // No trimming to preserve leading/trailing spaces.
+      TrimOptions = TrimOptions.None,
+    }))
+    {
+      // Register the mapping so that the header is "Variable,Original,Translation".
+      csv.Context.RegisterClassMap<DialogueEntryMap>();
+      csv.WriteHeader<DialogueEntry>();
+      csv.NextRecord();
+      csv.WriteRecords(dialogues);
     }
   }
 
@@ -269,25 +290,18 @@ class ExePatcher
       throw new FileNotFoundException("CSV file not found.", csvPath);
 
     var translations = new Dictionary<string, (string Original, string Translation)>();
-    using (var sr = new StreamReader(csvPath, Encoding.UTF8))
+    using (var reader = new StreamReader(csvPath, Encoding.UTF8))
+    using (var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture)
     {
-      // Skip header line.
-      string header = sr.ReadLine();
-      while (!sr.EndOfStream)
+      TrimOptions = TrimOptions.None,
+    }))
+    {
+      csv.Context.RegisterClassMap<DialogueEntryMap>();
+      var records = csv.GetRecords<DialogueEntry>().ToList();
+      foreach (var record in records)
       {
-        string line = sr.ReadLine();
-        if (string.IsNullOrWhiteSpace(line))
-          continue;
-
-        var fields = ParseCsvLine(line);
-        if (fields.Length < 3)
-          continue;
-
-        string key = fields[0].Trim();
-        string original = fields[1].Trim();
-        string translation = fields[2].Trim();
-        if (!string.IsNullOrWhiteSpace(translation))
-          translations[key] = (original, translation);
+        if (!string.IsNullOrEmpty(record.Translation))
+          translations[record.Key] = (record.Original, record.Translation);
       }
     }
     Rebuild(translations, outputFolder);
@@ -401,6 +415,9 @@ class ExePatcher
     if (trimmed.Length < 3)
       return false;
 
+    if (trimmed.All(char.IsLower) && trimmed.Length == 3)
+      return false;
+
     if (trimmed.All(char.IsUpper))
       return false;
 
@@ -423,53 +440,6 @@ class ExePatcher
       return false;
 
     return true;
-  }
-
-  // Escapes CSV fields that contain commas, quotes, or newlines.
-  private static string EscapeCsv(string input)
-  {
-    if (input.Contains("\"") || input.Contains(",") || input.Contains("\n") || input.Contains("\r"))
-    {
-      input = input.Replace("\"", "\"\"");
-      return $"\"{input}\"";
-    }
-    return input;
-  }
-
-  // A minimal CSV parser that handles quoted fields.
-  private static string[] ParseCsvLine(string line)
-  {
-    var result = new List<string>();
-    bool inQuotes = false;
-    var field = new StringBuilder();
-
-    for (int i = 0; i < line.Length; i++)
-    {
-      char c = line[i];
-      if (c == '"')
-      {
-        if (inQuotes && i + 1 < line.Length && line[i + 1] == '"')
-        {
-          field.Append('"');
-          i++;
-        }
-        else
-        {
-          inQuotes = !inQuotes;
-        }
-      }
-      else if (c == ',' && !inQuotes)
-      {
-        result.Add(field.ToString());
-        field.Clear();
-      }
-      else
-      {
-        field.Append(c);
-      }
-    }
-    result.Add(field.ToString());
-    return result.ToArray();
   }
 
   // Computes a stable key from the dialogue text using MD5 hash and a prefix.
