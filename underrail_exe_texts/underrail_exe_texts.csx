@@ -54,12 +54,11 @@ static void PrintUsage()
 
 static void RunExtraction(string[] args)
 {
-  // Parse positional parameters and optional flags:
   string exePath = "underrail.exe";
   string csvPath = null;
   bool includeSingle = false;
 
-  // Obtain arguments that are not flags (those that do not start with "--")
+  // Get non-flag arguments.
   var nonFlagArgs = args.Where(a => !a.StartsWith("--")).ToArray();
   if (nonFlagArgs.Length >= 2)
     exePath = nonFlagArgs[1];
@@ -72,9 +71,7 @@ static void RunExtraction(string[] args)
   foreach (var arg in args)
   {
     if (arg.ToLower() == "--include-single")
-    {
       includeSingle = true;
-    }
   }
 
   if (!File.Exists(exePath))
@@ -111,9 +108,7 @@ static void RunRepacking(string[] args)
   foreach (var arg in args)
   {
     if (arg.ToLower() == "--include-single")
-    {
       includeSingle = true;
-    }
   }
 
   if (!File.Exists(exePath))
@@ -147,8 +142,8 @@ class DialogueEntry
 }
 
 //
-// Maps DialogueEntry properties to CSV columns.
-// The "Key" property is mapped to "Variable", preserving the same header used in the original script.
+// Maps DialogueEntry properties to CSV columns. The "Key" property is mapped to "Variable",
+// preserving the same header used in the original script.
 //
 sealed class DialogueEntryMap : ClassMap<DialogueEntry>
 {
@@ -179,7 +174,7 @@ class ExePatcher
     ExePath = exePath;
   }
 
-  // Extract dialogue texts from custom attributes, fields, and Ldstr instructions.
+  // Extract dialogue texts from custom attributes, constant fields, and Ldstr instructions.
   public List<DialogueEntry> ExtractDialogues()
   {
     var dialogues = new Dictionary<string, DialogueEntry>();
@@ -258,22 +253,24 @@ class ExePatcher
       }
     }
     var list = dialogues.Values.ToList();
-    list.Sort((a, b) => string.Compare(a.Key.Split('.').First() + a.Original, a.Key.Split('.').First() + b.Original, StringComparison.Ordinal));
+    // list.Sort((a, b) => string.Compare(a.Key.Split('.').First() + a.Original, b.Key.Split('.').First() + b.Original, StringComparison.Ordinal));
+    list.Sort((a, b) => string.Compare(a.Original, b.Original, StringComparison.Ordinal));
     return list;
   }
 
   // Writes the extracted dialogues to a CSV file using CsvHelper.
+  // The configuration disables quoting even if fields have leading or trailing spaces.
   public void ExportCSV(string csvPath)
   {
     var dialogues = ExtractDialogues();
     using (var writer = new StreamWriter(csvPath, false, Encoding.UTF8))
     using (var csv = new CsvWriter(writer, new CsvConfiguration(CultureInfo.InvariantCulture)
     {
-      // No trimming to preserve leading/trailing spaces.
+      // Preserve leading/trailing spaces (no trimming).
       TrimOptions = TrimOptions.None,
+      // ShouldQuote = args => false
     }))
     {
-      // Register the mapping so that the header is "Variable,Original,Translation".
       csv.Context.RegisterClassMap<DialogueEntryMap>();
       csv.WriteHeader<DialogueEntry>();
       csv.NextRecord();
@@ -282,8 +279,6 @@ class ExePatcher
   }
 
   // Reads translations from a CSV file and rebuilds the executable with updated texts.
-  // For each dialogue, if the original text in the executable matches the one exported in CSV,
-  // the translation is applied.
   public void ImportAndRebuild(string csvPath, string outputFolder)
   {
     if (!File.Exists(csvPath))
@@ -307,8 +302,7 @@ class ExePatcher
     Rebuild(translations, outputFolder);
   }
 
-  // Applies translations to custom attributes, constant fields, and Ldstr instructions,
-  // then writes the new executable.
+  // Applies translations to custom attributes, constant fields, and Ldstr instructions, then writes the new executable.
   private void Rebuild(Dictionary<string, (string Original, string Translation)> translations, string outputFolder)
   {
     string outputPath = Path.Combine(outputFolder, RelativePath);
